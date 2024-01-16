@@ -1,5 +1,18 @@
 # Provisions Shop and Price Editor
-Also available @ [https://www.nexusmods.com/monsterhunterworld/mods/2058](https://www.nexusmods.com/monsterhunterworld/mods/2058) but this repo will be the best spot to get the most recent updates.
+~~Also available @ [https://www.nexusmods.com/monsterhunterworld/mods/2058](https://www.nexusmods.com/monsterhunterworld/mods/2058) but this repo will be the best spot to get the most recent updates.~~
+
+This is a fork of a fork of a fork.
+
+I'm updating for completeness since:
+
+- the OG ShopList Editor is 404'd 
+
+- the OG editor doesn't have the QoL and other features of MHWShopListAndPriceEditor
+
+- MHWSLAPE is a tad outdated
+
+This will be reuploaded on Nexus and this repo (ideally) should mirror the most recent version of MHW (as of writing this README, MHW is version 15.21).
+
 
 **Now Requires Stracker's Loader  
 [https://www.nexusmods.com/monsterhunterworld/mods/1982](https://www.nexusmods.com/monsterhunterworld/mods/1982)**
