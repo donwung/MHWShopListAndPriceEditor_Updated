@@ -90,166 +90,21 @@ namespace ShopListPriceEditor.Handlers
         };
 
         // guiding lands mats
-        private readonly string[] GL_MATERIALS =
-        {
-            "00D0"
-            // 
-            // Decayed Crystal
-            // Forest Crystal
-            // Prosperous Crystal
-            // Guiding Forest Crystal
-            // Cracked Crystal
-            // Wasteland Crystal
-            // Serene Crystal
-            // Guiding Wasteland Crystal
-            // Pale Crystal
-            // Reef Crystal
-            // Deepsea Crystal
-            // Guiding Reef Crystal
-            // Distorted Crystal
-            // Effluvial Crystal
-            // Twilight Crystal
-            // Guiding Effluvial Crystal
-            // Melted Crystal
-            // Magma Crystal
-            // Hellfire Crystal
-            // Guiding Magma Crystal
-            // Frozen Crystal
-            // Rime Crystal
-            // Daybreak Crystal
-            // Guiding Rime Crystal
-            // Mossy Greatbone
-            // Woodland Greatbone
-            // Slumbering Greatbone
-            // Guiding Forest Dragonbone
-            // Weathered Cragbone
-            // Wasteland Cragbone
-            // Tempered Cragbone
-            // Guiding Wasteland Dragonbone
-            // Vivid Crimsonbone
-            // Coral Crimsonbone
-            // Vibrant Crimsonbone
-            // Guiding Reef Dragonbone
-            // Malformed Frenzybone
-            // Effluvial Frenzybone
-            // Afflicted Frenzybone
-            // Guiding Rotted Dragonbone
-            // Simmering Wildbone
-            // Volcanic Wildbone
-            // Dragonscorched Wildbone
-            // Guiding Volcanic Dragonbone
-            // Hoary Icebone
-            // Tundra Icebone
-            // Everfrost Icebone
-            // Guiding Tundra Dragonbone
-            // Fierce Dragonvein Bone
-            // Heavy Dragonvein Bone
-            // Dragonvein Solidbone
-            // Elder Dragonvein Bone
-            // Spiritvein Slogbone
-            // Spiritvein Solidbone
-            // Elder Spiritvein Bone
-            // Spiritvein Gem Shard
-            // Spiritvein Gem
-            // Great Spiritvein Gem
-            // Rugged Mane
-            // Colorful Plume
-            // Fragrant Poison Sac
-            // Tempered Poison Sac
-            // Hydrated Sac
-            // Tempered Torrent Sac
-            // Muddy Crown
-            // Tempered Crown
-            // Blinding Cathode
-            // Tempered Cathode
-            // Enticing Viperthorn
-            // Tempered Viperthorn
-            // Ancient Great Horn
-            // Tempered Great Horn
-            // Flickering Flamepelt
-            // Tempered Flamepelt
-            // Crackling Thunderpelt
-            // Tempered Thunderpelt
-            // Queen's Scale
-            // Tempered Green Scale
-            // Pink Scale
-            // Tempered Pink Scale
-            // Dazzling Photophore+
-            // Rubbery Shell
-            // Tempered Rubbery Shell
-            // Obsidian Fur
-            // Tempered Hide
-            // Night Hood
-            // Inkstained Oilshell+
-            // Tempered Oilshell+
-            // Heavy Jaw
-            // Incandescent Magmafin
-            // Tempered Magmafin
-            // Metallic Scute
-            // Tempered Scute
-            // Coldblooded Icefang
-            // Tempered Icefang
-            // Sinister Silverpelt
-            // Tempered Silverpelt
-            // Smooth Icehide
-            // Tempered Icehide
-            // Crystal Frozenhide
-            // Tempered Frosthide
-            // Fatal Rendclaw
-            // Tempered Rendclaw
-            // Soulrender Talon
-            // Tempered Talon
-            // King's Scale
-            // Tempered Red Scale
-            // Azure Scale
-            // Tempered Azure Scale
-            // Twisted Bravehorn
-            // Twisted Temperhorn
-            // Blackcurl Tyranthorn
-            // Blackcurl Temperhorn
-            // Assassin Cutwing
-            // Tempered Cutwing
-            // Smoldering Tailedge
-            // Tempered Tailedge
-            // Honed Tailblade
-            // Tempered Tailblade
-            // Glossy Ebonshell
-            // Tempered Ebonshell
-            // Strongman's Jaw
-            // Tempered Jaw
-            // Shuddering Darkjaw
-            // Tempered Ebonjaw
-            // Charged Deathly Shocker
-            // Tempered Shocker
-            // Crimson Blastscale
-            // Tempered Blastscale
-            // Bloodstained Ebonhide
-            // Spattered Hide
-            // Solemn Azure Horn
-            // Tempered Azure Horn
-            // Hellfire Mane
-            // Tempered Crimson Mane
-            // Stormcall Steelwing
-            // Tempered Steelwing
-            // Azure Mane
-            // Tempered Azure Mane
-            // Aurora Crownhorn
-            // Tempered Crownhorn
-            // Twilight Fang
-            // Tempered Twilight Fang
-            // Enchanting Finehide
-            // Tempered Trancehide
-            // Extinction Greathorn
-            // Annihilating Temperhorn
-            // Moonlight Scale
-            // Tempered Gold Scale
-            // Scorching Scale
-            // Tempered Silver Scale
-            // Gushing Dragonhold
-            // Tempered Dragonhold
-            // Bloodthirsty Glimmerpelt
-            // Tempered Glimmerpelt
-        };
+        private readonly string[] GL_MATERIALS = {
+            "0703", "0704", "0705", "0706", "0707", "0708", "0709", "070A", "070B", "070C", "070D", "070E",
+            "070F", "0710", "0711", "0712", "0713", "0714", "0715", "0716", "0717", "0718", "0719", "071A",
+            "071B", "071C", "071D", "071E", "071F", "0720", "0721", "0722", "0723", "0724", "0725", "0726",
+            "0727", "0728", "0729", "072A", "072B", "072C", "072D", "072E", "072F", "0730", "0731", "0732",
+            "0733", "0734", "0735", "0736", "0738", "0739", "073A", "073B", "073C", "073D", "073E", "0740",
+            "0742", "0743", "0744", "0745", "0746", "0747", "074C", "074D", "074E", "074F", "0750", "0751",
+            "0752", "0753", "0754", "0755", "0756", "0757", "0758", "0759", "075A", "075C", "075D", "075E",
+            "075F", "0760", "0762", "0763", "0764", "0766", "0767", "0768", "0769", "076A", "076B", "076C",
+            "076D", "076E", "076F", "0770", "0771", "0772", "0773", "0774", "0775", "0776", "0777", "0778",
+            "0779", "077A", "077B", "077C", "077D", "077E", "077F", "0780", "0781", "0782", "0783", "0784",
+            "0785", "0786", "0787", "0788", "0789", "078A", "078B", "078C", "078D", "078E", "078F", "0790",
+            "0791", "0792", "0793", "0794", "0795", "0796", "0797", "0798", "0799", "079A", "079B", "079C",
+            "079D", "079E", "079F", "07A0", "07A1", "07A2", "07A3", "07A4", "07A5", "07A6", "07A7" };
+
 
         // mr mats
         private readonly string[] MR_MATERIALS_A_L = {
@@ -271,7 +126,7 @@ namespace ShopListPriceEditor.Handlers
             "0591", "058F", "0590", "0592", "0593", "0455", "041D", "042A", "044C", "044B", "0450", "049C",
             "0428", "04D2", "04D4", "04D3", "04D1", "04A0", "049F", "04A2", "049D", "04A1", "049E", "0426",
             "0551", "0556", "0554", "0553", "0552", "0555"
-        }
+        };
 
 
         private readonly string[] MR_MATERIALS_M_Z = {
@@ -308,7 +163,8 @@ namespace ShopListPriceEditor.Handlers
         public string[] matsLR => LR_MATERIALS;
         public string[] matsHR => HR_MATERIALS;
         public string[] matsGL => GL_MATERIALS;
-        public string[] matsMR => MR_MATERIALS;
+        public string[] matsMR_A_L => MR_MATERIALS_A_L;
+        public string[] matsMR_M_Z => MR_MATERIALS_M_Z;
 
         public Item[] hiddenList
         {

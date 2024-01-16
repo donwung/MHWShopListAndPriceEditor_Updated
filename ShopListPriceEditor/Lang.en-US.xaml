@@ -18,8 +18,9 @@
     <system:String x:Key="consumables">Consumables</system:String>
     <system:String x:Key="lr_mats">LR Materials</system:String>
     <system:String x:Key="hr_mats">HR Materials</system:String>
+    <system:String x:Key="mr_mats_A_L">MR Materials A-L</system:String>
+    <system:String x:Key="mr_mats_M_Z">MR Materials M-Z</system:String>
     <system:String x:Key="gl_mats">GL Materials</system:String>
-    <system:String x:Key="mr_mats">MR Materials</system:String>
     <system:String x:Key="settings">Settings</system:String>
     <system:String x:Key="insertTop">Insert to Top</system:String>
     <system:String x:Key="insertBottom">Insert to Bottom</system:String>

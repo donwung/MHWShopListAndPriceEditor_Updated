@@ -349,10 +349,16 @@ namespace ShopListPriceEditor
             PopulateBoxes(itemHandler.matsGL.ToList());
         }
 
-        private void MRMaterials(object sender, RoutedEventArgs e)
+        private void MRMaterials_AL(object sender, RoutedEventArgs e)
         {
             Clear();
-            PopulateBoxes(itemHandler.matsMR.ToList());
+            PopulateBoxes(itemHandler.matsMR_A_L.ToList());
+        }
+
+        private void MRMaterials_MZ(object sender, RoutedEventArgs e)
+        {
+            Clear();
+            PopulateBoxes(itemHandler.matsMR_M_Z.ToList());
         }
 
         private void InitBoxes()
