@@ -1,0 +1,2766 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:system="clr-namespace:System;assembly=mscorlib"
+                    xmlns:handlers="clr-namespace:ShopListPriceEditor.Handlers">
+
+    <!--TODO: Translate Strings-->
+    <!--application-->
+    <system:String x:Key="title">Provisions Shop List and Price Editor</system:String>
+    <system:String x:Key="file">File</system:String>
+    <system:String x:Key="open">Open</system:String>
+    <system:String x:Key="save">Save</system:String>
+    <system:String x:Key="lang">Language</system:String>
+    <system:String x:Key="default">Default Items</system:String>
+    <system:String x:Key="gems">All Gems</system:String>
+    <system:String x:Key="clear">Clear Items</system:String>
+    <system:String x:Key="consumables">Consumables</system:String>
+    <system:String x:Key="lr_mats">LR Materials</system:String>
+    <system:String x:Key="hr_mats">HR Materials</system:String>
+    <system:String x:Key="settings">Settings</system:String>
+    <system:String x:Key="insertTop">Insert to Top</system:String>
+    <system:String x:Key="insertBottom">Insert to Bottom</system:String>
+    <system:String x:Key="count">Item Count:</system:String>
+    <system:String x:Key="results">Results:</system:String>
+
+
+    <!--itemlist-->
+    <x:Array Type="handlers:Item" x:Key="itemsList" >
+        <handlers:Item Key="item0001" Value="Potion"/>
+        <handlers:Item Key="item0002" Value="Mega Potion"/>
+        <handlers:Item Key="item0003" Value="Max Potion"/>
+        <handlers:Item Key="item0004" Value="Ancient Potion"/>
+        <handlers:Item Key="item0005" Value="Antidote"/>
+        <handlers:Item Key="item0006" Value="Herbal Medicine"/>
+        <handlers:Item Key="item0007" Value="Nulberry"/>
+        <handlers:Item Key="item0008" Value="Energy Drink"/>
+        <handlers:Item Key="item0009" Value="Ration"/>
+        <handlers:Item Key="item000A" Value="Rare Steak"/>
+        <handlers:Item Key="item000B" Value="Well-done Steak"/>
+        <handlers:Item Key="item000C" Value="Burnt Meat"/>
+        <handlers:Item Key="item000D" Value="Cool Drink"/>
+        <handlers:Item Key="item000E" Value="Nutrients"/>
+        <handlers:Item Key="item000F" Value="Mega Nutrients"/>
+        <handlers:Item Key="item0010" Value="Immunizer"/>
+        <handlers:Item Key="item0011" Value="Astera Jerky"/>
+        <handlers:Item Key="item0012" Value="Dash Juice"/>
+        <handlers:Item Key="item0013" Value="Mega Dash Juice"/>
+        <handlers:Item Key="item0014" Value="Might Seed"/>
+        <handlers:Item Key="item0015" Value="Demondrug"/>
+        <handlers:Item Key="item0016" Value="Mega Demondrug"/>
+        <handlers:Item Key="item0017" Value="Might Pill"/>
+        <handlers:Item Key="item0018" Value="Adamant Seed"/>
+        <handlers:Item Key="item0019" Value="Armorskin"/>
+        <handlers:Item Key="item001A" Value="Mega Armorskin"/>
+        <handlers:Item Key="item001B" Value="Adamant Pill"/>
+        <handlers:Item Key="item001C" Value="Lifepowder"/>
+        <handlers:Item Key="item001D" Value="Herbal Powder"/>
+        <handlers:Item Key="item001E" Value="Demon Powder"/>
+        <handlers:Item Key="item001F" Value="Hardshell Powder"/>
+        <handlers:Item Key="item0020" Value="Honey"/>
+        <handlers:Item Key="item0021" Value="Herb"/>
+        <handlers:Item Key="item0022" Value="Antidote Herb"/>
+        <handlers:Item Key="item0023" Value="Fire Herb"/>
+        <handlers:Item Key="item0024" Value="Flowfern"/>
+        <handlers:Item Key="item0025" Value="Snow Herb"/>
+        <handlers:Item Key="item0026" Value="Sleep Herb"/>
+        <handlers:Item Key="item0027" Value="Ivy"/>
+        <handlers:Item Key="item0028" Value="Smokenut"/>
+        <handlers:Item Key="item0029" Value="Dragonfell Berry"/>
+        <handlers:Item Key="item002A" Value="Blue Mushroom"/>
+        <handlers:Item Key="item002B" Value="Mandragora"/>
+        <handlers:Item Key="item002C" Value="Nitroshroom"/>
+        <handlers:Item Key="item002D" Value="Devil's Blight"/>
+        <handlers:Item Key="item002E" Value="Parashroom"/>
+        <handlers:Item Key="item002F" Value="Toadstool"/>
+        <handlers:Item Key="item0030" Value="Exciteshroom"/>
+        <handlers:Item Key="item0031" Value="Bitterbug"/>
+        <handlers:Item Key="item0032" Value="Flashbug"/>
+        <handlers:Item Key="item0033" Value="Godbug"/>
+        <handlers:Item Key="item0034" Value="Thunderbug"/>
+        <handlers:Item Key="item0035" Value="Baitbug"/>
+        <handlers:Item Key="item0036" Value="Kelbi Horn"/>
+        <handlers:Item Key="item0037" Value="Dash Extract"/>
+        <handlers:Item Key="item0038" Value="Nourishing Extract"/>
+        <handlers:Item Key="item0039" Value="Screamer Sac"/>
+        <handlers:Item Key="item003A" Value="Catalyst"/>
+        <handlers:Item Key="item003B" Value="Tranq Bomb"/>
+        <handlers:Item Key="item003C" Value="Flash Pod"/>
+        <handlers:Item Key="item003D" Value="Screamer Pod"/>
+        <handlers:Item Key="item003E" Value="Smoke Bomb"/>
+        <handlers:Item Key="item003F" Value="Poison Smoke Bomb"/>
+        <handlers:Item Key="item0040" Value="Farcaster"/>
+        <handlers:Item Key="item0041" Value="Raw Meat"/>
+        <handlers:Item Key="item0042" Value="Poisoned Meat"/>
+        <handlers:Item Key="item0043" Value="Tinged Meat"/>
+        <handlers:Item Key="item0044" Value="Drugged Meat"/>
+        <handlers:Item Key="item0045" Value="Gunpowder"/>
+        <handlers:Item Key="item0046" Value="Small Barrel"/>
+        <handlers:Item Key="item0047" Value="Barrel Bomb"/>
+        <handlers:Item Key="item0048" Value="Bounce Bomb"/>
+        <handlers:Item Key="item0049" Value="Mega Bounce Bomb"/>
+        <handlers:Item Key="item004A" Value="Large Barrel"/>
+        <handlers:Item Key="item004B" Value="Large Barrel Bomb"/>
+        <handlers:Item Key="item004C" Value="Mega Barrel Bomb"/>
+        <handlers:Item Key="item004D" Value="Spider Web"/>
+        <handlers:Item Key="item004E" Value="Net"/>
+        <handlers:Item Key="item004F" Value="Trap Tool"/>
+        <handlers:Item Key="item0050" Value="Pitfall Trap"/>
+        <handlers:Item Key="item0051" Value="Shock Trap"/>
+        <handlers:Item Key="item0052" Value="Rolled-up Dung"/>
+        <handlers:Item Key="item0053" Value="Dung"/>
+        <handlers:Item Key="item0054" Value="Dung Pod"/>
+        <handlers:Item Key="item0055" Value="Arowana Bait"/>
+        <handlers:Item Key="item0056" Value="Gunpowderfish Bait"/>
+        <handlers:Item Key="item0057" Value="Goldenfish Bait"/>
+        <handlers:Item Key="item0058" Value="Boomerang"/>
+        <handlers:Item Key="item0059" Value="Binoculars"/>
+        <handlers:Item Key="item005A" Value="Powercharm"/>
+        <handlers:Item Key="item005B" Value="Powertalon"/>
+        <handlers:Item Key="item005C" Value="Armorcharm"/>
+        <handlers:Item Key="item005D" Value="Armortalon"/>
+        <handlers:Item Key="item005E" Value="Needleberry"/>
+        <handlers:Item Key="item005F" Value="Blastnut"/>
+        <handlers:Item Key="item0060" Value="Dragonstrike Nut"/>
+        <handlers:Item Key="item0061" Value="Slashberry"/>
+        <handlers:Item Key="item0062" Value="Latchberry"/>
+        <handlers:Item Key="item0063" Value="Bomberry"/>
+        <handlers:Item Key="item0064" Value="Flamenut"/>
+        <handlers:Item Key="item0065" Value="Blazenut"/>
+        <handlers:Item Key="item0066" Value="Gunpowder Level 2"/>
+        <handlers:Item Key="item0067" Value="Gunpowder Level 3"/>
+        <handlers:Item Key="item0068" Value="Whetfish Fin"/>
+        <handlers:Item Key="item0069" Value="Whetfish Fin+"/>
+        <handlers:Item Key="item006A" Value="Sushifish Scale"/>
+        <handlers:Item Key="item006B" Value="Great Sushifish Scale"/>
+        <handlers:Item Key="item006C" Value="Gunpowderfish Scale"/>
+        <handlers:Item Key="item006D" Value="Great Gunpowderfish Scale"/>
+        <handlers:Item Key="item006E" Value="Burst Arowana Scale"/>
+        <handlers:Item Key="item006F" Value="Great Burst Arowana Scale"/>
+        <handlers:Item Key="item0070" Value="Bomb Arowana Scale"/>
+        <handlers:Item Key="item0071" Value="Great Bomb Arowana Scale"/>
+        <handlers:Item Key="item0072" Value="Whetstone"/>
+        <handlers:Item Key="item0073" Value="Capture Net"/>
+        <handlers:Item Key="item0074" Value="Fishing Rod"/>
+        <handlers:Item Key="item0075" Value="BBQ Spit"/>
+        <handlers:Item Key="item0076" Value="Ghillie Mantle"/>
+        <handlers:Item Key="item0077" Value="Temporal Mantle"/>
+        <handlers:Item Key="item0078" Value="Health Booster"/>
+        <handlers:Item Key="item0079" Value="Rocksteady Mantle"/>
+        <handlers:Item Key="item007A" Value="Challenger Mantle"/>
+        <handlers:Item Key="item007B" Value="Vitality Mantle"/>
+        <handlers:Item Key="item007C" Value="Fireproof Mantle"/>
+        <handlers:Item Key="item007D" Value="Waterproof Mantle"/>
+        <handlers:Item Key="item007E" Value="Iceproof Mantle"/>
+        <handlers:Item Key="item007F" Value="Thunderproof Mantle"/>
+        <handlers:Item Key="item0080" Value="Dragonproof Mantle"/>
+        <handlers:Item Key="item0081" Value="Cleanser Booster"/>
+        <handlers:Item Key="item0082" Value="Glider Mantle"/>
+        <handlers:Item Key="item0083" Value="Evasion Mantle"/>
+        <handlers:Item Key="item0084" Value="Impact Mantle"/>
+        <handlers:Item Key="item0085" Value="Apothecary Mantle"/>
+        <handlers:Item Key="item0086" Value="Immunity Mantle"/>
+        <handlers:Item Key="item0087" Value="Affinity Booster"/>
+        <handlers:Item Key="item0088" Value="Bandit Mantle"/>
+        <handlers:Item Key="item0089" Value="Normal Ammo 1"/>
+        <handlers:Item Key="item008A" Value="Normal Ammo 2"/>
+        <handlers:Item Key="item008B" Value="Normal Ammo 3"/>
+        <handlers:Item Key="item008C" Value="Pierce Ammo 1"/>
+        <handlers:Item Key="item008D" Value="Pierce Ammo 2"/>
+        <handlers:Item Key="item008E" Value="Pierce Ammo 3"/>
+        <handlers:Item Key="item008F" Value="Spread Ammo 1"/>
+        <handlers:Item Key="item0090" Value="Spread Ammo 2"/>
+        <handlers:Item Key="item0091" Value="Spread Ammo 3"/>
+        <handlers:Item Key="item0092" Value="Sticky Ammo 1"/>
+        <handlers:Item Key="item0093" Value="Sticky Ammo 2"/>
+        <handlers:Item Key="item0094" Value="Sticky Ammo 3"/>
+        <handlers:Item Key="item0095" Value="Cluster Bomb 1"/>
+        <handlers:Item Key="item0096" Value="Cluster Bomb 2"/>
+        <handlers:Item Key="item0097" Value="Cluster Bomb 3"/>
+        <handlers:Item Key="item0098" Value="Flaming Ammo"/>
+        <handlers:Item Key="item0099" Value="Water Ammo"/>
+        <handlers:Item Key="item009A" Value="Thunder Ammo"/>
+        <handlers:Item Key="item009B" Value="Freeze Ammo"/>
+        <handlers:Item Key="item009C" Value="Dragon Ammo"/>
+        <handlers:Item Key="item009D" Value="Poison Ammo 1"/>
+        <handlers:Item Key="item009E" Value="Poison Ammo 2"/>
+        <handlers:Item Key="item009F" Value="Paralysis Ammo 1"/>
+        <handlers:Item Key="item00A0" Value="Paralysis Ammo 2"/>
+        <handlers:Item Key="item00A1" Value="Sleep Ammo 1"/>
+        <handlers:Item Key="item00A2" Value="Sleep Ammo 2"/>
+        <handlers:Item Key="item00A3" Value="Exhaust Ammo 1"/>
+        <handlers:Item Key="item00A4" Value="Exhaust Ammo 2"/>
+        <handlers:Item Key="item00A5" Value="Recover Ammo 1"/>
+        <handlers:Item Key="item00A6" Value="Recover Ammo 2"/>
+        <handlers:Item Key="item00A7" Value="Wyvern Ammo"/>
+        <handlers:Item Key="item00A8" Value="Slicing Ammo"/>
+        <handlers:Item Key="item00A9" Value="Tranq Ammo"/>
+        <handlers:Item Key="item00AA" Value="Demon Ammo"/>
+        <handlers:Item Key="item00AB" Value="Armor Ammo"/>
+        <handlers:Item Key="item00AC" Value="(None)"/>
+        <handlers:Item Key="item00AD" Value="Close-range Coating"/>
+        <handlers:Item Key="item00AE" Value="Empty Phial"/>
+        <handlers:Item Key="item00AF" Value="Power Coating"/>
+        <handlers:Item Key="item00B0" Value="Poison Coating"/>
+        <handlers:Item Key="item00B1" Value="Paralysis Coating"/>
+        <handlers:Item Key="item00B2" Value="Sleep Coating"/>
+        <handlers:Item Key="item00B3" Value="Exhaust Coating"/>
+        <handlers:Item Key="item00B4" Value="Blast Coating"/>
+        <handlers:Item Key="item00B5" Value="First-aid Med"/>
+        <handlers:Item Key="item00B6" Value="First-aid Med+"/>
+        <handlers:Item Key="item00B7" Value="EZ Ration"/>
+        <handlers:Item Key="item00B8" Value="EZ Lifepowder"/>
+        <handlers:Item Key="item00B9" Value="EZ Max Potion"/>
+        <handlers:Item Key="item00BA" Value="EZ Large Barrel Bomb"/>
+        <handlers:Item Key="item00BB" Value="EZ Shock Trap"/>
+        <handlers:Item Key="item00BC" Value="EZ Pitfall Trap"/>
+        <handlers:Item Key="item00BD" Value="EZ Herbal Powder"/>
+        <handlers:Item Key="item00BE" Value="EZ Demon Powder"/>
+        <handlers:Item Key="item00BF" Value="EZ Hardshell Powder"/>
+        <handlers:Item Key="item00C0" Value="EZ Dung Pod"/>
+        <handlers:Item Key="item00C1" Value="EZ Flash Pod"/>
+        <handlers:Item Key="item00C2" Value="EZ Screamer Pod"/>
+        <handlers:Item Key="item00C3" Value="Throwing Knife"/>
+        <handlers:Item Key="item00C4" Value="Poison Knife"/>
+        <handlers:Item Key="item00C5" Value="Sleep Knife"/>
+        <handlers:Item Key="item00C6" Value="Paralysis Knife"/>
+        <handlers:Item Key="item00C7" Value="Tranq Knife"/>
+        <handlers:Item Key="item00C8" Value="EZ Farcaster"/>
+        <handlers:Item Key="item00C9" Value="EZ Tranq Bomb"/>
+        <handlers:Item Key="item00CA" Value="Ballista Ammo"/>
+        <handlers:Item Key="item00CB" Value="One-shot Binder"/>
+        <handlers:Item Key="item00CC" Value="Cannon Ammo"/>
+        <handlers:Item Key="item00CD" Value="Iron Ore"/>
+        <handlers:Item Key="item00CE" Value="Machalite Ore"/>
+        <handlers:Item Key="item00CF" Value="Dragonite Ore"/>
+        <handlers:Item Key="item00D0" Value="Carbalite Ore"/>
+        <handlers:Item Key="item00D1" Value="Fucium Ore"/>
+        <handlers:Item Key="item00D2" Value="Earth Crystal"/>
+        <handlers:Item Key="item00D3" Value="Coral Crystal"/>
+        <handlers:Item Key="item00D4" Value="Dragonvein Crystal"/>
+        <handlers:Item Key="item00D5" Value="Lightcrystal"/>
+        <handlers:Item Key="item00D6" Value="Novacrystal"/>
+        <handlers:Item Key="item00D7" Value="Firecell Stone"/>
+        <handlers:Item Key="item00D8" Value="Aquacore Ore"/>
+        <handlers:Item Key="item00D9" Value="Spiritcore Ore"/>
+        <handlers:Item Key="item00DA" Value="Dreamcore Ore"/>
+        <handlers:Item Key="item00DB" Value="Dragoncore Ore"/>
+        <handlers:Item Key="item00DC" Value="Armor Sphere"/>
+        <handlers:Item Key="item00DD" Value="Armor Sphere+"/>
+        <handlers:Item Key="item00DE" Value="Advanced Armor Sphere"/>
+        <handlers:Item Key="item00DF" Value="Hard Armor Sphere"/>
+        <handlers:Item Key="item00E0" Value="Heavy Armor Sphere"/>
+        <handlers:Item Key="item00E1" Value="Sturdy Bone"/>
+        <handlers:Item Key="item00E2" Value="Quality Bone"/>
+        <handlers:Item Key="item00E3" Value="Ancient Bone"/>
+        <handlers:Item Key="item00E4" Value="Boulder Bone"/>
+        <handlers:Item Key="item00E5" Value="Coral Bone"/>
+        <handlers:Item Key="item00E6" Value="Warped Bone"/>
+        <handlers:Item Key="item00E7" Value="Brutal Bone"/>
+        <handlers:Item Key="item00E8" Value="Dragonbone Relic"/>
+        <handlers:Item Key="item00E9" Value="Unknown Skull"/>
+        <handlers:Item Key="item00EA" Value="Great Hornfly"/>
+        <handlers:Item Key="item00EB" Value="Sinister Cloth"/>
+        <handlers:Item Key="item00EC" Value="Monster Bone S"/>
+        <handlers:Item Key="item00ED" Value="Monster Bone M"/>
+        <handlers:Item Key="item00EE" Value="Monster Bone L"/>
+        <handlers:Item Key="item00EF" Value="Monster Bone+"/>
+        <handlers:Item Key="item00F0" Value="Monster Keenbone"/>
+        <handlers:Item Key="item00F1" Value="Monster Hardbone"/>
+        <handlers:Item Key="item00F2" Value="Elder Dragon Bone"/>
+        <handlers:Item Key="item00F3" Value="Sharp Claw"/>
+        <handlers:Item Key="item00F4" Value="Piercing Claw"/>
+        <handlers:Item Key="item00F5" Value="Monster Fluid"/>
+        <handlers:Item Key="item00F6" Value="Monster Broth"/>
+        <handlers:Item Key="item00F7" Value="Poison Sac"/>
+        <handlers:Item Key="item00F8" Value="Toxin Sac"/>
+        <handlers:Item Key="item00F9" Value="Paralysis Sac"/>
+        <handlers:Item Key="item00FA" Value="Omniplegia Sac"/>
+        <handlers:Item Key="item00FB" Value="Sleep Sac"/>
+        <handlers:Item Key="item00FC" Value="Coma Sac"/>
+        <handlers:Item Key="item00FD" Value="Flame Sac"/>
+        <handlers:Item Key="item00FE" Value="Inferno Sac"/>
+        <handlers:Item Key="item00FF" Value="Aqua Sac"/>
+        <handlers:Item Key="item0100" Value="Torrent Sac"/>
+        <handlers:Item Key="item0101" Value="Frost Sac"/>
+        <handlers:Item Key="item0102" Value="Freezer Sac"/>
+        <handlers:Item Key="item0103" Value="Electro Sac"/>
+        <handlers:Item Key="item0104" Value="Thunder Sac"/>
+        <handlers:Item Key="item0105" Value="Bird Wyvern Gem"/>
+        <handlers:Item Key="item0106" Value="Wyvern Gem"/>
+        <handlers:Item Key="item0107" Value="Elder Dragon Blood"/>
+        <handlers:Item Key="item0108" Value="Mosswine Hide"/>
+        <handlers:Item Key="item0109" Value="Warm Pelt"/>
+        <handlers:Item Key="item010A" Value="High-quality Pelt"/>
+        <handlers:Item Key="item010B" Value="Vespoid Shell"/>
+        <handlers:Item Key="item010C" Value="Vespoid Carapace"/>
+        <handlers:Item Key="item010D" Value="Vespoid Wing"/>
+        <handlers:Item Key="item010E" Value="Vespoid Innerwing"/>
+        <handlers:Item Key="item010F" Value="Hornetaur Shell"/>
+        <handlers:Item Key="item0110" Value="Hornetaur Wing"/>
+        <handlers:Item Key="item0111" Value="Hornetaur Head"/>
+        <handlers:Item Key="item0112" Value="Hornetaur Carapace"/>
+        <handlers:Item Key="item0113" Value="Hornetaur Innerwing"/>
+        <handlers:Item Key="item0114" Value="Gajau Skin"/>
+        <handlers:Item Key="item0115" Value="Gajau Whisker"/>
+        <handlers:Item Key="item0116" Value="Gajau Scale"/>
+        <handlers:Item Key="item0117" Value="Grand Gajau Whisker"/>
+        <handlers:Item Key="item0118" Value="Wingdrake Hide"/>
+        <handlers:Item Key="item0119" Value="Wingdrake Hide+"/>
+        <handlers:Item Key="item011A" Value="Barnos Hide+"/>
+        <handlers:Item Key="item011B" Value="Barnos Talon"/>
+        <handlers:Item Key="item011C" Value="Kestodon Shell"/>
+        <handlers:Item Key="item011D" Value="Kestodon Scalp"/>
+        <handlers:Item Key="item011E" Value="Kestodon Carapace"/>
+        <handlers:Item Key="item011F" Value="Gastodon Carapace"/>
+        <handlers:Item Key="item0120" Value="Gastodon Horn"/>
+        <handlers:Item Key="item0121" Value="Jagras Scale"/>
+        <handlers:Item Key="item0122" Value="Jagras Hide"/>
+        <handlers:Item Key="item0123" Value="Jagras Scale+"/>
+        <handlers:Item Key="item0124" Value="Jagras Hide+"/>
+        <handlers:Item Key="item0125" Value="Shamos Scale"/>
+        <handlers:Item Key="item0126" Value="Shamos Hide"/>
+        <handlers:Item Key="item0127" Value="Shamos Scale+"/>
+        <handlers:Item Key="item0128" Value="Shamos Hide+"/>
+        <handlers:Item Key="item0129" Value="Girros Scale"/>
+        <handlers:Item Key="item012A" Value="Girros Hide"/>
+        <handlers:Item Key="item012B" Value="Girros Fang"/>
+        <handlers:Item Key="item012C" Value="Girros Scale+"/>
+        <handlers:Item Key="item012D" Value="Girros Hide+"/>
+        <handlers:Item Key="item012E" Value="Great Jagras Scale"/>
+        <handlers:Item Key="item012F" Value="Great Jagras Hide"/>
+        <handlers:Item Key="item0130" Value="Great Jagras Mane"/>
+        <handlers:Item Key="item0131" Value="Great Jagras Claw"/>
+        <handlers:Item Key="item0132" Value="Great Jagras Scale+"/>
+        <handlers:Item Key="item0133" Value="Great Jagras Hide+"/>
+        <handlers:Item Key="item0134" Value="Great Jagras Claw+"/>
+        <handlers:Item Key="item0135" Value="Kulu-Ya-Ku Scale"/>
+        <handlers:Item Key="item0136" Value="Kulu-Ya-Ku Hide"/>
+        <handlers:Item Key="item0137" Value="Kulu-Ya-Ku Plume"/>
+        <handlers:Item Key="item0138" Value="Kulu-Ya-Ku Beak"/>
+        <handlers:Item Key="item0139" Value="Kulu-Ya-Ku Scale+"/>
+        <handlers:Item Key="item013A" Value="Kulu-Ya-Ku Hide+"/>
+        <handlers:Item Key="item013B" Value="Kulu-Ya-Ku Plume+"/>
+        <handlers:Item Key="item013C" Value="Kulu-Ya-Ku Beak+"/>
+        <handlers:Item Key="item013D" Value="Pukei-Pukei Scale"/>
+        <handlers:Item Key="item013E" Value="Pukei-Pukei Shell"/>
+        <handlers:Item Key="item013F" Value="Pukei-Pukei Quill"/>
+        <handlers:Item Key="item0140" Value="Pukei-Pukei Sac"/>
+        <handlers:Item Key="item0141" Value="Pukei-Pukei Tail"/>
+        <handlers:Item Key="item0142" Value="Pukei-Pukei Scale+"/>
+        <handlers:Item Key="item0143" Value="Pukei-Pukei Carapace"/>
+        <handlers:Item Key="item0144" Value="Pukei-Pukei Wing"/>
+        <handlers:Item Key="item0145" Value="Pukei-Pukei Sac+"/>
+        <handlers:Item Key="item0146" Value="Barroth Shell"/>
+        <handlers:Item Key="item0147" Value="Barroth Ridge"/>
+        <handlers:Item Key="item0148" Value="Barroth Claw"/>
+        <handlers:Item Key="item0149" Value="Barroth Scalp"/>
+        <handlers:Item Key="item014A" Value="Barroth Tail"/>
+        <handlers:Item Key="item014B" Value="Fertile Mud"/>
+        <handlers:Item Key="item014C" Value="Barroth Carapace"/>
+        <handlers:Item Key="item014D" Value="Barroth Ridge+"/>
+        <handlers:Item Key="item014E" Value="Barroth Claw+"/>
+        <handlers:Item Key="item014F" Value="Jyuratodus Scale"/>
+        <handlers:Item Key="item0150" Value="Jyuratodus Shell"/>
+        <handlers:Item Key="item0151" Value="Jyuratodus Fang"/>
+        <handlers:Item Key="item0152" Value="Jyuratodus Fin"/>
+        <handlers:Item Key="item0153" Value="Jyuratodus Scale+"/>
+        <handlers:Item Key="item0154" Value="Jyuratodus Carapace"/>
+        <handlers:Item Key="item0155" Value="Jyuratodus Fang+"/>
+        <handlers:Item Key="item0156" Value="Jyuratodus Fin+"/>
+        <handlers:Item Key="item0157" Value="Tobi-Kadachi Scale"/>
+        <handlers:Item Key="item0158" Value="Tobi-Kadachi Pelt"/>
+        <handlers:Item Key="item0159" Value="Tobi-Kadachi Membrane"/>
+        <handlers:Item Key="item015A" Value="Tobi-Kadachi Claw"/>
+        <handlers:Item Key="item015B" Value="Tobi-Kadachi Electrode"/>
+        <handlers:Item Key="item015C" Value="Tobi-Kadachi Scale+"/>
+        <handlers:Item Key="item015D" Value="Tobi-Kadachi Pelt+"/>
+        <handlers:Item Key="item015E" Value="Tobi-Kadachi Claw+"/>
+        <handlers:Item Key="item015F" Value="Tobi-Kadachi Electrode+"/>
+        <handlers:Item Key="item0160" Value="Anjanath Scale"/>
+        <handlers:Item Key="item0161" Value="Anjanath Pelt"/>
+        <handlers:Item Key="item0162" Value="Anjanath Fang"/>
+        <handlers:Item Key="item0163" Value="Anjanath Nosebone"/>
+        <handlers:Item Key="item0164" Value="Anjanath Tail"/>
+        <handlers:Item Key="item0165" Value="Anjanath Plate"/>
+        <handlers:Item Key="item0166" Value="Anjanath Scale+"/>
+        <handlers:Item Key="item0167" Value="Anjanath Pelt+"/>
+        <handlers:Item Key="item0168" Value="Anjanath Fang+"/>
+        <handlers:Item Key="item0169" Value="Anjanath Nosebone+"/>
+        <handlers:Item Key="item016A" Value="Anjanath Gem"/>
+        <handlers:Item Key="item016B" Value="Rathian Scale"/>
+        <handlers:Item Key="item016C" Value="Rathian Shell"/>
+        <handlers:Item Key="item016D" Value="Rathian Webbing"/>
+        <handlers:Item Key="item016E" Value="Rathian Spike"/>
+        <handlers:Item Key="item016F" Value="Rathian Plate"/>
+        <handlers:Item Key="item0170" Value="Rathian Scale+"/>
+        <handlers:Item Key="item0171" Value="Rathian Carapace"/>
+        <handlers:Item Key="item0172" Value="Rathian Spike+"/>
+        <handlers:Item Key="item0173" Value="Rathian Ruby"/>
+        <handlers:Item Key="item0174" Value="Pink Rathian Scale+"/>
+        <handlers:Item Key="item0175" Value="Pink Rathian Carapace"/>
+        <handlers:Item Key="item0176" Value="Tzitzi-Ya-Ku Scale"/>
+        <handlers:Item Key="item0177" Value="Tzitzi-Ya-Ku Hide"/>
+        <handlers:Item Key="item0178" Value="Tzitzi-Ya-Ku Claw"/>
+        <handlers:Item Key="item0179" Value="Tzitzi-Ya-Ku Photophore"/>
+        <handlers:Item Key="item017A" Value="Tzitzi-Ya-Ku Scale+"/>
+        <handlers:Item Key="item017B" Value="Tzitzi-Ya-Ku Hide+"/>
+        <handlers:Item Key="item017C" Value="Tzitzi-Ya-Ku Claw+"/>
+        <handlers:Item Key="item017D" Value="Tzitzi-Ya-Ku Photophore+"/>
+        <handlers:Item Key="item017E" Value="Paolumu Pelt"/>
+        <handlers:Item Key="item017F" Value="Paolumu Scale"/>
+        <handlers:Item Key="item0180" Value="Paolumu Shell"/>
+        <handlers:Item Key="item0181" Value="Paolumu Webbing"/>
+        <handlers:Item Key="item0182" Value="Paolumu Pelt+"/>
+        <handlers:Item Key="item0183" Value="Paolumu Scale+"/>
+        <handlers:Item Key="item0184" Value="Paolumu Carapace+"/>
+        <handlers:Item Key="item0185" Value="Paolumu Wing"/>
+        <handlers:Item Key="item0186" Value="Great Girros Scale"/>
+        <handlers:Item Key="item0187" Value="Great Girros Hide"/>
+        <handlers:Item Key="item0188" Value="Great Girros Hood"/>
+        <handlers:Item Key="item0189" Value="Great Girros Fang"/>
+        <handlers:Item Key="item018A" Value="Great Girros Tail"/>
+        <handlers:Item Key="item018B" Value="Great Girros Scale+"/>
+        <handlers:Item Key="item018C" Value="Great Girros Hide+"/>
+        <handlers:Item Key="item018D" Value="Great Girros Hood+"/>
+        <handlers:Item Key="item018E" Value="Great Girros Fang+"/>
+        <handlers:Item Key="item018F" Value="Radobaan Scale"/>
+        <handlers:Item Key="item0190" Value="Radobaan Shell"/>
+        <handlers:Item Key="item0191" Value="Radobaan Oilshell"/>
+        <handlers:Item Key="item0192" Value="Wyvern Bonemass"/>
+        <handlers:Item Key="item0193" Value="Radobaan Jaw"/>
+        <handlers:Item Key="item0194" Value="Radobaan Marrow"/>
+        <handlers:Item Key="item0195" Value="Radobaan Scale+"/>
+        <handlers:Item Key="item0196" Value="Radobaan Carapace"/>
+        <handlers:Item Key="item0197" Value="Radobaan Medulla"/>
+        <handlers:Item Key="item0198" Value="Legiana Scale"/>
+        <handlers:Item Key="item0199" Value="Legiana Hide"/>
+        <handlers:Item Key="item019A" Value="Legiana Claw"/>
+        <handlers:Item Key="item019B" Value="Legiana Webbing"/>
+        <handlers:Item Key="item019C" Value="Legiana Tail Webbing"/>
+        <handlers:Item Key="item019D" Value="Legiana Plate"/>
+        <handlers:Item Key="item019E" Value="Legiana Scale+"/>
+        <handlers:Item Key="item019F" Value="Legiana Hide+"/>
+        <handlers:Item Key="item01A0" Value="Legiana Claw+"/>
+        <handlers:Item Key="item01A1" Value="Legiana Wing"/>
+        <handlers:Item Key="item01A2" Value="Legiana Gem"/>
+        <handlers:Item Key="item01A3" Value="Odogaron Scale"/>
+        <handlers:Item Key="item01A4" Value="Odogaron Sinew"/>
+        <handlers:Item Key="item01A5" Value="Odogaron Claw"/>
+        <handlers:Item Key="item01A6" Value="Odogaron Fang"/>
+        <handlers:Item Key="item01A7" Value="Odogaron Tail"/>
+        <handlers:Item Key="item01A8" Value="Odogaron Plate"/>
+        <handlers:Item Key="item01A9" Value="Odogaron Scale+"/>
+        <handlers:Item Key="item01AA" Value="Odogaron Sinew+"/>
+        <handlers:Item Key="item01AB" Value="Odogaron Claw+"/>
+        <handlers:Item Key="item01AC" Value="Odogaron Fang+"/>
+        <handlers:Item Key="item01AD" Value="Odogaron Gem"/>
+        <handlers:Item Key="item01AE" Value="Rathalos Scale"/>
+        <handlers:Item Key="item01AF" Value="Rathalos Shell"/>
+        <handlers:Item Key="item01B0" Value="Rathalos Webbing"/>
+        <handlers:Item Key="item01B1" Value="Rathalos Tail"/>
+        <handlers:Item Key="item01B2" Value="Rath Wingtalon"/>
+        <handlers:Item Key="item01B3" Value="Rathalos Marrow"/>
+        <handlers:Item Key="item01B4" Value="Rathalos Plate"/>
+        <handlers:Item Key="item01B5" Value="Rathalos Scale+"/>
+        <handlers:Item Key="item01B6" Value="Rathalos Carapace"/>
+        <handlers:Item Key="item01B7" Value="Rathalos Wing"/>
+        <handlers:Item Key="item01B8" Value="Rathalos Medulla"/>
+        <handlers:Item Key="item01B9" Value="Rathalos Ruby"/>
+        <handlers:Item Key="item01BA" Value="Azure Rathalos Scale+"/>
+        <handlers:Item Key="item01BB" Value="Azure Rathalos Carapace"/>
+        <handlers:Item Key="item01BC" Value="Azure Rathalos Tail"/>
+        <handlers:Item Key="item01BD" Value="Azure Rathalos Wing"/>
+        <handlers:Item Key="item01BE" Value="Diablos Shell"/>
+        <handlers:Item Key="item01BF" Value="Diablos Ridge"/>
+        <handlers:Item Key="item01C0" Value="Diablos Tailcase"/>
+        <handlers:Item Key="item01C1" Value="Diablos Fang"/>
+        <handlers:Item Key="item01C2" Value="Twisted Horn"/>
+        <handlers:Item Key="item01C3" Value="Diablos Marrow"/>
+        <handlers:Item Key="item01C4" Value="Diablos Carapace"/>
+        <handlers:Item Key="item01C5" Value="Diablos Ridge+"/>
+        <handlers:Item Key="item01C6" Value="Majestic Horn"/>
+        <handlers:Item Key="item01C7" Value="Blos Medulla"/>
+        <handlers:Item Key="item01C8" Value="Black Diablos Carapace"/>
+        <handlers:Item Key="item01C9" Value="Black Diablos Ridge+"/>
+        <handlers:Item Key="item01CA" Value="Black Spiral Horn+"/>
+        <handlers:Item Key="item01CB" Value="Kirin Hide"/>
+        <handlers:Item Key="item01CC" Value="Kirin Tail"/>
+        <handlers:Item Key="item01CD" Value="Kirin Mane"/>
+        <handlers:Item Key="item01CE" Value="Kirin Thunderhorn"/>
+        <handlers:Item Key="item01CF" Value="Kirin Hide+"/>
+        <handlers:Item Key="item01D0" Value="Kirin Thundertail"/>
+        <handlers:Item Key="item01D1" Value="Kirin Azure Horn"/>
+        <handlers:Item Key="item01D2" Value="Zorah Magdaros Inner Scale"/>
+        <handlers:Item Key="item01D3" Value="Zorah Magdaros Heat Scale"/>
+        <handlers:Item Key="item01D4" Value="Zorah Magdaros Carapace"/>
+        <handlers:Item Key="item01D5" Value="Zorah Magdaros Ridge"/>
+        <handlers:Item Key="item01D6" Value="Zorah Magdaros Pleura"/>
+        <handlers:Item Key="item01D7" Value="Zorah Magdaros Brace"/>
+        <handlers:Item Key="item01D8" Value="Zorah Magdaros Magma"/>
+        <handlers:Item Key="item01D9" Value="Zorah Magdaros Gem"/>
+        <handlers:Item Key="item01DA" Value="Dodogama Scale+"/>
+        <handlers:Item Key="item01DB" Value="Dodogama Hide+"/>
+        <handlers:Item Key="item01DC" Value="Dodogama Jaw"/>
+        <handlers:Item Key="item01DD" Value="Dodogama Talon"/>
+        <handlers:Item Key="item01DE" Value="Dodogama Tail"/>
+        <handlers:Item Key="item01DF" Value="Lavasioth Scale+"/>
+        <handlers:Item Key="item01E0" Value="Lavasioth Carapace"/>
+        <handlers:Item Key="item01E1" Value="Lavasioth Fang+"/>
+        <handlers:Item Key="item01E2" Value="Lavasioth Fin+"/>
+        <handlers:Item Key="item01E3" Value="Uragaan Scale+"/>
+        <handlers:Item Key="item01E4" Value="Uragaan Carapace"/>
+        <handlers:Item Key="item01E5" Value="Uragaan Jaw"/>
+        <handlers:Item Key="item01E6" Value="Uragaan Scute"/>
+        <handlers:Item Key="item01E7" Value="Uragaan Marrow"/>
+        <handlers:Item Key="item01E8" Value="Uragaan Ruby"/>
+        <handlers:Item Key="item01E9" Value="Lava Nugget"/>
+        <handlers:Item Key="item01EA" Value="Bazelgeuse Scale+"/>
+        <handlers:Item Key="item01EB" Value="Bazelgeuse Carapace"/>
+        <handlers:Item Key="item01EC" Value="Bazelgeuse Tail"/>
+        <handlers:Item Key="item01ED" Value="Bazelgeuse Fuse"/>
+        <handlers:Item Key="item01EE" Value="Bazelgeuse Talon"/>
+        <handlers:Item Key="item01EF" Value="Bazelgeuse Wing"/>
+        <handlers:Item Key="item01F0" Value="Bazelgeuse Gem"/>
+        <handlers:Item Key="item01F1" Value="Immortal Dragonscale"/>
+        <handlers:Item Key="item01F2" Value="Nergigante Carapace"/>
+        <handlers:Item Key="item01F3" Value="Nergigante Barbs"/>
+        <handlers:Item Key="item01F4" Value="Nergigante Tail"/>
+        <handlers:Item Key="item01F5" Value="Nergigante Horn+"/>
+        <handlers:Item Key="item01F6" Value="Nergigante Talon"/>
+        <handlers:Item Key="item01F7" Value="Nergigante Regrowth Plate"/>
+        <handlers:Item Key="item01F8" Value="Nergigante Gem"/>
+        <handlers:Item Key="item01F9" Value="Deceased Scale"/>
+        <handlers:Item Key="item01FA" Value="Vaal Hazak Carapace"/>
+        <handlers:Item Key="item01FB" Value="Vaal Hazak Membrane"/>
+        <handlers:Item Key="item01FC" Value="Vaal Hazak Tail"/>
+        <handlers:Item Key="item01FD" Value="Vaal Hazak Fang+"/>
+        <handlers:Item Key="item01FE" Value="Vaal Hazak Talon"/>
+        <handlers:Item Key="item01FF" Value="Vaal Hazak Wing"/>
+        <handlers:Item Key="item0200" Value="Vaal Hazak Miasmacryst"/>
+        <handlers:Item Key="item0201" Value="Vaal Hazak Gem"/>
+        <handlers:Item Key="item0202" Value="Teostra Carapace"/>
+        <handlers:Item Key="item0203" Value="Teostra Mane"/>
+        <handlers:Item Key="item0204" Value="Teostra Tail"/>
+        <handlers:Item Key="item0205" Value="Teostra Horn+"/>
+        <handlers:Item Key="item0206" Value="Fire Dragon Scale+"/>
+        <handlers:Item Key="item0207" Value="Teostra Claw+"/>
+        <handlers:Item Key="item0208" Value="Teostra Webbing"/>
+        <handlers:Item Key="item0209" Value="Teostra Powder"/>
+        <handlers:Item Key="item020A" Value="Teostra Gem"/>
+        <handlers:Item Key="item020B" Value="Daora Carapace"/>
+        <handlers:Item Key="item020C" Value="Daora Dragon Scale+"/>
+        <handlers:Item Key="item020D" Value="Daora Webbing"/>
+        <handlers:Item Key="item020E" Value="Daora Horn+"/>
+        <handlers:Item Key="item020F" Value="Daora Tail"/>
+        <handlers:Item Key="item0210" Value="Daora Claw+"/>
+        <handlers:Item Key="item0211" Value="Daora Gem"/>
+        <handlers:Item Key="item0212" Value="Xeno'jiiva Soulscale"/>
+        <handlers:Item Key="item0213" Value="Xeno'jiiva Shell"/>
+        <handlers:Item Key="item0214" Value="Xeno'jiiva Veil"/>
+        <handlers:Item Key="item0215" Value="Xeno'jiiva Tail"/>
+        <handlers:Item Key="item0216" Value="Xeno'jiiva Horn"/>
+        <handlers:Item Key="item0217" Value="Xeno'jiiva Claw"/>
+        <handlers:Item Key="item0218" Value="Xeno'jiiva Wing"/>
+        <handlers:Item Key="item0219" Value="Xeno'jiiva Crystal"/>
+        <handlers:Item Key="item021A" Value="Xeno'jiiva Gem"/>
+        <handlers:Item Key="item021B" Value="??? Scale"/>
+        <handlers:Item Key="item021C" Value="??? Shell"/>
+        <handlers:Item Key="item021D" Value="??? Membrane"/>
+        <handlers:Item Key="item021E" Value="??? Tail"/>
+        <handlers:Item Key="item021F" Value="??? Horn"/>
+        <handlers:Item Key="item0220" Value="??? Claw"/>
+        <handlers:Item Key="item0221" Value="??? Wing"/>
+        <handlers:Item Key="item0222" Value="??? Crystal"/>
+        <handlers:Item Key="item0223" Value="??? Gem"/>
+        <handlers:Item Key="item0224" Value="Mysterious Feystone"/>
+        <handlers:Item Key="item0225" Value="Glowing Feystone"/>
+        <handlers:Item Key="item0226" Value="Worn Feystone"/>
+        <handlers:Item Key="item0227" Value="Warped Feystone"/>
+        <handlers:Item Key="item0228" Value="Sullied Streamstone"/>
+        <handlers:Item Key="item0229" Value="Shining Streamstone"/>
+        <handlers:Item Key="item022A" Value="Streamstone Shard"/>
+        <handlers:Item Key="item022B" Value="Streamstone"/>
+        <handlers:Item Key="item022C" Value="Gleaming Streamstone"/>
+        <handlers:Item Key="item022D" Value="Warrior's Streamstone: Sword"/>
+        <handlers:Item Key="item022E" Value="Warrior's Streamstone: Blade"/>
+        <handlers:Item Key="item022F" Value="Warrior's Streamstone: Hammer"/>
+        <handlers:Item Key="item0230" Value="Warrior's Streamstone: Lance"/>
+        <handlers:Item Key="item0231" Value="Warrior's Streamstone: Axe"/>
+        <handlers:Item Key="item0232" Value="Warrior's Streamstone: Shaft"/>
+        <handlers:Item Key="item0233" Value="Warrior's Streamstone: Ranged"/>
+        <handlers:Item Key="item0234" Value="Hero's Streamstone: Sword"/>
+        <handlers:Item Key="item0235" Value="Hero's Streamstone: Blade"/>
+        <handlers:Item Key="item0236" Value="Hero's Streamstone: Hammer"/>
+        <handlers:Item Key="item0237" Value="Hero's Streamstone: Lance"/>
+        <handlers:Item Key="item0238" Value="Hero's Streamstone: Axe"/>
+        <handlers:Item Key="item0239" Value="Hero's Streamstone: Shaft"/>
+        <handlers:Item Key="item023A" Value="Hero's Streamstone: Ranged"/>
+        <handlers:Item Key="item023B" Value="Voucher"/>
+        <handlers:Item Key="item023C" Value="First Wyverian Print"/>
+        <handlers:Item Key="item023D" Value="Deluxe First Wyverian Print"/>
+        <handlers:Item Key="item023E" Value="Steel Wyverian Print"/>
+        <handlers:Item Key="item023F" Value="Silver Wyverian Print"/>
+        <handlers:Item Key="item0240" Value="Gold Wyverian Print"/>
+        <handlers:Item Key="item0241" Value="Commendation"/>
+        <handlers:Item Key="item0242" Value="High Commendation"/>
+        <handlers:Item Key="item0243" Value="Research Commission Ticket"/>
+        <handlers:Item Key="item0244" Value="Pukei Coin"/>
+        <handlers:Item Key="item0245" Value="Kulu Coin"/>
+        <handlers:Item Key="item0246" Value="Rathian Coin"/>
+        <handlers:Item Key="item0247" Value="Tzitzi Coin"/>
+        <handlers:Item Key="item0248" Value="Barroth Coin"/>
+        <handlers:Item Key="item0249" Value="Gama Coin"/>
+        <handlers:Item Key="item024A" Value="Rathalos Coin"/>
+        <handlers:Item Key="item024B" Value="Brute Coin"/>
+        <handlers:Item Key="item024C" Value="Flying Coin"/>
+        <handlers:Item Key="item024D" Value="Pinnacle Coin"/>
+        <handlers:Item Key="item024E" Value="Hunter King Coin"/>
+        <handlers:Item Key="item024F" Value="Ace Hunter Coin"/>
+        <handlers:Item Key="item0250" Value="Steel Egg"/>
+        <handlers:Item Key="item0251" Value="Silver Egg"/>
+        <handlers:Item Key="item0252" Value="Golden Egg"/>
+        <handlers:Item Key="item0253" Value="Chipped Scale"/>
+        <handlers:Item Key="item0254" Value="Large Scale"/>
+        <handlers:Item Key="item0255" Value="Beautiful Scale"/>
+        <handlers:Item Key="item0256" Value="Lustrous Scale"/>
+        <handlers:Item Key="item0257" Value="Glimmering Scale"/>
+        <handlers:Item Key="item0258" Value="Bhernastone"/>
+        <handlers:Item Key="item0259" Value="Dundormarin"/>
+        <handlers:Item Key="item025A" Value="Loc Lac Ore"/>
+        <handlers:Item Key="item025B" Value="Val Habar Quartz"/>
+        <handlers:Item Key="item025C" Value="Minegardenite"/>
+        <handlers:Item Key="item025D" Value="Golden Scale"/>
+        <handlers:Item Key="item025E" Value="Golden Scale+"/>
+        <handlers:Item Key="item025F" Value="Platinum Scale"/>
+        <handlers:Item Key="item0260" Value="Platinum Scale+"/>
+        <handlers:Item Key="item0261" Value="Gilded Scale"/>
+        <handlers:Item Key="item0262" Value="Gilded Scale+"/>
+        <handlers:Item Key="item0263" Value="White Liver"/>
+        <handlers:Item Key="item0264" Value="Wyvern Tear"/>
+        <handlers:Item Key="item0265" Value="Large Wyvern Tear"/>
+        <handlers:Item Key="item0266" Value="Dragon Treasure"/>
+        <handlers:Item Key="item0267" Value="Old Dragon Treasure"/>
+        <handlers:Item Key="item0268" Value="Sunbloom"/>
+        <handlers:Item Key="item0269" Value="Shinebloom"/>
+        <handlers:Item Key="item026A" Value="Goldbloom"/>
+        <handlers:Item Key="item026B" Value="Gourmet Shroomcap"/>
+        <handlers:Item Key="item026C" Value="Exquisite Shroomcap"/>
+        <handlers:Item Key="item026D" Value="Spirit Shroomcap"/>
+        <handlers:Item Key="item026E" Value="Bauble Cactus"/>
+        <handlers:Item Key="item026F" Value="Jewel Cactus"/>
+        <handlers:Item Key="item0270" Value="Kingly Cactus"/>
+        <handlers:Item Key="item0271" Value="Hardfruit"/>
+        <handlers:Item Key="item0272" Value="Rockfruit"/>
+        <handlers:Item Key="item0273" Value="Wildfruit"/>
+        <handlers:Item Key="item0274" Value="Super Abalone"/>
+        <handlers:Item Key="item0275" Value="Choice Abalone"/>
+        <handlers:Item Key="item0276" Value="Precious Abalone"/>
+        <handlers:Item Key="item0277" Value="Light Pearl"/>
+        <handlers:Item Key="item0278" Value="Deep Pearl"/>
+        <handlers:Item Key="item0279" Value="Innocent Pearl"/>
+        <handlers:Item Key="item027A" Value="Forgotten Fossil"/>
+        <handlers:Item Key="item027B" Value="Legendary Fossil"/>
+        <handlers:Item Key="item027C" Value="Mystical Fossil"/>
+        <handlers:Item Key="item027D" Value="Underground Fruit"/>
+        <handlers:Item Key="item027E" Value="Tainted Fruit"/>
+        <handlers:Item Key="item027F" Value="Elysian Fruit"/>
+        <handlers:Item Key="item0280" Value="Gaia Amber"/>
+        <handlers:Item Key="item0281" Value="Dragonvein Amber"/>
+        <handlers:Item Key="item0282" Value="Ancient Amber"/>
+        <handlers:Item Key="item0283" Value="Blue Beryl"/>
+        <handlers:Item Key="item0284" Value="True Beryl"/>
+        <handlers:Item Key="item0285" Value="Abyssal Beryl"/>
+        <handlers:Item Key="item0286" Value="Sunkissed Grass"/>
+        <handlers:Item Key="item0287" Value="Moonlit Mushroom"/>
+        <handlers:Item Key="item0288" Value="Dragonbloom"/>
+        <handlers:Item Key="item0289" Value="Divineapple"/>
+        <handlers:Item Key="item028A" Value="Violet Abalone"/>
+        <handlers:Item Key="item028B" Value="Platinum Pearl"/>
+        <handlers:Item Key="item028C" Value="Wicked Fossil"/>
+        <handlers:Item Key="item028D" Value="Heavenberry"/>
+        <handlers:Item Key="item028E" Value="Twilight Stone"/>
+        <handlers:Item Key="item028F" Value="Noahstone"/>
+        <handlers:Item Key="item0290" Value="Wyvern Egg"/>
+        <handlers:Item Key="item0291" Value="Herbivore Egg"/>
+        <handlers:Item Key="item0292" Value="Lump of Meat"/>
+        <handlers:Item Key="item0293" Value="Shepherd Hare"/>
+        <handlers:Item Key="item0294" Value="Pilot Hare"/>
+        <handlers:Item Key="item0295" Value="Woodland Pteryx"/>
+        <handlers:Item Key="item0296" Value="Forest Pteryx"/>
+        <handlers:Item Key="item0297" Value="Cobalt Flutterfly"/>
+        <handlers:Item Key="item0298" Value="Phantom Flutterfly"/>
+        <handlers:Item Key="item0299" Value="Climbing Joyperch"/>
+        <handlers:Item Key="item029A" Value="Forest Gekko"/>
+        <handlers:Item Key="item029B" Value="Wildspire Gekko"/>
+        <handlers:Item Key="item029C" Value="Gloom Gekko"/>
+        <handlers:Item Key="item029D" Value="Moonlight Gekko"/>
+        <handlers:Item Key="item029E" Value="Vaporonid"/>
+        <handlers:Item Key="item029F" Value="Scavantula"/>
+        <handlers:Item Key="item02A0" Value="Revolture"/>
+        <handlers:Item Key="item02A1" Value="Blissbill"/>
+        <handlers:Item Key="item02A2" Value="Omenfly"/>
+        <handlers:Item Key="item02A3" Value="Augurfly"/>
+        <handlers:Item Key="item02A4" Value="Scalebat"/>
+        <handlers:Item Key="item02A5" Value="Dung Beetle"/>
+        <handlers:Item Key="item02A6" Value="Bomb Beetle"/>
+        <handlers:Item Key="item02A7" Value="Pink Parexus"/>
+        <handlers:Item Key="item02A8" Value="Great Pink Parexus"/>
+        <handlers:Item Key="item02A9" Value="Burst Arowana"/>
+        <handlers:Item Key="item02AA" Value="Bomb Arowana"/>
+        <handlers:Item Key="item02AB" Value="Great Burst Arowana"/>
+        <handlers:Item Key="item02AC" Value="Great Bomb Arowana"/>
+        <handlers:Item Key="item02AD" Value="Elegant Coralbird"/>
+        <handlers:Item Key="item02AE" Value="Dapper Coralbird"/>
+        <handlers:Item Key="item02AF" Value="Andangler"/>
+        <handlers:Item Key="item02B0" Value="Downy Crake"/>
+        <handlers:Item Key="item02B1" Value="Bristly Crake"/>
+        <handlers:Item Key="item02B2" Value="Hopguppy"/>
+        <handlers:Item Key="item02B3" Value="Petricanths"/>
+        <handlers:Item Key="item02B4" Value="Paratoad"/>
+        <handlers:Item Key="item02B5" Value="Sleeptoad"/>
+        <handlers:Item Key="item02B6" Value="Nitrotoad"/>
+        <handlers:Item Key="item02B7" Value="Wiggler"/>
+        <handlers:Item Key="item02B8" Value="Wiggler Queen"/>
+        <handlers:Item Key="item02B9" Value="Vigorwasp"/>
+        <handlers:Item Key="item02BA" Value="Giant Vigorwasp"/>
+        <handlers:Item Key="item02BB" Value="Flying Meduso"/>
+        <handlers:Item Key="item02BC" Value="Carrier Ant"/>
+        <handlers:Item Key="item02BD" Value="Hercudrome"/>
+        <handlers:Item Key="item02BE" Value="Gold Hercudrome"/>
+        <handlers:Item Key="item02BF" Value="Prism Hercudrome"/>
+        <handlers:Item Key="item02C0" Value="Emperor Hopper"/>
+        <handlers:Item Key="item02C1" Value="Tyrant Hopper"/>
+        <handlers:Item Key="item02C2" Value="Flashfly"/>
+        <handlers:Item Key="item02C3" Value="Grandfather Mantagrell"/>
+        <handlers:Item Key="item02C4" Value="Iron Helmcrab"/>
+        <handlers:Item Key="item02C5" Value="Soldier Helmcrab"/>
+        <handlers:Item Key="item02C6" Value="Emerald Helmcrab"/>
+        <handlers:Item Key="item02C7" Value="Whetfish"/>
+        <handlers:Item Key="item02C8" Value="Great Whetfish"/>
+        <handlers:Item Key="item02C9" Value="Gastronome Tuna"/>
+        <handlers:Item Key="item02CA" Value="Great Gastronome Tuna"/>
+        <handlers:Item Key="item02CB" Value="King Marlin"/>
+        <handlers:Item Key="item02CC" Value="Great King Marlin"/>
+        <handlers:Item Key="item02CD" Value="Goldenfish"/>
+        <handlers:Item Key="item02CE" Value="Platinumfish"/>
+        <handlers:Item Key="item02CF" Value="Great Goldenfish"/>
+        <handlers:Item Key="item02D0" Value="Great Platinumfish"/>
+        <handlers:Item Key="item02D1" Value="Goldenfry"/>
+        <handlers:Item Key="item02D2" Value="Great Goldenfry"/>
+        <handlers:Item Key="item02D3" Value="Sushifish"/>
+        <handlers:Item Key="item02D4" Value="Great Sushifish"/>
+        <handlers:Item Key="item02D5" Value="Gunpowderfish"/>
+        <handlers:Item Key="item02D6" Value="Great Gunpowderfish"/>
+        <handlers:Item Key="item02D7" Value="Antidote Jewel 1"/>
+        <handlers:Item Key="item02D8" Value="Antipara Jewel 1"/>
+        <handlers:Item Key="item02D9" Value="Pep Jewel 1"/>
+        <handlers:Item Key="item02DA" Value="Steadfast Jewel 1"/>
+        <handlers:Item Key="item02DB" Value="Antiblast Jewel 1"/>
+        <handlers:Item Key="item02DC" Value="Suture Jewel 1"/>
+        <handlers:Item Key="item02DD" Value="Def Lock Jewel 1"/>
+        <handlers:Item Key="item02DE" Value="Earplug Jewel 3"/>
+        <handlers:Item Key="item02DF" Value="Wind Resist Jewel 2"/>
+        <handlers:Item Key="item02E0" Value="Footing Jewel 2"/>
+        <handlers:Item Key="item02E1" Value="Fertilizer Jewel 1"/>
+        <handlers:Item Key="item02E2" Value="Heat Resist Jewel 2"/>
+        <handlers:Item Key="item02E3" Value="Attack Jewel 1"/>
+        <handlers:Item Key="item02E4" Value="Defense Jewel 1"/>
+        <handlers:Item Key="item02E5" Value="Vitality Jewel 1"/>
+        <handlers:Item Key="item02E6" Value="Recovery Jewel 1"/>
+        <handlers:Item Key="item02E7" Value="Fire Res Jewel 1"/>
+        <handlers:Item Key="item02E8" Value="Water Res Jewel 1"/>
+        <handlers:Item Key="item02E9" Value="Ice Res Jewel 1"/>
+        <handlers:Item Key="item02EA" Value="Thunder Res Jewel 1"/>
+        <handlers:Item Key="item02EB" Value="Dragon Res Jewel 1"/>
+        <handlers:Item Key="item02EC" Value="Resistor Jewel 1"/>
+        <handlers:Item Key="item02ED" Value="Blaze Jewel 1"/>
+        <handlers:Item Key="item02EE" Value="Stream Jewel 1"/>
+        <handlers:Item Key="item02EF" Value="Frost Jewel 1"/>
+        <handlers:Item Key="item02F0" Value="Bolt Jewel 1"/>
+        <handlers:Item Key="item02F1" Value="Dragon Jewel 1"/>
+        <handlers:Item Key="item02F2" Value="Venom Jewel 1"/>
+        <handlers:Item Key="item02F3" Value="Paralyzer Jewel 1"/>
+        <handlers:Item Key="item02F4" Value="Sleep Jewel 1"/>
+        <handlers:Item Key="item02F5" Value="Blast Jewel 1"/>
+        <handlers:Item Key="item02F6" Value="Poisoncoat Jewel 3"/>
+        <handlers:Item Key="item02F7" Value="Paracoat Jewel 3"/>
+        <handlers:Item Key="item02F8" Value="Sleepcoat Jewel 3"/>
+        <handlers:Item Key="item02F9" Value="Blastcoat Jewel 3"/>
+        <handlers:Item Key="item02FA" Value="Powercoat Jewel 3"/>
+        <handlers:Item Key="item02FB" Value="Release Jewel 3"/>
+        <handlers:Item Key="item02FC" Value="Expert Jewel 1"/>
+        <handlers:Item Key="item02FD" Value="Critical Jewel 2"/>
+        <handlers:Item Key="item02FE" Value="Tenderizer Jewel 2"/>
+        <handlers:Item Key="item02FF" Value="Charger Jewel 2"/>
+        <handlers:Item Key="item0300" Value="Handicraft Jewel 3"/>
+        <handlers:Item Key="item0301" Value="Draw Jewel 2"/>
+        <handlers:Item Key="item0302" Value="Destroyer Jewel 2"/>
+        <handlers:Item Key="item0303" Value="KO Jewel 2"/>
+        <handlers:Item Key="item0304" Value="Drain Jewel 1"/>
+        <handlers:Item Key="item0305" Value="Rodeo Jewel 2"/>
+        <handlers:Item Key="item0306" Value="Flight Jewel 2"/>
+        <handlers:Item Key="item0307" Value="Throttle Jewel 2"/>
+        <handlers:Item Key="item0308" Value="Challenger Jewel 2"/>
+        <handlers:Item Key="item0309" Value="Flawless Jewel 2"/>
+        <handlers:Item Key="item030A" Value="Potential Jewel 2"/>
+        <handlers:Item Key="item030B" Value="Fortitude Jewel 1"/>
+        <handlers:Item Key="item030C" Value="Furor Jewel 2"/>
+        <handlers:Item Key="item030D" Value="Sonorous Jewel 1"/>
+        <handlers:Item Key="item030E" Value="Magazine Jewel 2"/>
+        <handlers:Item Key="item030F" Value="Trueshot Jewel 1"/>
+        <handlers:Item Key="item0310" Value="Artillery Jewel 1"/>
+        <handlers:Item Key="item0311" Value="Heavy Artillery Jewel 1"/>
+        <handlers:Item Key="item0312" Value="Sprinter Jewel 2"/>
+        <handlers:Item Key="item0313" Value="Physique Jewel 2"/>
+        <handlers:Item Key="item0314" Value="Flying Leap Jewel 1"/>
+        <handlers:Item Key="item0315" Value="Refresh Jewel 2"/>
+        <handlers:Item Key="item0316" Value="Hungerless Jewel 1"/>
+        <handlers:Item Key="item0317" Value="Evasion Jewel 2"/>
+        <handlers:Item Key="item0318" Value="Jumping Jewel 2"/>
+        <handlers:Item Key="item0319" Value="Ironwall Jewel 1"/>
+        <handlers:Item Key="item031A" Value="Sheath Jewel 1"/>
+        <handlers:Item Key="item031B" Value="Friendship Jewel 1"/>
+        <handlers:Item Key="item031C" Value="Enduring Jewel 1"/>
+        <handlers:Item Key="item031D" Value="Satiated Jewel 1"/>
+        <handlers:Item Key="item031E" Value="Gobbler Jewel 1"/>
+        <handlers:Item Key="item031F" Value="Grinder Jewel 1"/>
+        <handlers:Item Key="item0320" Value="Bomber Jewel 1"/>
+        <handlers:Item Key="item0321" Value="Fungiform Jewel 1"/>
+        <handlers:Item Key="item0322" Value="Angler Jewel 1"/>
+        <handlers:Item Key="item0323" Value="Chef Jewel 1"/>
+        <handlers:Item Key="item0324" Value="Transporter Jewel 1"/>
+        <handlers:Item Key="item0325" Value="Gathering Jewel 1"/>
+        <handlers:Item Key="item0326" Value="Honeybee Jewel 1"/>
+        <handlers:Item Key="item0327" Value="Carver Jewel 1"/>
+        <handlers:Item Key="item0328" Value="Protection Jewel 1"/>
+        <handlers:Item Key="item0329" Value="Meowster Jewel 1"/>
+        <handlers:Item Key="item032A" Value="Botany Jewel 1"/>
+        <handlers:Item Key="item032B" Value="Geology Jewel 1"/>
+        <handlers:Item Key="item032C" Value="Mighty Jewel 2"/>
+        <handlers:Item Key="item032D" Value="Stonethrower Jewel 1"/>
+        <handlers:Item Key="item032E" Value="Tip Toe Jewel 1"/>
+        <handlers:Item Key="item032F" Value="Brace Jewel 3"/>
+        <handlers:Item Key="item0330" Value="Scoutfly Jewel 1"/>
+        <handlers:Item Key="item0331" Value="Crouching Jewel 1"/>
+        <handlers:Item Key="item0332" Value="Longjump Jewel 1"/>
+        <handlers:Item Key="item0333" Value="Smoke Jewel 1"/>
+        <handlers:Item Key="item0334" Value="Mirewalker Jewel 1"/>
+        <handlers:Item Key="item0335" Value="Climber Jewel 1"/>
+        <handlers:Item Key="item0336" Value="Radiosity Jewel 1"/>
+        <handlers:Item Key="item0337" Value="Research Jewel 1"/>
+        <handlers:Item Key="item0338" Value="Specimen Jewel 1"/>
+        <handlers:Item Key="item0339" Value="Miasma Jewel 1"/>
+        <handlers:Item Key="item033A" Value="Scent Jewel 1"/>
+        <handlers:Item Key="item033B" Value="Slider Jewel 1"/>
+        <handlers:Item Key="item033C" Value="Intimidator Jewel 1"/>
+        <handlers:Item Key="item033D" Value="Hazmat Jewel 1"/>
+        <handlers:Item Key="item033E" Value="Mudshield Jewel 1"/>
+        <handlers:Item Key="item033F" Value="Element Resist Jewel 1"/>
+        <handlers:Item Key="item0340" Value="Slider Jewel 2"/>
+        <handlers:Item Key="item0341" Value="Medicine Jewel 1"/>
+        <handlers:Item Key="item0342" Value="Forceshot Jewel 3"/>
+        <handlers:Item Key="item0343" Value="Pierce Jewel 3"/>
+        <handlers:Item Key="item0344" Value="Spread Jewel 3"/>
+        <handlers:Item Key="item0345" Value="Enhancer Jewel 2"/>
+        <handlers:Item Key="item0346" Value="Crisis Jewel 1"/>
+        <handlers:Item Key="item0347" Value="Dragonseal Jewel 3"/>
+        <handlers:Item Key="item0348" Value="Discovery Jewel 2"/>
+        <handlers:Item Key="item0349" Value="Detector Jewel 1"/>
+        <handlers:Item Key="item034A" Value="Maintenance Jewel 1"/>
+        <handlers:Item Key="item034B" Value="Vigorwasp Delivery"/>
+        <handlers:Item Key="item034C" Value="Vigorwasp Station"/>
+        <handlers:Item Key="item034D" Value="Flashfly Cage"/>
+        <handlers:Item Key="item034E" Value="Thunderbug Cage"/>
+        <handlers:Item Key="item034F" Value="Shieldspire Taunt"/>
+        <handlers:Item Key="item0350" Value="Shieldspire Bash"/>
+        <handlers:Item Key="item0351" Value="Coral Cheerhorn"/>
+        <handlers:Item Key="item0352" Value="Coral Cheerbongo"/>
+        <handlers:Item Key="item0353" Value="Plunderblade"/>
+        <handlers:Item Key="item0354" Value="Palarang"/>
+        <handlers:Item Key="item0355" Value="Meowlotov Assault"/>
+        <handlers:Item Key="item0356" Value="Rath-of-Meow"/>
+        <handlers:Item Key="item0357" Value="Item 855"/>
+        <handlers:Item Key="item0358" Value="Item 856"/>
+        <handlers:Item Key="item0359" Value="Item 857"/>
+        <handlers:Item Key="item035A" Value="Item 858"/>
+        <handlers:Item Key="item035B" Value="Stone"/>
+        <handlers:Item Key="item035C" Value="Redpit"/>
+        <handlers:Item Key="item035D" Value="Brightmoss"/>
+        <handlers:Item Key="item035E" Value="Scatternut"/>
+        <handlers:Item Key="item035F" Value="Torch Pod"/>
+        <handlers:Item Key="item0360" Value="Bomb Pod"/>
+        <handlers:Item Key="item0361" Value="Thorn Pod"/>
+        <handlers:Item Key="item0362" Value="Piercing Pod"/>
+        <handlers:Item Key="item0363" Value="Dragon Pod"/>
+        <handlers:Item Key="item0364" Value="Crystalburst"/>
+        <handlers:Item Key="item0365" Value="Puddle Pod"/>
+        <handlers:Item Key="item0366" Value="Chillshroom"/>
+        <handlers:Item Key="item0367" Value="Tailraider Voucher"/>
+        <handlers:Item Key="item0368" Value="Emerald Shell"/>
+        <handlers:Item Key="item0369" Value="Gajalaka Sketch"/>
+        <handlers:Item Key="item036A" Value="Mighty Bow Jewel 2"/>
+        <handlers:Item Key="item036B" Value="Mind's Eye Jewel 2"/>
+        <handlers:Item Key="item036C" Value="Shield Jewel 2"/>
+        <handlers:Item Key="item036D" Value="Sharp Jewel 2"/>
+        <handlers:Item Key="item036E" Value="Elementless Jewel 2"/>
+        <handlers:Item Key="item036F" Value="Deviljho Scale"/>
+        <handlers:Item Key="item0370" Value="Deviljho Hide"/>
+        <handlers:Item Key="item0371" Value="Deviljho Tallfang"/>
+        <handlers:Item Key="item0372" Value="Deviljho Talon"/>
+        <handlers:Item Key="item0373" Value="Deviljho Scalp"/>
+        <handlers:Item Key="item0374" Value="Deviljho Tail"/>
+        <handlers:Item Key="item0375" Value="Deviljho Saliva"/>
+        <handlers:Item Key="item0376" Value="Deviljho Gem"/>
+        <handlers:Item Key="item0377" Value="Kulve Taroth Golden Scale"/>
+        <handlers:Item Key="item0378" Value="Kulve Taroth Golden Shell"/>
+        <handlers:Item Key="item0379" Value="Kulve Taroth Golden Nugget"/>
+        <handlers:Item Key="item037A" Value="Kulve Taroth Golden Spiralhorn"/>
+        <handlers:Item Key="item037B" Value="Kulve Taroth Golden Tailshell"/>
+        <handlers:Item Key="item037C" Value="Kulve Taroth Golden Glimstone"/>
+        <handlers:Item Key="item037D" Value="Golden Fragment"/>
+        <handlers:Item Key="item037E" Value="Golden Chunk"/>
+        <handlers:Item Key="item037F" Value="Lunastra Scale+"/>
+        <handlers:Item Key="item0380" Value="Lunastra Wing"/>
+        <handlers:Item Key="item0381" Value="Lunastra Gem"/>
+        <handlers:Item Key="item0382" Value="Lunastra Carapace"/>
+        <handlers:Item Key="item0383" Value="Lunastra Mane"/>
+        <handlers:Item Key="item0384" Value="Lunastra Tail"/>
+        <handlers:Item Key="item0385" Value="Lunastra Horn"/>
+        <handlers:Item Key="item0386" Value="Behemoth Mane"/>
+        <handlers:Item Key="item0387" Value="Behemoth Bone"/>
+        <handlers:Item Key="item0388" Value="Behemoth Great Horn"/>
+        <handlers:Item Key="item0389" Value="Behemoth Shearclaw"/>
+        <handlers:Item Key="item038A" Value="Behemoth Tail"/>
+        <handlers:Item Key="item038B" Value="Aetheryte Shard"/>
+        <handlers:Item Key="item038C" Value="Spring Blossom Ticket"/>
+        <handlers:Item Key="item038D" Value="Summer Twilight Ticket"/>
+        <handlers:Item Key="item038E" Value="Autumn Harvest Ticket"/>
+        <handlers:Item Key="item038F" Value="Winter Star Ticket"/>
+        <handlers:Item Key="item0390" Value="Appreciation Ticket"/>
+        <handlers:Item Key="item0391" Value="Spring Insect Field Guide"/>
+        <handlers:Item Key="item0392" Value="Summer Insect Field Guide"/>
+        <handlers:Item Key="item0393" Value="Vaal Hazak Ticket"/>
+        <handlers:Item Key="item0394" Value="Kirin Ticket"/>
+        <handlers:Item Key="item0395" Value="Teostra Ticket"/>
+        <handlers:Item Key="item0396" Value="Kushala Daora Ticket"/>
+        <handlers:Item Key="item0397" Value="Nergigante Ticket"/>
+        <handlers:Item Key="item0398" Value="Zorah Magdaros Ticket"/>
+        <handlers:Item Key="item0399" Value="Xeno'jiiva Ticket"/>
+        <handlers:Item Key="item039A" Value="Black Bandage"/>
+        <handlers:Item Key="item039B" Value="Black Crystal Ticket"/>
+        <handlers:Item Key="item039C" Value="Kulu-Ya-Ku Ticket"/>
+        <handlers:Item Key="item039D" Value="Wiggler Ticket"/>
+        <handlers:Item Key="item039E" Value="Item 926"/>
+        <handlers:Item Key="item039F" Value="Item 927"/>
+        <handlers:Item Key="item03A0" Value="Mega Man Ticket"/>
+        <handlers:Item Key="item03A1" Value="Item 929"/>
+        <handlers:Item Key="item03A2" Value="Item 930"/>
+        <handlers:Item Key="item03A3" Value="Item 931"/>
+        <handlers:Item Key="item03A4" Value="Azure Star Shard"/>
+        <handlers:Item Key="item03A5" Value="Azure Stargem"/>
+        <handlers:Item Key="item03A6" Value="Red Orb"/>
+        <handlers:Item Key="item03A7" Value="Master Craftsman's Blueprint"/>
+        <handlers:Item Key="item03A8" Value="Dissolved Weapon"/>
+        <handlers:Item Key="item03A9" Value="Melded Weapon"/>
+        <handlers:Item Key="item03AA" Value="Sublimated Weapon"/>
+        <handlers:Item Key="item03AB" Value="Bushi Ticket"/>
+        <handlers:Item Key="item03AC" Value="Blossom Fireworks"/>
+        <handlers:Item Key="item03AD" Value="Twilight Fireworks"/>
+        <handlers:Item Key="item03AE" Value="Harvest Fireworks"/>
+        <handlers:Item Key="item03AF" Value="Star Fireworks"/>
+        <handlers:Item Key="item03B0" Value="Appreciation Fireworks"/>
+        <handlers:Item Key="item03B1" Value="Gold Scalebat"/>
+        <handlers:Item Key="item03B2" Value="Gold Helmcrab"/>
+        <handlers:Item Key="item03B3" Value="Shiny Gold Helmcrab"/>
+        <handlers:Item Key="item03B4" Value="Copper Calappa"/>
+        <handlers:Item Key="item03B5" Value="Gold Calappa"/>
+        <handlers:Item Key="item03B6" Value="Tsuchinoko"/>
+        <handlers:Item Key="item03B7" Value="Cactuar Cutting"/>
+        <handlers:Item Key="item03B8" Value="Gold Chip Fragment"/>
+        <handlers:Item Key="item03B9" Value="Gold Nugget Fragment"/>
+        <handlers:Item Key="item03BA" Value="Blossom Ticket"/>
+        <handlers:Item Key="item03BB" Value="Senu's Feather"/>
+        <handlers:Item Key="item03BC" Value="Igni Sign"/>
+        <handlers:Item Key="item03BD" Value="Hunter Runestone"/>
+        <handlers:Item Key="item03BE" Value="Nekker"/>
+        <handlers:Item Key="item03BF" Value="Brigade Ticket"/>
+        <handlers:Item Key="item03C0" Value="Guild Cross Ticket"/>
+        <handlers:Item Key="item03C1" Value="Downy Crake Ticket"/>
+        <handlers:Item Key="item03C2" Value="Bristly Crake Ticket"/>
+        <handlers:Item Key="item03C3" Value="First Fleet Ticket"/>
+        <handlers:Item Key="item03C4" Value="Fifth Fleet Ticket"/>
+        <handlers:Item Key="item03C5" Value="Lunastra Ticket"/>
+        <handlers:Item Key="item03C6" Value="Transparent Stone"/>
+        <handlers:Item Key="item03C7" Value="Flowering Cactuar Cutting"/>
+        <handlers:Item Key="item03C8" Value="Cactuar"/>
+        <handlers:Item Key="item03C9" Value="Faux Ticket"/>
+        <handlers:Item Key="item03CA" Value="Faux Ticket II"/>
+        <handlers:Item Key="item03CB" Value="Faux Ticket III"/>
+        <handlers:Item Key="item03CC" Value="Beetle Ticket"/>
+        <handlers:Item Key="item03CD" Value="Item 973"/>
+        <handlers:Item Key="item03CE" Value="Item 974"/>
+        <handlers:Item Key="item03CF" Value="Glamour Prism"/>
+        <handlers:Item Key="item03D0" Value="Item 976"/>
+        <handlers:Item Key="item03D1" Value="Incandescent Weapon"/>
+        <handlers:Item Key="item03D2" Value="Kulve Taroth Emperor Nugget"/>
+        <handlers:Item Key="item03D3" Value="Leshen Claw"/>
+        <handlers:Item Key="item03D4" Value="Ancient Leshen Claw"/>
+        <handlers:Item Key="item03D5" Value="Leshen Skull"/>
+        <handlers:Item Key="item03D6" Value="Ancient Leshen Skull"/>
+        <handlers:Item Key="item03D7" Value="Cursed Bone"/>
+        <handlers:Item Key="item03D8" Value="Ancient Cursed Bone"/>
+        <handlers:Item Key="item03D9" Value="Leshen Antlers"/>
+        <handlers:Item Key="item03DA" Value="Ancient Leshen Antlers"/>
+        <handlers:Item Key="item03DB" Value="Leshen Resin"/>
+        <handlers:Item Key="item03DC" Value="Mutagen"/>
+        <handlers:Item Key="item03DD" Value="Nekker Card (Weapon)"/>
+        <handlers:Item Key="item03DE" Value="Nekker Card (Armor)"/>
+        <handlers:Item Key="item03DF" Value="Item 991"/>
+        <handlers:Item Key="item03E0" Value="Item 992"/>
+        <handlers:Item Key="item03E1" Value="Item 993"/>
+        <handlers:Item Key="item03E2" Value="Item 994"/>
+        <handlers:Item Key="item03E3" Value="Item 995"/>
+        <handlers:Item Key="item03E4" Value="Item 996"/>
+        <handlers:Item Key="item03E5" Value="Item 997"/>
+        <handlers:Item Key="item03E6" Value="Item 998"/>
+        <handlers:Item Key="item03E7" Value="Assassin's Hood"/>
+        <handlers:Item Key="item03E8" Value="Hot Drink"/>
+        <handlers:Item Key="item03E9" Value="Item 1001"/>
+        <handlers:Item Key="item03EA" Value="Item 1002"/>
+        <handlers:Item Key="item03EB" Value="Gourmet Voucher"/>
+        <handlers:Item Key="item03EC" Value="Surveyor Set"/>
+        <handlers:Item Key="item03ED" Value="Raider Ride"/>
+        <handlers:Item Key="item03EE" Value="Hot Pepper"/>
+        <handlers:Item Key="item03EF" Value="Gloamgrass Bud"/>
+        <handlers:Item Key="item03F0" Value="Dust of Life"/>
+        <handlers:Item Key="item03F1" Value="Crystalized Bone Shard"/>
+        <handlers:Item Key="item03F2" Value="Crystalized Monster Bone"/>
+        <handlers:Item Key="item03F3" Value="Crystalized Elder Dragon Bone"/>
+        <handlers:Item Key="item03F4" Value="Item 1012"/>
+        <handlers:Item Key="item03F5" Value="Item 1013"/>
+        <handlers:Item Key="item03F6" Value="Item 1014"/>
+        <handlers:Item Key="item03F7" Value="Item 1015"/>
+        <handlers:Item Key="item03F8" Value="Item 1016"/>
+        <handlers:Item Key="item03F9" Value="Item 1017"/>
+        <handlers:Item Key="item03FA" Value="Item 1018"/>
+        <handlers:Item Key="item03FB" Value="Item 1019"/>
+        <handlers:Item Key="item03FC" Value="Item 1020"/>
+        <handlers:Item Key="item03FD" Value="Item 1021"/>
+        <handlers:Item Key="item03FE" Value="Vigorwasp Revival"/>
+        <handlers:Item Key="item03FF" Value="Boombug Cage"/>
+        <handlers:Item Key="item0400" Value="Shieldspire Stooge"/>
+        <handlers:Item Key="item0401" Value="Coral Sonicgong"/>
+        <handlers:Item Key="item0402" Value="Mount &amp; Plunder"/>
+        <handlers:Item Key="item0403" Value="Meowcano"/>
+        <handlers:Item Key="item0404" Value="zenny"/>
+        <handlers:Item Key="item0405" Value="Research Points"/>
+        <handlers:Item Key="item0406" Value="Eltalite Ore"/>
+        <handlers:Item Key="item0407" Value="Meldspar Ore"/>
+        <handlers:Item Key="item0408" Value="Spiritvein Crystal"/>
+        <handlers:Item Key="item0409" Value="Item 1033"/>
+        <handlers:Item Key="item040A" Value="Purecrystal"/>
+        <handlers:Item Key="item040B" Value="Item 1035"/>
+        <handlers:Item Key="item040C" Value="Bathycite Ore"/>
+        <handlers:Item Key="item040D" Value="Gracium"/>
+        <handlers:Item Key="item040E" Value="Phantomcore Ore"/>
+        <handlers:Item Key="item040F" Value="Shadowcore Ore"/>
+        <handlers:Item Key="item0410" Value="King Armor Sphere"/>
+        <handlers:Item Key="item0411" Value="True Armor Sphere"/>
+        <handlers:Item Key="item0412" Value="Thick Bone"/>
+        <handlers:Item Key="item0413" Value="Frozen Bone"/>
+        <handlers:Item Key="item0414" Value="Dragonbone Artifact"/>
+        <handlers:Item Key="item0415" Value="Item 1045"/>
+        <handlers:Item Key="item0416" Value="Item 1046"/>
+        <handlers:Item Key="item0417" Value="Item 1047"/>
+        <handlers:Item Key="item0418" Value="Ancient Fragment"/>
+        <handlers:Item Key="item0419" Value="Monster Toughbone"/>
+        <handlers:Item Key="item041A" Value="Monster Slogbone"/>
+        <handlers:Item Key="item041B" Value="Monster Solidbone"/>
+        <handlers:Item Key="item041C" Value="Item 1052"/>
+        <handlers:Item Key="item041D" Value="Large Elder Dragon Bone"/>
+        <handlers:Item Key="item041E" Value="Tough Claw"/>
+        <handlers:Item Key="item041F" Value="Monster Essence"/>
+        <handlers:Item Key="item0420" Value="Deadly Poison Sac"/>
+        <handlers:Item Key="item0421" Value="Ultraplegia Sac"/>
+        <handlers:Item Key="item0422" Value="Torpor Sac"/>
+        <handlers:Item Key="item0423" Value="Conflagrant Sac"/>
+        <handlers:Item Key="item0424" Value="Flood Sac"/>
+        <handlers:Item Key="item0425" Value="Cryo Sac"/>
+        <handlers:Item Key="item0426" Value="Lightning Sac"/>
+        <handlers:Item Key="item0427" Value="Fey Wyvern Gem"/>
+        <handlers:Item Key="item0428" Value="Large Wyvern Gem"/>
+        <handlers:Item Key="item0429" Value="Pure Dragon Blood"/>
+        <handlers:Item Key="item042A" Value="Large Elder Dragon Gem"/>
+        <handlers:Item Key="item042B" Value="Item 1067"/>
+        <handlers:Item Key="item042C" Value="Prized Pelt"/>
+        <handlers:Item Key="item042D" Value="Anteka Antler"/>
+        <handlers:Item Key="item042E" Value="Item 1070"/>
+        <handlers:Item Key="item042F" Value="Vespoid Razorwing"/>
+        <handlers:Item Key="item0430" Value="Item 1072"/>
+        <handlers:Item Key="item0431" Value="Hornetaur Razorwing"/>
+        <handlers:Item Key="item0432" Value="Item 1074"/>
+        <handlers:Item Key="item0433" Value="Gajau Thickhide"/>
+        <handlers:Item Key="item0434" Value="Steel Gajau Whisker"/>
+        <handlers:Item Key="item0435" Value="Wingdrake Finehide"/>
+        <handlers:Item Key="item0436" Value="Barnos Hardclaw"/>
+        <handlers:Item Key="item0437" Value="Item 1079"/>
+        <handlers:Item Key="item0438" Value="Cortos Hardclaw"/>
+        <handlers:Item Key="item0439" Value="Kestodon Husk"/>
+        <handlers:Item Key="item043A" Value="Item 1082"/>
+        <handlers:Item Key="item043B" Value="Gastodon Husk"/>
+        <handlers:Item Key="item043C" Value="Item 1084"/>
+        <handlers:Item Key="item043D" Value="Jagras Shard"/>
+        <handlers:Item Key="item043E" Value="Item 1086"/>
+        <handlers:Item Key="item043F" Value="Shamos Shard"/>
+        <handlers:Item Key="item0440" Value="Item 1088"/>
+        <handlers:Item Key="item0441" Value="Girros Shard"/>
+        <handlers:Item Key="item0442" Value="Item 1090"/>
+        <handlers:Item Key="item0443" Value="Wulg Thickfur"/>
+        <handlers:Item Key="item0444" Value="Item 1092"/>
+        <handlers:Item Key="item0445" Value="Great Jagras Shard"/>
+        <handlers:Item Key="item0446" Value="Great Jagras Thickhide"/>
+        <handlers:Item Key="item0447" Value="Great Jagras Hardclaw"/>
+        <handlers:Item Key="item0448" Value="Great Jagras Mane+"/>
+        <handlers:Item Key="item0449" Value="Kulu-Ya-Ku Shard"/>
+        <handlers:Item Key="item044A" Value="Kulu-Ya-Ku Thickhide"/>
+        <handlers:Item Key="item044B" Value="Large Kulu-Ya-Ku Plume"/>
+        <handlers:Item Key="item044C" Value="Large Kulu-Ya-Ku Beak"/>
+        <handlers:Item Key="item044D" Value="Pukei-Pukei Shard"/>
+        <handlers:Item Key="item044E" Value="Pukei-Pukei Cortex"/>
+        <handlers:Item Key="item044F" Value="Pukei-Pukei Fellwing"/>
+        <handlers:Item Key="item0450" Value="Large Pukei-Pukei Sac"/>
+        <handlers:Item Key="item0451" Value="Pukei-Pukei Lash"/>
+        <handlers:Item Key="item0452" Value="Coral Pukei-Pukei Shard"/>
+        <handlers:Item Key="item0453" Value="Coral Pukei-Pukei Cortex"/>
+        <handlers:Item Key="item0454" Value="Coral Pukei-Pukei Fellwing"/>
+        <handlers:Item Key="item0455" Value="Large Coral Pukei-Pukei Sac"/>
+        <handlers:Item Key="item0456" Value="Coral Pukei-Pukei Lash"/>
+        <handlers:Item Key="item0457" Value="Barroth Cortex"/>
+        <handlers:Item Key="item0458" Value="Barroth Chine"/>
+        <handlers:Item Key="item0459" Value="Barroth Hardclaw"/>
+        <handlers:Item Key="item045A" Value="Barroth Crown"/>
+        <handlers:Item Key="item045B" Value="Barroth Lash"/>
+        <handlers:Item Key="item045C" Value="Rich Mud"/>
+        <handlers:Item Key="item045D" Value="Jyuratodus Shard"/>
+        <handlers:Item Key="item045E" Value="Jyuratodus Cortex"/>
+        <handlers:Item Key="item045F" Value="Jyuratodus Hardfang"/>
+        <handlers:Item Key="item0460" Value="Jyuratodus Grandfin"/>
+        <handlers:Item Key="item0461" Value="Beotodus Shard"/>
+        <handlers:Item Key="item0462" Value="Beotodus Cortex"/>
+        <handlers:Item Key="item0463" Value="Beotodus Hardhorn"/>
+        <handlers:Item Key="item0464" Value="Beotodus Grandfin"/>
+        <handlers:Item Key="item0465" Value="Tobi-Kadachi Shard"/>
+        <handlers:Item Key="item0466" Value="Tobi-Kadachi Thickfur"/>
+        <handlers:Item Key="item0467" Value="Tobi-Kadachi Membrane+"/>
+        <handlers:Item Key="item0468" Value="Tobi-Kadachi Hardclaw"/>
+        <handlers:Item Key="item0469" Value="Tobi-Kadachi Cathode"/>
+        <handlers:Item Key="item046A" Value="Viper Tobi-Kadachi Shard"/>
+        <handlers:Item Key="item046B" Value="Viper Tobi-Kadachi Thickfur"/>
+        <handlers:Item Key="item046C" Value="Viper Tobi-Kadachi Membrane+"/>
+        <handlers:Item Key="item046D" Value="Viper Tobi-Kadachi Hardclaw"/>
+        <handlers:Item Key="item046E" Value="Viper Tobi-Kadachi Thorn"/>
+        <handlers:Item Key="item046F" Value="Banbaro Cortex"/>
+        <handlers:Item Key="item0470" Value="Banbaro Chine"/>
+        <handlers:Item Key="item0471" Value="Banbaro Great Horn"/>
+        <handlers:Item Key="item0472" Value="Banbaro Lash"/>
+        <handlers:Item Key="item0473" Value="Anjanath Shard"/>
+        <handlers:Item Key="item0474" Value="Anjanath Fur"/>
+        <handlers:Item Key="item0475" Value="Anjanath Hardfang"/>
+        <handlers:Item Key="item0476" Value="Heavy Anjanath Nosebone"/>
+        <handlers:Item Key="item0477" Value="Anjanath Lash"/>
+        <handlers:Item Key="item0478" Value="Anjanath Mantle"/>
+        <handlers:Item Key="item0479" Value="Fulgur Anjanath Shard"/>
+        <handlers:Item Key="item047A" Value="Fulgur Anjanath Thickfur"/>
+        <handlers:Item Key="item047B" Value="Fulgur Anjanath Hardfang"/>
+        <handlers:Item Key="item047C" Value="Heavy Fulgur Anjanath Nosebone"/>
+        <handlers:Item Key="item047D" Value="Fulgur Anjanath Lash"/>
+        <handlers:Item Key="item047E" Value="Fulgur Anjanath Mantle"/>
+        <handlers:Item Key="item047F" Value="Rathian Shard"/>
+        <handlers:Item Key="item0480" Value="Rathian Cortex"/>
+        <handlers:Item Key="item0481" Value="Rathian Weave"/>
+        <handlers:Item Key="item0482" Value="Rathian Surspike"/>
+        <handlers:Item Key="item0483" Value="Rathian Mantle"/>
+        <handlers:Item Key="item0484" Value="Pink Rathian Shard"/>
+        <handlers:Item Key="item0485" Value="Pink Rathian Cortex"/>
+        <handlers:Item Key="item0486" Value="Gold Rathian Shard"/>
+        <handlers:Item Key="item0487" Value="Gold Rathian Cortex"/>
+        <handlers:Item Key="item0488" Value="Gold Rathian Surspike"/>
+        <handlers:Item Key="item0489" Value="Tzitzi-Ya-Ku Shard"/>
+        <handlers:Item Key="item048A" Value="Tzitzi-Ya-Ku Thickhide"/>
+        <handlers:Item Key="item048B" Value="Tzitzi-Ya-Ku Hardclaw"/>
+        <handlers:Item Key="item048C" Value="Tzitzi-Ya-Ku Photomembrane"/>
+        <handlers:Item Key="item048D" Value="Paolumu Thickfur"/>
+        <handlers:Item Key="item048E" Value="Paolumu Shard"/>
+        <handlers:Item Key="item048F" Value="Paolumu Cortex"/>
+        <handlers:Item Key="item0490" Value="Paolumu Fellwing"/>
+        <handlers:Item Key="item0491" Value="Nightshade Paolumu Thickfur"/>
+        <handlers:Item Key="item0492" Value="Nightshade Paolumu Shard"/>
+        <handlers:Item Key="item0493" Value="Nightshade Paolumu Fellwing"/>
+        <handlers:Item Key="item0494" Value="Great Girros Shard"/>
+        <handlers:Item Key="item0495" Value="Great Girros Thickhide"/>
+        <handlers:Item Key="item0496" Value="Great Girros Hardhood"/>
+        <handlers:Item Key="item0497" Value="Great Girros Hardfang"/>
+        <handlers:Item Key="item0498" Value="Great Girros Lash"/>
+        <handlers:Item Key="item0499" Value="Radobaan Shard"/>
+        <handlers:Item Key="item049A" Value="Radobaan Cortex"/>
+        <handlers:Item Key="item049B" Value="Radobaan Oilshell+"/>
+        <handlers:Item Key="item049C" Value="Large Wyvern Bonemass"/>
+        <handlers:Item Key="item049D" Value="Legiana Shard"/>
+        <handlers:Item Key="item049E" Value="Legiana Thickhide"/>
+        <handlers:Item Key="item049F" Value="Legiana Hardclaw"/>
+        <handlers:Item Key="item04A0" Value="Legiana Fellwing"/>
+        <handlers:Item Key="item04A1" Value="Legiana Tail Webbing+"/>
+        <handlers:Item Key="item04A2" Value="Legiana Mantle"/>
+        <handlers:Item Key="item04A3" Value="Item 1187"/>
+        <handlers:Item Key="item04A4" Value="Rimed Hide"/>
+        <handlers:Item Key="item04A5" Value="Obsidian Icetalon"/>
+        <handlers:Item Key="item04A6" Value="Stark Wing"/>
+        <handlers:Item Key="item04A7" Value="Item 1191"/>
+        <handlers:Item Key="item04A8" Value="Item 1192"/>
+        <handlers:Item Key="item04A9" Value="Odogaron Shard"/>
+        <handlers:Item Key="item04AA" Value="Hard Odogaron Sinew"/>
+        <handlers:Item Key="item04AB" Value="Odogaron Hardclaw"/>
+        <handlers:Item Key="item04AC" Value="Odogaron Hardfang"/>
+        <handlers:Item Key="item04AD" Value="Odogaron Lash"/>
+        <handlers:Item Key="item04AE" Value="Odogaron Mantle"/>
+        <handlers:Item Key="item04AF" Value="Ebony Odogaron Shard"/>
+        <handlers:Item Key="item04B0" Value="Hard Ebony Odogaron Sinew"/>
+        <handlers:Item Key="item04B1" Value="Ebony Odogaron Hardclaw"/>
+        <handlers:Item Key="item04B2" Value="Ebony Odogaron Hardfang"/>
+        <handlers:Item Key="item04B3" Value="Ebony Odogaron Lash"/>
+        <handlers:Item Key="item04B4" Value="Ebony Odogaron Mantle"/>
+        <handlers:Item Key="item04B5" Value="Rathalos Shard"/>
+        <handlers:Item Key="item04B6" Value="Rathalos Cortex"/>
+        <handlers:Item Key="item04B7" Value="Rathalos Fellwing"/>
+        <handlers:Item Key="item04B8" Value="Rathalos Lash"/>
+        <handlers:Item Key="item04B9" Value="Rath Wingtalon+"/>
+        <handlers:Item Key="item04BA" Value="Rathalos Mantle"/>
+        <handlers:Item Key="item04BB" Value="Azure Rathalos Shard"/>
+        <handlers:Item Key="item04BC" Value="Azure Rathalos Cortex"/>
+        <handlers:Item Key="item04BD" Value="Azure Rathalos Lash"/>
+        <handlers:Item Key="item04BE" Value="Azure Rathalos Fellwing"/>
+        <handlers:Item Key="item04BF" Value="Silver Rathalos Shard"/>
+        <handlers:Item Key="item04C0" Value="Silver Rathalos Cortex"/>
+        <handlers:Item Key="item04C1" Value="Silver Rathalos Fellwing"/>
+        <handlers:Item Key="item04C2" Value="Silver Rathalos Lash"/>
+        <handlers:Item Key="item04C3" Value="Rath Gleam"/>
+        <handlers:Item Key="item04C4" Value="Diablos Cortex"/>
+        <handlers:Item Key="item04C5" Value="Diablos Chine"/>
+        <handlers:Item Key="item04C6" Value="Diablos Tailcase+"/>
+        <handlers:Item Key="item04C7" Value="Twisted Stouthorn"/>
+        <handlers:Item Key="item04C8" Value="Diablos Hardhorn"/>
+        <handlers:Item Key="item04C9" Value="Black Diablos Cortex"/>
+        <handlers:Item Key="item04CA" Value="Black Diablos Chine"/>
+        <handlers:Item Key="item04CB" Value="Blackcurl Stouthorn"/>
+        <handlers:Item Key="item04CC" Value="Dodogama Shard"/>
+        <handlers:Item Key="item04CD" Value="Dodogama Thickhide"/>
+        <handlers:Item Key="item04CE" Value="Dodogama Mandible"/>
+        <handlers:Item Key="item04CF" Value="Dodogama Hardclaw"/>
+        <handlers:Item Key="item04D0" Value="Dodogama Lash"/>
+        <handlers:Item Key="item04D1" Value="Lavasioth Shard"/>
+        <handlers:Item Key="item04D2" Value="Lavasioth Cortex"/>
+        <handlers:Item Key="item04D3" Value="Lavasioth Hardfang"/>
+        <handlers:Item Key="item04D4" Value="Lavasioth Grandfin"/>
+        <handlers:Item Key="item04D5" Value="Uragaan Shard"/>
+        <handlers:Item Key="item04D6" Value="Uragaan Cortex"/>
+        <handlers:Item Key="item04D7" Value="Uragaan Jaw+"/>
+        <handlers:Item Key="item04D8" Value="Uragaan Scute+"/>
+        <handlers:Item Key="item04D9" Value="Uragaan Pallium"/>
+        <handlers:Item Key="item04DA" Value="Barioth Cortex"/>
+        <handlers:Item Key="item04DB" Value="Barioth Thickfur"/>
+        <handlers:Item Key="item04DC" Value="Barioth Hardclaw"/>
+        <handlers:Item Key="item04DD" Value="Barioth Greatspike"/>
+        <handlers:Item Key="item04DE" Value="Barioth Lash"/>
+        <handlers:Item Key="item04DF" Value="Amber Hardfang"/>
+        <handlers:Item Key="item04E0" Value="Nargacuga Shard"/>
+        <handlers:Item Key="item04E1" Value="Nargacuga Blackfur+"/>
+        <handlers:Item Key="item04E2" Value="Nargacuga Lash"/>
+        <handlers:Item Key="item04E3" Value="Nargacuga Tailspear"/>
+        <handlers:Item Key="item04E4" Value="Nargacuga Cutwing+"/>
+        <handlers:Item Key="item04E5" Value="Nargacuga Hardfang"/>
+        <handlers:Item Key="item04E6" Value="Nargacuga Mantle"/>
+        <handlers:Item Key="item04E7" Value="Tigrex Shard"/>
+        <handlers:Item Key="item04E8" Value="Tigrex Cortex"/>
+        <handlers:Item Key="item04E9" Value="Tigrex Lash"/>
+        <handlers:Item Key="item04EA" Value="Tigrex Hardclaw"/>
+        <handlers:Item Key="item04EB" Value="Tigrex Hardfang"/>
+        <handlers:Item Key="item04EC" Value="Tigrex Mantle"/>
+        <handlers:Item Key="item04ED" Value="Brute Tigrex Shard"/>
+        <handlers:Item Key="item04EE" Value="Brute Tigrex Cortex"/>
+        <handlers:Item Key="item04EF" Value="Brute Tigrex Hardclaw"/>
+        <handlers:Item Key="item04F0" Value="Brute Tigrex Hardfang"/>
+        <handlers:Item Key="item04F1" Value="Glavenus Shard"/>
+        <handlers:Item Key="item04F2" Value="Glavenus Cortex"/>
+        <handlers:Item Key="item04F3" Value="Glavenus Hardfang"/>
+        <handlers:Item Key="item04F4" Value="Glavenus Hellshell"/>
+        <handlers:Item Key="item04F5" Value="Glavenus Tailedge"/>
+        <handlers:Item Key="item04F6" Value="Molten Bursa"/>
+        <handlers:Item Key="item04F7" Value="Glavenus Mantle"/>
+        <handlers:Item Key="item04F8" Value="Acidic Glavenus Shard"/>
+        <handlers:Item Key="item04F9" Value="Acidic Glavenus Cortex"/>
+        <handlers:Item Key="item04FA" Value="Acidic Glavenus Hardfang"/>
+        <handlers:Item Key="item04FB" Value="Acidic Glavenus Spineshell"/>
+        <handlers:Item Key="item04FC" Value="Acidic Glavenus Tailedge"/>
+        <handlers:Item Key="item04FD" Value="Honed Acidcryst"/>
+        <handlers:Item Key="item04FE" Value="Item 1278"/>
+        <handlers:Item Key="item04FF" Value="Brachydios Cortex"/>
+        <handlers:Item Key="item0500" Value="Fine Brachydios Ebonshell"/>
+        <handlers:Item Key="item0501" Value="Brachydios Crown"/>
+        <handlers:Item Key="item0502" Value="Glowing Slime"/>
+        <handlers:Item Key="item0503" Value="Brachydios Pounder+"/>
+        <handlers:Item Key="item0504" Value="Brachydios Lash"/>
+        <handlers:Item Key="item0505" Value="Brachydios Pallium"/>
+        <handlers:Item Key="item0506" Value="Item 1286"/>
+        <handlers:Item Key="item0507" Value="Item 1287"/>
+        <handlers:Item Key="item0508" Value="Item 1288"/>
+        <handlers:Item Key="item0509" Value="Item 1289"/>
+        <handlers:Item Key="item050A" Value="Garuga Shard"/>
+        <handlers:Item Key="item050B" Value="Garuga Cortex"/>
+        <handlers:Item Key="item050C" Value="Garuga Auricle"/>
+        <handlers:Item Key="item050D" Value="Fancy Beak"/>
+        <handlers:Item Key="item050E" Value="Garuga Fellwing"/>
+        <handlers:Item Key="item050F" Value="Garuga Lash"/>
+        <handlers:Item Key="item0510" Value="Garuga Silverpelt"/>
+        <handlers:Item Key="item0511" Value="Zinogre Cortex"/>
+        <handlers:Item Key="item0512" Value="Zinogre Electrofur+"/>
+        <handlers:Item Key="item0513" Value="Zinogre Hardhorn"/>
+        <handlers:Item Key="item0514" Value="Zinogre Hardclaw"/>
+        <handlers:Item Key="item0515" Value="Zinogre Lash"/>
+        <handlers:Item Key="item0516" Value="Zinogre Deathly Shocker"/>
+        <handlers:Item Key="item0517" Value="Fulgurbug"/>
+        <handlers:Item Key="item0518" Value="Zinogre Skymerald"/>
+        <handlers:Item Key="item0519" Value="Item 1305"/>
+        <handlers:Item Key="item051A" Value="Item 1306"/>
+        <handlers:Item Key="item051B" Value="Item 1307"/>
+        <handlers:Item Key="item051C" Value="Item 1308"/>
+        <handlers:Item Key="item051D" Value="Item 1309"/>
+        <handlers:Item Key="item051E" Value="Item 1310"/>
+        <handlers:Item Key="item051F" Value="Item 1311"/>
+        <handlers:Item Key="item0520" Value="Item 1312"/>
+        <handlers:Item Key="item0521" Value="Bazelgeuse Shard"/>
+        <handlers:Item Key="item0522" Value="Flickering Silvershell"/>
+        <handlers:Item Key="item0523" Value="Bazelgeuse Flail"/>
+        <handlers:Item Key="item0524" Value="Distilled Blast Fluid"/>
+        <handlers:Item Key="item0525" Value="Bazelgeuse Hardclaw"/>
+        <handlers:Item Key="item0526" Value="Scorching Silverwing"/>
+        <handlers:Item Key="item0527" Value="Bazelgeuse Mantle"/>
+        <handlers:Item Key="item0528" Value="Deviljho Shard"/>
+        <handlers:Item Key="item0529" Value="Deviljho Blackpiel"/>
+        <handlers:Item Key="item052A" Value="Item 1322"/>
+        <handlers:Item Key="item052B" Value="Vile Fang"/>
+        <handlers:Item Key="item052C" Value="Deviljho Ripper"/>
+        <handlers:Item Key="item052D" Value="Deviljho Flail"/>
+        <handlers:Item Key="item052E" Value="Black Blood"/>
+        <handlers:Item Key="item052F" Value="Deviljho Crook"/>
+        <handlers:Item Key="item0530" Value="Item 1328"/>
+        <handlers:Item Key="item0531" Value="Item 1329"/>
+        <handlers:Item Key="item0532" Value="Item 1330"/>
+        <handlers:Item Key="item0533" Value="Item 1331"/>
+        <handlers:Item Key="item0534" Value="Item 1332"/>
+        <handlers:Item Key="item0535" Value="Item 1333"/>
+        <handlers:Item Key="item0536" Value="Item 1334"/>
+        <handlers:Item Key="item0537" Value="Item 1335"/>
+        <handlers:Item Key="item0538" Value="Item 1336"/>
+        <handlers:Item Key="item0539" Value="Kirin Finehide"/>
+        <handlers:Item Key="item053A" Value="Kirin Thundertail+"/>
+        <handlers:Item Key="item053B" Value="Kirin Silvermane"/>
+        <handlers:Item Key="item053C" Value="Kirin Azure Horn+"/>
+        <handlers:Item Key="item053D" Value="Immortal Shard"/>
+        <handlers:Item Key="item053E" Value="Nergigante Cortex"/>
+        <handlers:Item Key="item053F" Value="Nergigante Flail"/>
+        <handlers:Item Key="item0540" Value="Annihilating Greathorn"/>
+        <handlers:Item Key="item0541" Value="Nergigante Hardclaw"/>
+        <handlers:Item Key="item0542" Value="Eternal Regrowth Plate"/>
+        <handlers:Item Key="item0543" Value="Crystal Shard"/>
+        <handlers:Item Key="item0544" Value="Velkhana Cortex"/>
+        <handlers:Item Key="item0545" Value="Velkhana Fellwing"/>
+        <handlers:Item Key="item0546" Value="Velkhana Crownhorn"/>
+        <handlers:Item Key="item0547" Value="Velkhana Lash"/>
+        <handlers:Item Key="item0548" Value="Velkhana Hardclaw"/>
+        <handlers:Item Key="item0549" Value="Velkhana Crystal"/>
+        <handlers:Item Key="item054A" Value="Teostra Cortex"/>
+        <handlers:Item Key="item054B" Value="Teostra Mane+"/>
+        <handlers:Item Key="item054C" Value="Teostra Lash"/>
+        <handlers:Item Key="item054D" Value="Teostra Hardhorn"/>
+        <handlers:Item Key="item054E" Value="Hellfire Shard"/>
+        <handlers:Item Key="item054F" Value="Fire Dragon Hardclaw"/>
+        <handlers:Item Key="item0550" Value="Teostra Fellwing"/>
+        <handlers:Item Key="item0551" Value="Lunastra Cortex"/>
+        <handlers:Item Key="item0552" Value="Lunastra Mane+"/>
+        <handlers:Item Key="item0553" Value="Lunastra Lash"/>
+        <handlers:Item Key="item0554" Value="Lunastra Hardhorn"/>
+        <handlers:Item Key="item0555" Value="Lunastra Shard"/>
+        <handlers:Item Key="item0556" Value="Lunastra Fellwing"/>
+        <handlers:Item Key="item0557" Value="Daora Cortex"/>
+        <handlers:Item Key="item0558" Value="Daora Shard"/>
+        <handlers:Item Key="item0559" Value="Daora Fellwing"/>
+        <handlers:Item Key="item055A" Value="Daora Hardhorn"/>
+        <handlers:Item Key="item055B" Value="Daora Lash"/>
+        <handlers:Item Key="item055C" Value="Daora Hardclaw"/>
+        <handlers:Item Key="item055D" Value="Deceased Shard"/>
+        <handlers:Item Key="item055E" Value="Vaal Hazak Cortex"/>
+        <handlers:Item Key="item055F" Value="Deathweaver Membrane"/>
+        <handlers:Item Key="item0560" Value="Vaal Hazak Flail"/>
+        <handlers:Item Key="item0561" Value="Shadowpierce Fang"/>
+        <handlers:Item Key="item0562" Value="Vaal Hazak Hardclaw"/>
+        <handlers:Item Key="item0563" Value="Vaal Hazak Fellwing"/>
+        <handlers:Item Key="item0564" Value="Namielle Finehide"/>
+        <handlers:Item Key="item0565" Value="Item 1381"/>
+        <handlers:Item Key="item0566" Value="Namielle Fellwing"/>
+        <handlers:Item Key="item0567" Value="Namielle Whisker"/>
+        <handlers:Item Key="item0568" Value="Namielle Lash"/>
+        <handlers:Item Key="item0569" Value="Namielle Hardclaw"/>
+        <handlers:Item Key="item056A" Value="Item 1386"/>
+        <handlers:Item Key="item056B" Value="Item 1387"/>
+        <handlers:Item Key="item056C" Value="Item 1388"/>
+        <handlers:Item Key="item056D" Value="Item 1389"/>
+        <handlers:Item Key="item056E" Value="Item 1390"/>
+        <handlers:Item Key="item056F" Value="Item 1391"/>
+        <handlers:Item Key="item0570" Value="Item 1392"/>
+        <handlers:Item Key="item0571" Value="Item 1393"/>
+        <handlers:Item Key="item0572" Value="Item 1394"/>
+        <handlers:Item Key="item0573" Value="Shara Ishvalda Tenderscale"/>
+        <handlers:Item Key="item0574" Value="Shara Ishvalda Boulderplate"/>
+        <handlers:Item Key="item0575" Value="Item 1397"/>
+        <handlers:Item Key="item0576" Value="Shara Ishvalda Tenderplate"/>
+        <handlers:Item Key="item0577" Value="Shara Ishvalda Petalstone"/>
+        <handlers:Item Key="item0578" Value="Shara Ishvalda Tenderclaw"/>
+        <handlers:Item Key="item0579" Value="Shara Ishvalda Gem"/>
+        <handlers:Item Key="item057A" Value="Item 1402"/>
+        <handlers:Item Key="item057B" Value="Item 1403"/>
+        <handlers:Item Key="item057C" Value="Item 1404"/>
+        <handlers:Item Key="item057D" Value="Item 1405"/>
+        <handlers:Item Key="item057E" Value="Item 1406"/>
+        <handlers:Item Key="item057F" Value="Item 1407"/>
+        <handlers:Item Key="item0580" Value="Item 1408"/>
+        <handlers:Item Key="item0581" Value="Ancient Feystone"/>
+        <handlers:Item Key="item0582" Value="Carved Feystone"/>
+        <handlers:Item Key="item0583" Value="Sealed Feystone"/>
+        <handlers:Item Key="item0584" Value="Decayed Scale"/>
+        <handlers:Item Key="item0585" Value="Luminous Scale"/>
+        <handlers:Item Key="item0586" Value="Old Dragon Treasure"/>
+        <handlers:Item Key="item0587" Value="Item 1415"/>
+        <handlers:Item Key="item0588" Value="Item 1416"/>
+        <handlers:Item Key="item0589" Value="??? Shard"/>
+        <handlers:Item Key="item058A" Value="??? Boulderplate"/>
+        <handlers:Item Key="item058B" Value="??? Cortex"/>
+        <handlers:Item Key="item058C" Value="??? Rock"/>
+        <handlers:Item Key="item058D" Value="??? Hardclaw"/>
+        <handlers:Item Key="item058E" Value="Large ??? Gem"/>
+        <handlers:Item Key="item058F" Value="Item 1423"/>
+        <handlers:Item Key="item0590" Value="Item 1424"/>
+        <handlers:Item Key="item0591" Value="Item 1425"/>
+        <handlers:Item Key="item0592" Value="Item 1426"/>
+        <handlers:Item Key="item0593" Value="Item 1427"/>
+        <handlers:Item Key="item0594" Value="Item 1428"/>
+        <handlers:Item Key="item0595" Value="Item 1429"/>
+        <handlers:Item Key="item0596" Value="Item 1430"/>
+        <handlers:Item Key="item0597" Value="Celestial Wyverian Print"/>
+        <handlers:Item Key="item0598" Value="Conqueror's Seal"/>
+        <handlers:Item Key="item0599" Value="Research Commission Ticket+"/>
+        <handlers:Item Key="item059A" Value="Banbaro Coin"/>
+        <handlers:Item Key="item059B" Value="Paolumu Coin"/>
+        <handlers:Item Key="item059C" Value="Nargacuga Coin"/>
+        <handlers:Item Key="item059D" Value="Glavenus Coin"/>
+        <handlers:Item Key="item059E" Value="Odogaron Coin"/>
+        <handlers:Item Key="item059F" Value="Zinogre Coin"/>
+        <handlers:Item Key="item05A0" Value="Black Belt Coin"/>
+        <handlers:Item Key="item05A1" Value="Hero King Coin"/>
+        <handlers:Item Key="item05A2" Value="Tigrex Coin"/>
+        <handlers:Item Key="item05A3" Value="Giant Scale"/>
+        <handlers:Item Key="item05A4" Value="Magnificent Scale"/>
+        <handlers:Item Key="item05A5" Value="Boaboa Ticket"/>
+        <handlers:Item Key="item05A6" Value="Young Butterbur"/>
+        <handlers:Item Key="item05A7" Value="Exquisite Butterbur"/>
+        <handlers:Item Key="item05A8" Value="Millennium Butterbur"/>
+        <handlers:Item Key="item05A9" Value="Icebloom"/>
+        <handlers:Item Key="item05AA" Value="Moonlight Icebloom"/>
+        <handlers:Item Key="item05AB" Value="Snowpeak Icebloom"/>
+        <handlers:Item Key="item05AC" Value="Snow White"/>
+        <handlers:Item Key="item05AD" Value="Petalcryst"/>
+        <handlers:Item Key="item05AE" Value="EZ Dust of Life"/>
+        <handlers:Item Key="item05AF" Value="Pearlspring Macaque"/>
+        <handlers:Item Key="item05B0" Value="Goldspring Macaque"/>
+        <handlers:Item Key="item05B1" Value="Item 1457"/>
+        <handlers:Item Key="item05B2" Value="Crowned Prawn"/>
+        <handlers:Item Key="item05B3" Value="Moon Slug"/>
+        <handlers:Item Key="item05B4" Value="Duffel Penguin"/>
+        <handlers:Item Key="item05B5" Value="Arrowhead Gekko"/>
+        <handlers:Item Key="item05B6" Value="Blue Diva"/>
+        <handlers:Item Key="item05B7" Value="Sealord's Crestfish"/>
+        <handlers:Item Key="item05B8" Value="Glass Parexus"/>
+        <handlers:Item Key="item05B9" Value="Wintermoon Nettle"/>
+        <handlers:Item Key="item05BA" Value="Moly"/>
+        <handlers:Item Key="item05BB" Value="Mossy Moly"/>
+        <handlers:Item Key="item05BC" Value="Rocky Moly"/>
+        <handlers:Item Key="item05BD" Value="Fluffy Moly"/>
+        <handlers:Item Key="item05BE" Value="Spiny Moly"/>
+        <handlers:Item Key="item05BF" Value="Item 1471"/>
+        <handlers:Item Key="item05C0" Value="Item 1472"/>
+        <handlers:Item Key="item05C1" Value="Great Glass Parexus"/>
+        <handlers:Item Key="item05C2" Value="Item 1474"/>
+        <handlers:Item Key="item05C3" Value="Item 1475"/>
+        <handlers:Item Key="item05C4" Value="Item 1476"/>
+        <handlers:Item Key="item05C5" Value="Item 1477"/>
+        <handlers:Item Key="item05C6" Value="Dragonvein Shard"/>
+        <handlers:Item Key="item05C7" Value="Dragonvein Coal"/>
+        <handlers:Item Key="item05C8" Value="Dragonvein Coal Chunk"/>
+        <handlers:Item Key="item05C9" Value="Cloth Curtain (Small)"/>
+        <handlers:Item Key="item05CA" Value="Pelt Curtain (Small)"/>
+        <handlers:Item Key="item05CB" Value="Elegant Curtain (Small)"/>
+        <handlers:Item Key="item05CC" Value="Item 1484"/>
+        <handlers:Item Key="item05CD" Value="Cloth Curtain (Large)"/>
+        <handlers:Item Key="item05CE" Value="Pelt Curtain (Large)"/>
+        <handlers:Item Key="item05CF" Value="Elegant Curtain (Large)"/>
+        <handlers:Item Key="item05D0" Value="Item 1488"/>
+        <handlers:Item Key="item05D1" Value="Familiar Sofa"/>
+        <handlers:Item Key="item05D2" Value="Item 1490"/>
+        <handlers:Item Key="item05D3" Value="Luxury Sofa"/>
+        <handlers:Item Key="item05D4" Value="Elegant Sofa"/>
+        <handlers:Item Key="item05D5" Value="Item 1493"/>
+        <handlers:Item Key="item05D6" Value="Rustic Bed"/>
+        <handlers:Item Key="item05D7" Value="Familiar Bed"/>
+        <handlers:Item Key="item05D8" Value="Luxury Bed"/>
+        <handlers:Item Key="item05D9" Value="Item 1497"/>
+        <handlers:Item Key="item05DA" Value="Familiar Table"/>
+        <handlers:Item Key="item05DB" Value="Luxury Table"/>
+        <handlers:Item Key="item05DC" Value="Elegant Table"/>
+        <handlers:Item Key="item05DD" Value="Item 1501"/>
+        <handlers:Item Key="item05DE" Value="Rustic Chairs"/>
+        <handlers:Item Key="item05DF" Value="Familiar Chairs"/>
+        <handlers:Item Key="item05E0" Value="Luxury Chairs"/>
+        <handlers:Item Key="item05E1" Value="Elegant Chairs"/>
+        <handlers:Item Key="item05E2" Value="Item 1506"/>
+        <handlers:Item Key="item05E3" Value="Carnivore Carnival"/>
+        <handlers:Item Key="item05E4" Value="Party Platter"/>
+        <handlers:Item Key="item05E5" Value="Tropical Lunch"/>
+        <handlers:Item Key="item05E6" Value="Sumptuous Stew"/>
+        <handlers:Item Key="item05E7" Value="Hunter's Brunch"/>
+        <handlers:Item Key="item05E8" Value="Familiar Chest"/>
+        <handlers:Item Key="item05E9" Value="Luxury Chest"/>
+        <handlers:Item Key="item05EA" Value="Item 1514"/>
+        <handlers:Item Key="item05EB" Value="Hoarfrost Reach Plant 1"/>
+        <handlers:Item Key="item05EC" Value="Hoarfrost Reach Plant 2"/>
+        <handlers:Item Key="item05ED" Value="Item 1517"/>
+        <handlers:Item Key="item05EE" Value="Hoarfrost Reach Plant 3"/>
+        <handlers:Item Key="item05EF" Value="Ancient Forest Plant 1"/>
+        <handlers:Item Key="item05F0" Value="Item 1520"/>
+        <handlers:Item Key="item05F1" Value="Ancient Forest Plant 4"/>
+        <handlers:Item Key="item05F2" Value="Ancient Forest Plant 5"/>
+        <handlers:Item Key="item05F3" Value="Ancient Forest Plant 3"/>
+        <handlers:Item Key="item05F4" Value="Wildspire Wastes Plant 2"/>
+        <handlers:Item Key="item05F5" Value="Item 1525"/>
+        <handlers:Item Key="item05F6" Value="Wildspire Wastes Plant 1"/>
+        <handlers:Item Key="item05F7" Value="Ancient Forest Plant 2"/>
+        <handlers:Item Key="item05F8" Value="Item 1528"/>
+        <handlers:Item Key="item05F9" Value="Item 1529"/>
+        <handlers:Item Key="item05FA" Value="Simple Urn"/>
+        <handlers:Item Key="item05FB" Value="Grimalkyne Doll"/>
+        <handlers:Item Key="item05FC" Value="Gajalaka Doll"/>
+        <handlers:Item Key="item05FD" Value="Boaboa Doll"/>
+        <handlers:Item Key="item05FE" Value="Felyne Doll"/>
+        <handlers:Item Key="item05FF" Value="Grimalkyne Doll (Black)"/>
+        <handlers:Item Key="item0600" Value="Grimalkyne Doll (Navy)"/>
+        <handlers:Item Key="item0601" Value="Grimalkyne Doll (Blue)"/>
+        <handlers:Item Key="item0602" Value="Poogie Doll (Memorial Stripes)"/>
+        <handlers:Item Key="item0603" Value="Poogie Doll (Emperor's Duds)"/>
+        <handlers:Item Key="item0604" Value="Item 1540"/>
+        <handlers:Item Key="item0605" Value="Item 1541"/>
+        <handlers:Item Key="item0606" Value="Item 1542"/>
+        <handlers:Item Key="item0607" Value="Item 1543"/>
+        <handlers:Item Key="item0608" Value="Item 1544"/>
+        <handlers:Item Key="item0609" Value="Simple Urn Set"/>
+        <handlers:Item Key="item060A" Value="Burlap Sacks"/>
+        <handlers:Item Key="item060B" Value="Bottled Spirit"/>
+        <handlers:Item Key="item060C" Value="Assorted Bottle Set"/>
+        <handlers:Item Key="item060D" Value="Crafting Tools"/>
+        <handlers:Item Key="item060E" Value="Dyed Silk Rolls"/>
+        <handlers:Item Key="item060F" Value="Ornamental Horn"/>
+        <handlers:Item Key="item0610" Value="Display Fossil"/>
+        <handlers:Item Key="item0611" Value="Simple Pottery"/>
+        <handlers:Item Key="item0612" Value="Pottery Set"/>
+        <handlers:Item Key="item0613" Value="Item 1555"/>
+        <handlers:Item Key="item0614" Value="Ornamental Plate (Large)"/>
+        <handlers:Item Key="item0615" Value="Basket of Ore"/>
+        <handlers:Item Key="item0616" Value="Item 1558"/>
+        <handlers:Item Key="item0617" Value="First Aid Kit"/>
+        <handlers:Item Key="item0618" Value="Item 1560"/>
+        <handlers:Item Key="item0619" Value="Potted Plant"/>
+        <handlers:Item Key="item061A" Value="Research Tomes"/>
+        <handlers:Item Key="item061B" Value="Scholarly Tomes"/>
+        <handlers:Item Key="item061C" Value="Refined Vase (Large)"/>
+        <handlers:Item Key="item061D" Value="Potted Cactus"/>
+        <handlers:Item Key="item061E" Value="Colorful Planting"/>
+        <handlers:Item Key="item061F" Value="Basket of Mushrooms"/>
+        <handlers:Item Key="item0620" Value="Item 1568"/>
+        <handlers:Item Key="item0621" Value="Vegetable Display"/>
+        <handlers:Item Key="item0622" Value="Fierce Gajalaka Mask"/>
+        <handlers:Item Key="item0623" Value="Grimacing Gajalaka Mask"/>
+        <handlers:Item Key="item0624" Value="Surprised Gajalaka Mask"/>
+        <handlers:Item Key="item0625" Value="Amber"/>
+        <handlers:Item Key="item0626" Value="Item 1574"/>
+        <handlers:Item Key="item0627" Value="Item 1575"/>
+        <handlers:Item Key="item0628" Value="Seashell"/>
+        <handlers:Item Key="item0629" Value="Symbol of Assistance"/>
+        <handlers:Item Key="item062A" Value="Symbol of Contribution"/>
+        <handlers:Item Key="item062B" Value="Symbol of Dedication"/>
+        <handlers:Item Key="item062C" Value="Symbol of Valor"/>
+        <handlers:Item Key="item062D" Value="Goldenfry Mobile"/>
+        <handlers:Item Key="item062E" Value="Whetfish Mobile"/>
+        <handlers:Item Key="item062F" Value="Marlin Mobile"/>
+        <handlers:Item Key="item0630" Value="Item 1584"/>
+        <handlers:Item Key="item0631" Value="Item 1585"/>
+        <handlers:Item Key="item0632" Value="Item 1586"/>
+        <handlers:Item Key="item0633" Value="Barrel Ornament"/>
+        <handlers:Item Key="item0634" Value="Catch-of-the-Day Ornament"/>
+        <handlers:Item Key="item0635" Value="Fish Ornament"/>
+        <handlers:Item Key="item0636" Value="Marlin Ornament"/>
+        <handlers:Item Key="item0637" Value="Elegant Flag"/>
+        <handlers:Item Key="item0638" Value="Nargacuga Painting"/>
+        <handlers:Item Key="item0639" Value="Research Base Painting"/>
+        <handlers:Item Key="item063A" Value="Handler Portrait"/>
+        <handlers:Item Key="item063B" Value="Elegant Ornamental Plate"/>
+        <handlers:Item Key="item063C" Value="Gajalaka Painting 1"/>
+        <handlers:Item Key="item063D" Value="Boaboa Painting 1"/>
+        <handlers:Item Key="item063E" Value="Grimalkyne Painting 1"/>
+        <handlers:Item Key="item063F" Value="Poogie Painting"/>
+        <handlers:Item Key="item0640" Value="Palico Portraits"/>
+        <handlers:Item Key="item0641" Value="Item 1601"/>
+        <handlers:Item Key="item0642" Value="Item 1602"/>
+        <handlers:Item Key="item0643" Value="Item 1603"/>
+        <handlers:Item Key="item0644" Value="Item 1604"/>
+        <handlers:Item Key="item0645" Value="Familiar Desk"/>
+        <handlers:Item Key="item0646" Value="Luxury Desk"/>
+        <handlers:Item Key="item0647" Value="Item 1607"/>
+        <handlers:Item Key="item0648" Value="Familiar Shelves"/>
+        <handlers:Item Key="item0649" Value="Intellectual Shelves"/>
+        <handlers:Item Key="item064A" Value="Cluttered Shelves"/>
+        <handlers:Item Key="item064B" Value="Luxury Shelves"/>
+        <handlers:Item Key="item064C" Value="Elegant Shelves"/>
+        <handlers:Item Key="item064D" Value="Item 1613"/>
+        <handlers:Item Key="item064E" Value="Item 1614"/>
+        <handlers:Item Key="item064F" Value="Familiar Lights"/>
+        <handlers:Item Key="item0650" Value="Sturdy Lights"/>
+        <handlers:Item Key="item0651" Value="Luxury Lights"/>
+        <handlers:Item Key="item0652" Value="Item 1618"/>
+        <handlers:Item Key="item0653" Value="Simple Lights"/>
+        <handlers:Item Key="item0654" Value="Item 1620"/>
+        <handlers:Item Key="item0655" Value="Item 1621"/>
+        <handlers:Item Key="item0656" Value="Item 1622"/>
+        <handlers:Item Key="item0657" Value="Familiar Rack"/>
+        <handlers:Item Key="item0658" Value="Luxury Rack"/>
+        <handlers:Item Key="item0659" Value="Item 1625"/>
+        <handlers:Item Key="item065A" Value="Simple Wall Shelf (Large)"/>
+        <handlers:Item Key="item065B" Value="Luxury Wall Shelf (Large)"/>
+        <handlers:Item Key="item065C" Value="Item 1628"/>
+        <handlers:Item Key="item065D" Value="Simple Wall Shelf (Small)"/>
+        <handlers:Item Key="item065E" Value="Luxury Wall Shelf (Small)"/>
+        <handlers:Item Key="item065F" Value="Item 1631"/>
+        <handlers:Item Key="item0660" Value="Item 1632"/>
+        <handlers:Item Key="item0661" Value="Item 1633"/>
+        <handlers:Item Key="item0662" Value="Zorah Magdaros Painting"/>
+        <handlers:Item Key="item0663" Value="Cloth Wall-Hanging"/>
+        <handlers:Item Key="item0664" Value="Fur Wall-Hanging"/>
+        <handlers:Item Key="item0665" Value="Ship's Wheel Wall-Hanging"/>
+        <handlers:Item Key="item0666" Value="Item 1638"/>
+        <handlers:Item Key="item0667" Value="Gajalaka Painting 2"/>
+        <handlers:Item Key="item0668" Value="Boaboa Painting 2"/>
+        <handlers:Item Key="item0669" Value="Grimalkyne Painting 2"/>
+        <handlers:Item Key="item066A" Value="Ancient Forest Painting"/>
+        <handlers:Item Key="item066B" Value="Wildspire Wastes Painting"/>
+        <handlers:Item Key="item066C" Value="Coral Highlands Painting"/>
+        <handlers:Item Key="item066D" Value="Rotten Vale Painting"/>
+        <handlers:Item Key="item066E" Value="Elder's Recess Painting"/>
+        <handlers:Item Key="item066F" Value="Hoarfrost Reach Painting"/>
+        <handlers:Item Key="item0670" Value="Books and Documents"/>
+        <handlers:Item Key="item0671" Value="Healthy Refreshments"/>
+        <handlers:Item Key="item0672" Value="Item 1650"/>
+        <handlers:Item Key="item0673" Value="Maps"/>
+        <handlers:Item Key="item0674" Value="Crafting Set"/>
+        <handlers:Item Key="item0675" Value="Baking Set"/>
+        <handlers:Item Key="item0676" Value="Tool Set"/>
+        <handlers:Item Key="item0677" Value="Familiar Rugs (1F)"/>
+        <handlers:Item Key="item0678" Value="Luxury Rugs (1F)"/>
+        <handlers:Item Key="item0679" Value="Item 1657"/>
+        <handlers:Item Key="item067A" Value="Fur Rugs (1F)"/>
+        <handlers:Item Key="item067B" Value="Familiar Rugs (2F)"/>
+        <handlers:Item Key="item067C" Value="Luxury Rugs (2F)"/>
+        <handlers:Item Key="item067D" Value="Item 1661"/>
+        <handlers:Item Key="item067E" Value="Fur Rugs (2F)"/>
+        <handlers:Item Key="item067F" Value="Lantern"/>
+        <handlers:Item Key="item0680" Value="Item 1664"/>
+        <handlers:Item Key="item0681" Value="Item 1665"/>
+        <handlers:Item Key="item0682" Value="Candle"/>
+        <handlers:Item Key="item0683" Value="Candlestick"/>
+        <handlers:Item Key="item0684" Value="Songbird Lamp"/>
+        <handlers:Item Key="item0685" Value="Jellyfish Lamp"/>
+        <handlers:Item Key="item0686" Value="Angler Fish Lamp"/>
+        <handlers:Item Key="item0687" Value="Item 1671"/>
+        <handlers:Item Key="item0688" Value="Item 1672"/>
+        <handlers:Item Key="item0689" Value="Item 1673"/>
+        <handlers:Item Key="item068A" Value="Botanical Pattern"/>
+        <handlers:Item Key="item068B" Value="Elegant Pattern"/>
+        <handlers:Item Key="item068C" Value="Patchwork"/>
+        <handlers:Item Key="item068D" Value="Patchwork (Brown)"/>
+        <handlers:Item Key="item068E" Value="Patchwork (Gray)"/>
+        <handlers:Item Key="item068F" Value="Check (Red)"/>
+        <handlers:Item Key="item0690" Value="Check (White)"/>
+        <handlers:Item Key="item0691" Value="Check (Blue)"/>
+        <handlers:Item Key="item0692" Value="Trap and Beast (Brown)"/>
+        <handlers:Item Key="item0693" Value="Trap and Beast (Navy)"/>
+        <handlers:Item Key="item0694" Value="Trap and Beast (Aqua)"/>
+        <handlers:Item Key="item0695" Value="Trap and Beast (Yellow)"/>
+        <handlers:Item Key="item0696" Value="Wild Nature (Vibrant)"/>
+        <handlers:Item Key="item0697" Value="Wild Nature (Red)"/>
+        <handlers:Item Key="item0698" Value="Wild Nature (Green)"/>
+        <handlers:Item Key="item0699" Value="Nature Check (Green)"/>
+        <handlers:Item Key="item069A" Value="Nature Check (Blue)"/>
+        <handlers:Item Key="item069B" Value="Traditional Pattern (Black)"/>
+        <handlers:Item Key="item069C" Value="Traditional Pattern (Vibrant)"/>
+        <handlers:Item Key="item069D" Value="Traditional Pattern (Brown)"/>
+        <handlers:Item Key="item069E" Value="Traditional Pattern (Pink)"/>
+        <handlers:Item Key="item069F" Value="Traditional Pattern (Aqua)"/>
+        <handlers:Item Key="item06A0" Value="Traditional Pattern (Warm)"/>
+        <handlers:Item Key="item06A1" Value="Traditional Pattern (Red)"/>
+        <handlers:Item Key="item06A2" Value="Hunter Pattern (Brown)"/>
+        <handlers:Item Key="item06A3" Value="Hunter Pattern (White)"/>
+        <handlers:Item Key="item06A4" Value="Hunter Pattern (Gold)"/>
+        <handlers:Item Key="item06A5" Value="Hunter Pattern (Red)"/>
+        <handlers:Item Key="item06A6" Value="Item 1702"/>
+        <handlers:Item Key="item06A7" Value="Item 1703"/>
+        <handlers:Item Key="item06A8" Value="Item 1704"/>
+        <handlers:Item Key="item06A9" Value="Item 1705"/>
+        <handlers:Item Key="item06AA" Value="Item 1706"/>
+        <handlers:Item Key="item06AB" Value="Palico Print (Pink)"/>
+        <handlers:Item Key="item06AC" Value="Palico Print (Brown)"/>
+        <handlers:Item Key="item06AD" Value="Item 1709"/>
+        <handlers:Item Key="item06AE" Value="Item 1710"/>
+        <handlers:Item Key="item06AF" Value="Item 1711"/>
+        <handlers:Item Key="item06B0" Value="Item 1712"/>
+        <handlers:Item Key="item06B1" Value="Item 1713"/>
+        <handlers:Item Key="item06B2" Value="Item 1714"/>
+        <handlers:Item Key="item06B3" Value="Item 1715"/>
+        <handlers:Item Key="item06B4" Value="Item 1716"/>
+        <handlers:Item Key="item06B5" Value="Item 1717"/>
+        <handlers:Item Key="item06B6" Value="Item 1718"/>
+        <handlers:Item Key="item06B7" Value="Item 1719"/>
+        <handlers:Item Key="item06B8" Value="Item 1720"/>
+        <handlers:Item Key="item06B9" Value="Light Wood"/>
+        <handlers:Item Key="item06BA" Value="Dark Wood"/>
+        <handlers:Item Key="item06BB" Value="Light Iron"/>
+        <handlers:Item Key="item06BC" Value="Dark Iron"/>
+        <handlers:Item Key="item06BD" Value="Silver"/>
+        <handlers:Item Key="item06BE" Value="Item 1726"/>
+        <handlers:Item Key="item06BF" Value="Stone"/>
+        <handlers:Item Key="item06C0" Value="Home Sweet Home"/>
+        <handlers:Item Key="item06C1" Value="Traditional Room"/>
+        <handlers:Item Key="item06C2" Value="Item 1730"/>
+        <handlers:Item Key="item06C3" Value="Item 1731"/>
+        <handlers:Item Key="item06C4" Value="Item 1732"/>
+        <handlers:Item Key="item06C5" Value="Item 1733"/>
+        <handlers:Item Key="item06C6" Value="Wooden Floor"/>
+        <handlers:Item Key="item06C7" Value="Chic Wooden Floor"/>
+        <handlers:Item Key="item06C8" Value="Simple Stone Floor"/>
+        <handlers:Item Key="item06C9" Value="Item 1737"/>
+        <handlers:Item Key="item06CA" Value="Item 1738"/>
+        <handlers:Item Key="item06CB" Value="Marble Tile Floor"/>
+        <handlers:Item Key="item06CC" Value="Item 1740"/>
+        <handlers:Item Key="item06CD" Value="Item 1741"/>
+        <handlers:Item Key="item06CE" Value="Item 1742"/>
+        <handlers:Item Key="item06CF" Value="Chic Stone Floor"/>
+        <handlers:Item Key="item06D0" Value="Wooden Wall"/>
+        <handlers:Item Key="item06D1" Value="Chic Wooden Wall"/>
+        <handlers:Item Key="item06D2" Value="Simple Stone Wall"/>
+        <handlers:Item Key="item06D3" Value="Item 1747"/>
+        <handlers:Item Key="item06D4" Value="Item 1748"/>
+        <handlers:Item Key="item06D5" Value="Simple Stucco Wall"/>
+        <handlers:Item Key="item06D6" Value="Item 1750"/>
+        <handlers:Item Key="item06D7" Value="Item 1751"/>
+        <handlers:Item Key="item06D8" Value="Item 1752"/>
+        <handlers:Item Key="item06D9" Value="Item 1753"/>
+        <handlers:Item Key="item06DA" Value="Elegant Stucco Wall"/>
+        <handlers:Item Key="item06DB" Value="Wooden Floor (White)"/>
+        <handlers:Item Key="item06DC" Value="Wooden Floor (Green)"/>
+        <handlers:Item Key="item06DD" Value="Wooden Floor (Blue)"/>
+        <handlers:Item Key="item06DE" Value="Wooden Floor (Red)"/>
+        <handlers:Item Key="item06DF" Value="Wooden Floor (Yellow)"/>
+        <handlers:Item Key="item06E0" Value="Light Wooden Floor"/>
+        <handlers:Item Key="item06E1" Value="Wooden Wall (White)"/>
+        <handlers:Item Key="item06E2" Value="Wooden Wall (Green)"/>
+        <handlers:Item Key="item06E3" Value="Wooden Wall (Blue)"/>
+        <handlers:Item Key="item06E4" Value="Wooden Wall (Red)"/>
+        <handlers:Item Key="item06E5" Value="Wooden Wall (Yellow)"/>
+        <handlers:Item Key="item06E6" Value="Stucco Wall (Orange)"/>
+        <handlers:Item Key="item06E7" Value="Stucco Wall (Green)"/>
+        <handlers:Item Key="item06E8" Value="Stucco Wall (Red)"/>
+        <handlers:Item Key="item06E9" Value="Stucco Wall (Blue)"/>
+        <handlers:Item Key="item06EA" Value="Traditional Bench"/>
+        <handlers:Item Key="item06EB" Value="Traditional Bed"/>
+        <handlers:Item Key="item06EC" Value="Traditional Table"/>
+        <handlers:Item Key="item06ED" Value="Traditional Meal"/>
+        <handlers:Item Key="item06EE" Value="Traditional Chest"/>
+        <handlers:Item Key="item06EF" Value="Traditional Rugs (1F)"/>
+        <handlers:Item Key="item06F0" Value="Traditional Rugs (2F)"/>
+        <handlers:Item Key="item06F1" Value="Traditional Wall"/>
+        <handlers:Item Key="item06F2" Value="Traditional Floor"/>
+        <handlers:Item Key="item06F3" Value="Traditional Lights"/>
+        <handlers:Item Key="item06F4" Value="Item 1780"/>
+        <handlers:Item Key="item06F5" Value="Dragonrazer Fuel Cell"/>
+        <handlers:Item Key="item06F6" Value="Tailraider Signal"/>
+        <handlers:Item Key="item06F7" Value="Item 1783"/>
+        <handlers:Item Key="item06F8" Value="Bugtrappers: Fried Dragonfly"/>
+        <handlers:Item Key="item06F9" Value="Protectors: Dried Goldenfish"/>
+        <handlers:Item Key="item06FA" Value="Troupers: Horned Urchin"/>
+        <handlers:Item Key="item06FB" Value="Plunderers: Steamed Cricket"/>
+        <handlers:Item Key="item06FC" Value="Grimalkyne: Pot-au-magma"/>
+        <handlers:Item Key="item06FD" Value="Boaboa: Boaboa Bread"/>
+        <handlers:Item Key="item06FE" Value="Thermae Ticket"/>
+        <handlers:Item Key="item06FF" Value="Scratched Shell"/>
+        <handlers:Item Key="item0700" Value="Stonebill"/>
+        <handlers:Item Key="item0701" Value="Rime Beetle"/>
+        <handlers:Item Key="item0702" Value="Hot Spring Stone"/>
+        <handlers:Item Key="item0703" Value="Decayed Crystal"/>
+        <handlers:Item Key="item0704" Value="Forest Crystal"/>
+        <handlers:Item Key="item0705" Value="Prosperous Crystal"/>
+        <handlers:Item Key="item0706" Value="Guiding Forest Crystal"/>
+        <handlers:Item Key="item0707" Value="Cracked Crystal"/>
+        <handlers:Item Key="item0708" Value="Wasteland Crystal"/>
+        <handlers:Item Key="item0709" Value="Serene Crystal"/>
+        <handlers:Item Key="item070A" Value="Guiding Wasteland Crystal"/>
+        <handlers:Item Key="item070B" Value="Pale Crystal"/>
+        <handlers:Item Key="item070C" Value="Coral Crystal"/>
+        <handlers:Item Key="item070D" Value="Deepsea Crystal"/>
+        <handlers:Item Key="item070E" Value="Guiding Coral Crystal"/>
+        <handlers:Item Key="item070F" Value="Distorted Crystal"/>
+        <handlers:Item Key="item0710" Value="Effluvial Crystal"/>
+        <handlers:Item Key="item0711" Value="Twilight Crystal"/>
+        <handlers:Item Key="item0712" Value="Guiding Effluvial Crystal"/>
+        <handlers:Item Key="item0713" Value="Item 1811"/>
+        <handlers:Item Key="item0714" Value="Item 1812"/>
+        <handlers:Item Key="item0715" Value="Item 1813"/>
+        <handlers:Item Key="item0716" Value="Item 1814"/>
+        <handlers:Item Key="item0717" Value="Item 1815"/>
+        <handlers:Item Key="item0718" Value="Item 1816"/>
+        <handlers:Item Key="item0719" Value="Item 1817"/>
+        <handlers:Item Key="item071A" Value="Item 1818"/>
+        <handlers:Item Key="item071B" Value="Mossy Greatbone"/>
+        <handlers:Item Key="item071C" Value="Woodland Greatbone"/>
+        <handlers:Item Key="item071D" Value="Slumbering Greatbone"/>
+        <handlers:Item Key="item071E" Value="Guiding Forest Dragonbone"/>
+        <handlers:Item Key="item071F" Value="Weathered Cragbone"/>
+        <handlers:Item Key="item0720" Value="Wasteland Cragbone"/>
+        <handlers:Item Key="item0721" Value="Tempered Cragbone"/>
+        <handlers:Item Key="item0722" Value="Guiding Wasteland Dragonbone"/>
+        <handlers:Item Key="item0723" Value="Vivid Crimsonbone"/>
+        <handlers:Item Key="item0724" Value="Coral Crimsonbone"/>
+        <handlers:Item Key="item0725" Value="Vibrant Crimsonbone"/>
+        <handlers:Item Key="item0726" Value="Guiding Coral Dragonbone"/>
+        <handlers:Item Key="item0727" Value="Malformed Frenzybone"/>
+        <handlers:Item Key="item0728" Value="Effluvial Frenzybone"/>
+        <handlers:Item Key="item0729" Value="Afflicted Frenzybone"/>
+        <handlers:Item Key="item072A" Value="Guiding Rotted Dragonbone"/>
+        <handlers:Item Key="item072B" Value="Item 1835"/>
+        <handlers:Item Key="item072C" Value="Item 1836"/>
+        <handlers:Item Key="item072D" Value="Item 1837"/>
+        <handlers:Item Key="item072E" Value="Item 1838"/>
+        <handlers:Item Key="item072F" Value="Item 1839"/>
+        <handlers:Item Key="item0730" Value="Item 1840"/>
+        <handlers:Item Key="item0731" Value="Item 1841"/>
+        <handlers:Item Key="item0732" Value="Item 1842"/>
+        <handlers:Item Key="item0733" Value="Fierce Dragonvein Bone"/>
+        <handlers:Item Key="item0734" Value="Heavy Dragonvein Bone"/>
+        <handlers:Item Key="item0735" Value="Dragonvein Solidbone"/>
+        <handlers:Item Key="item0736" Value="Elder Dragonvein Bone"/>
+        <handlers:Item Key="item0737" Value="Item 1847"/>
+        <handlers:Item Key="item0738" Value="Spiritvein Slogbone"/>
+        <handlers:Item Key="item0739" Value="Spiritvein Solidbone"/>
+        <handlers:Item Key="item073A" Value="Elder Spiritvein Bone"/>
+        <handlers:Item Key="item073B" Value="Spiritvein Gem Shard"/>
+        <handlers:Item Key="item073C" Value="Spiritvein Gem"/>
+        <handlers:Item Key="item073D" Value="Great Spiritvein Gem"/>
+        <handlers:Item Key="item073E" Value="Rugged Mane"/>
+        <handlers:Item Key="item073F" Value="Item 1855"/>
+        <handlers:Item Key="item0740" Value="Colorful Plume"/>
+        <handlers:Item Key="item0741" Value="Item 1857"/>
+        <handlers:Item Key="item0742" Value="Fragrant Poison Sac"/>
+        <handlers:Item Key="item0743" Value="Tempered Poison Sac"/>
+        <handlers:Item Key="item0744" Value="Hydrated Sac"/>
+        <handlers:Item Key="item0745" Value="Tempered Torrent Sac"/>
+        <handlers:Item Key="item0746" Value="Muddy Crown"/>
+        <handlers:Item Key="item0747" Value="Tempered Crown"/>
+        <handlers:Item Key="item0748" Value="Item 1864"/>
+        <handlers:Item Key="item0749" Value="Item 1865"/>
+        <handlers:Item Key="item074A" Value="Item 1866"/>
+        <handlers:Item Key="item074B" Value="Item 1867"/>
+        <handlers:Item Key="item074C" Value="Blinding Cathode"/>
+        <handlers:Item Key="item074D" Value="Tempered Cathode"/>
+        <handlers:Item Key="item074E" Value="Item 1870"/>
+        <handlers:Item Key="item074F" Value="Item 1871"/>
+        <handlers:Item Key="item0750" Value="Ancient Great Horn"/>
+        <handlers:Item Key="item0751" Value="Tempered Great Horn"/>
+        <handlers:Item Key="item0752" Value="Flickering Flamepelt"/>
+        <handlers:Item Key="item0753" Value="Tempered Flamepelt"/>
+        <handlers:Item Key="item0754" Value="Crackling Thunderpelt"/>
+        <handlers:Item Key="item0755" Value="Tempered Thunderpelt"/>
+        <handlers:Item Key="item0756" Value="Queen's Scale"/>
+        <handlers:Item Key="item0757" Value="Tempered Green Scale"/>
+        <handlers:Item Key="item0758" Value="Pink Scale"/>
+        <handlers:Item Key="item0759" Value="Tempered Pink Scale"/>
+        <handlers:Item Key="item075A" Value="Dazzling Photophore+"/>
+        <handlers:Item Key="item075B" Value="Item 1883"/>
+        <handlers:Item Key="item075C" Value="Rubbery Shell"/>
+        <handlers:Item Key="item075D" Value="Tempered Rubbery Shell"/>
+        <handlers:Item Key="item075E" Value="Obsidian Fur"/>
+        <handlers:Item Key="item075F" Value="Tempered Hide"/>
+        <handlers:Item Key="item0760" Value="Night Hood"/>
+        <handlers:Item Key="item0761" Value="Item 1889"/>
+        <handlers:Item Key="item0762" Value="Inkstained Oilshell+"/>
+        <handlers:Item Key="item0763" Value="Tempered Oilshell+"/>
+        <handlers:Item Key="item0764" Value="Item 1892"/>
+        <handlers:Item Key="item0765" Value="Item 1893"/>
+        <handlers:Item Key="item0766" Value="Item 1894"/>
+        <handlers:Item Key="item0767" Value="Item 1895"/>
+        <handlers:Item Key="item0768" Value="Item 1896"/>
+        <handlers:Item Key="item0769" Value="Item 1897"/>
+        <handlers:Item Key="item076A" Value="Item 1898"/>
+        <handlers:Item Key="item076B" Value="Item 1899"/>
+        <handlers:Item Key="item076C" Value="Sinister Silverpelt"/>
+        <handlers:Item Key="item076D" Value="Tempered Silverpelt"/>
+        <handlers:Item Key="item076E" Value="Smooth Icehide"/>
+        <handlers:Item Key="item076F" Value="Tempered Icehide"/>
+        <handlers:Item Key="item0770" Value="Item 1904"/>
+        <handlers:Item Key="item0771" Value="Item 1905"/>
+        <handlers:Item Key="item0772" Value="Fatal Rendclaw"/>
+        <handlers:Item Key="item0773" Value="Tempered Rendclaw"/>
+        <handlers:Item Key="item0774" Value="Soulrender Talon"/>
+        <handlers:Item Key="item0775" Value="Tempered Talon"/>
+        <handlers:Item Key="item0776" Value="King's Scale"/>
+        <handlers:Item Key="item0777" Value="Tempered Red Scale"/>
+        <handlers:Item Key="item0778" Value="Azure Scale"/>
+        <handlers:Item Key="item0779" Value="Tempered Azure Scale"/>
+        <handlers:Item Key="item077A" Value="Twisted Bravehorn"/>
+        <handlers:Item Key="item077B" Value="Twisted Temperhorn"/>
+        <handlers:Item Key="item077C" Value="Blackcurl Tyranthorn"/>
+        <handlers:Item Key="item077D" Value="Blackcurl Temperhorn"/>
+        <handlers:Item Key="item077E" Value="Assassin Cutwing"/>
+        <handlers:Item Key="item077F" Value="Tempered Cutwing"/>
+        <handlers:Item Key="item0780" Value="Smoldering Tailedge"/>
+        <handlers:Item Key="item0781" Value="Tempered Tailedge"/>
+        <handlers:Item Key="item0782" Value="Honed Tailblade"/>
+        <handlers:Item Key="item0783" Value="Tempered Tailblade"/>
+        <handlers:Item Key="item0784" Value="Item 1924"/>
+        <handlers:Item Key="item0785" Value="Item 1925"/>
+        <handlers:Item Key="item0786" Value="Strongman's Jaw"/>
+        <handlers:Item Key="item0787" Value="Tempered Jaw"/>
+        <handlers:Item Key="item0788" Value="Shuddering Darkjaw"/>
+        <handlers:Item Key="item0789" Value="Tempered Ebonjaw"/>
+        <handlers:Item Key="item078A" Value="Charged Deathly Shocker"/>
+        <handlers:Item Key="item078B" Value="Tempered Shocker"/>
+        <handlers:Item Key="item078C" Value="Item 1932"/>
+        <handlers:Item Key="item078D" Value="Item 1933"/>
+        <handlers:Item Key="item078E" Value="Bloodstained Ebonhide"/>
+        <handlers:Item Key="item078F" Value="Spattered Hide"/>
+        <handlers:Item Key="item0790" Value="Solemn Azure Horn"/>
+        <handlers:Item Key="item0791" Value="Tempered Azure Horn"/>
+        <handlers:Item Key="item0792" Value="Hellfire Mane"/>
+        <handlers:Item Key="item0793" Value="Tempered Crimson Mane"/>
+        <handlers:Item Key="item0794" Value="Stormcall Steelwing"/>
+        <handlers:Item Key="item0795" Value="Tempered Steelwing"/>
+        <handlers:Item Key="item0796" Value="Azure Mane"/>
+        <handlers:Item Key="item0797" Value="Tempered Azure Mane"/>
+        <handlers:Item Key="item0798" Value="Aurora Crownhorn"/>
+        <handlers:Item Key="item0799" Value="Tempered Crownhorn"/>
+        <handlers:Item Key="item079A" Value="Twilight Fang"/>
+        <handlers:Item Key="item079B" Value="Tempered Twilight Fang"/>
+        <handlers:Item Key="item079C" Value="Enchanting Finehide"/>
+        <handlers:Item Key="item079D" Value="Tempered Trancehide"/>
+        <handlers:Item Key="item079E" Value="Extinction Greathorn"/>
+        <handlers:Item Key="item079F" Value="Item 1951"/>
+        <handlers:Item Key="item07A0" Value="Moonlight Scale"/>
+        <handlers:Item Key="item07A1" Value="Item 1953"/>
+        <handlers:Item Key="item07A2" Value="Scorching Scale"/>
+        <handlers:Item Key="item07A3" Value="Item 1955"/>
+        <handlers:Item Key="item07A4" Value="Item 1956"/>
+        <handlers:Item Key="item07A5" Value="Item 1957"/>
+        <handlers:Item Key="item07A6" Value="Item 1958"/>
+        <handlers:Item Key="item07A7" Value="Item 1959"/>
+        <handlers:Item Key="item07A8" Value="Item 1960"/>
+        <handlers:Item Key="item07A9" Value="Item 1961"/>
+        <handlers:Item Key="item07AA" Value="Item 1962"/>
+        <handlers:Item Key="item07AB" Value="Item 1963"/>
+        <handlers:Item Key="item07AC" Value="Special Scope"/>
+        <handlers:Item Key="item07AD" Value="Sublime First Wyverian Print"/>
+        <handlers:Item Key="item07AE" Value="Steam Ticket"/>
+        <handlers:Item Key="item07AF" Value="Giant Dragonvein Coal"/>
+        <handlers:Item Key="item07B0" Value="Phoenix Jewel 3"/>
+        <handlers:Item Key="item07B1" Value="Guardian Jewel 2"/>
+        <handlers:Item Key="item07B2" Value="Cooling Jewel 2"/>
+        <handlers:Item Key="item07B3" Value="Fire Res Jewel+ 4"/>
+        <handlers:Item Key="item07B4" Value="Water Res Jewel+ 4"/>
+        <handlers:Item Key="item07B5" Value="Ice Res Jewel+ 4"/>
+        <handlers:Item Key="item07B6" Value="Thunder Res Jewel+ 4"/>
+        <handlers:Item Key="item07B7" Value="Dragon Res Jewel+ 4"/>
+        <handlers:Item Key="item07B8" Value="Blaze Jewel+ 4"/>
+        <handlers:Item Key="item07B9" Value="Stream Jewel+ 4"/>
+        <handlers:Item Key="item07BA" Value="Frost Jewel+ 4"/>
+        <handlers:Item Key="item07BB" Value="Bolt Jewel+ 4"/>
+        <handlers:Item Key="item07BC" Value="Dragon Jewel+ 4"/>
+        <handlers:Item Key="item07BD" Value="Venom Jewel+ 4"/>
+        <handlers:Item Key="item07BE" Value="Paralyzer Jewel+ 4"/>
+        <handlers:Item Key="item07BF" Value="Sleep Jewel+ 4"/>
+        <handlers:Item Key="item07C0" Value="Blast Jewel+ 4"/>
+        <handlers:Item Key="item07C1" Value="Hard Fire Res Jewel 4"/>
+        <handlers:Item Key="item07C2" Value="Hard Water Res Jewel 4"/>
+        <handlers:Item Key="item07C3" Value="Hard Ice Res Jewel 4"/>
+        <handlers:Item Key="item07C4" Value="Hard Thunder Res Jewel 4"/>
+        <handlers:Item Key="item07C5" Value="Hard Dragon Res Jewel 4"/>
+        <handlers:Item Key="item07C6" Value="Antidote Jewel+ 4"/>
+        <handlers:Item Key="item07C7" Value="Antipara Jewel+ 4"/>
+        <handlers:Item Key="item07C8" Value="Pep Jewel+ 4"/>
+        <handlers:Item Key="item07C9" Value="Steadfast Jewel+ 4"/>
+        <handlers:Item Key="item07CA" Value="Antiblast Jewel+ 4"/>
+        <handlers:Item Key="item07CB" Value="Suture Jewel+ 4"/>
+        <handlers:Item Key="item07CC" Value="Def Lock Jewel+ 4"/>
+        <handlers:Item Key="item07CD" Value="Miasma Jewel+ 4"/>
+        <handlers:Item Key="item07CE" Value="Hungerless Jewel+ 4"/>
+        <handlers:Item Key="item07CF" Value="Recovery Jewel+ 4"/>
+        <handlers:Item Key="item07D0" Value="Tip Toe Jewel+ 4"/>
+        <handlers:Item Key="item07D1" Value="Intimidator Jewel+ 4"/>
+        <handlers:Item Key="item07D2" Value="Meowster Jewel+ 4"/>
+        <handlers:Item Key="item07D3" Value="Hard Tip Toe Jewel 4"/>
+        <handlers:Item Key="item07D4" Value="Hard Intimidator Jewel 4"/>
+        <handlers:Item Key="item07D5" Value="Hard Meowster Jewel 4"/>
+        <handlers:Item Key="item07D6" Value="Trueshot Jewel+ 4"/>
+        <handlers:Item Key="item07D7" Value="Heavy Artillery Jewel+ 4"/>
+        <handlers:Item Key="item07D8" Value="Botany Jewel+ 4"/>
+        <handlers:Item Key="item07D9" Value="Geology Jewel+ 4"/>
+        <handlers:Item Key="item07DA" Value="Survival Jewel+ 4"/>
+        <handlers:Item Key="item07DB" Value="Mirewalker Jewel+ 4"/>
+        <handlers:Item Key="item07DC" Value="Specimen Jewel+ 4"/>
+        <handlers:Item Key="item07DD" Value="Sonorous Jewel+ 4"/>
+        <handlers:Item Key="item07DE" Value="Hard Botany Jewel+ 4"/>
+        <handlers:Item Key="item07DF" Value="Hard Geology Jewel 4"/>
+        <handlers:Item Key="item07E0" Value="Hard Survival Jewel 4"/>
+        <handlers:Item Key="item07E1" Value="Hard Specimen Jewel 4"/>
+        <handlers:Item Key="item07E2" Value="Enduring Jewel+ 4"/>
+        <handlers:Item Key="item07E3" Value="Defense Jewel+ 4"/>
+        <handlers:Item Key="item07E4" Value="Hard Enduring Jewel 4"/>
+        <handlers:Item Key="item07E5" Value="Hard Defense Jewel 4"/>
+        <handlers:Item Key="item07E6" Value="Artillery Jewel+ 4"/>
+        <handlers:Item Key="item07E7" Value="Earplug Jewel+ 4"/>
+        <handlers:Item Key="item07E8" Value="Wind Resist Jewel+ 4"/>
+        <handlers:Item Key="item07E9" Value="Attack Jewel+ 4"/>
+        <handlers:Item Key="item07EA" Value="Expert Jewel+ 4"/>
+        <handlers:Item Key="item07EB" Value="Handicraft Jewel+ 4"/>
+        <handlers:Item Key="item07EC" Value="Throttle Jewel+ 4"/>
+        <handlers:Item Key="item07ED" Value="Challenger Jewel+ 4"/>
+        <handlers:Item Key="item07EE" Value="Potential Jewel+ 4"/>
+        <handlers:Item Key="item07EF" Value="Furor Jewel+ 4"/>
+        <handlers:Item Key="item07F0" Value="Physique Jewel+ 4"/>
+        <handlers:Item Key="item07F1" Value="Evasion Jewel+ 4"/>
+        <handlers:Item Key="item07F2" Value="Ironwall Jewel+ 4"/>
+        <handlers:Item Key="item07F3" Value="Friendship Jewel+ 4"/>
+        <handlers:Item Key="item07F4" Value="Drain/Physique Jewel 4"/>
+        <handlers:Item Key="item07F5" Value="Fortitude/Physique Jewel 4"/>
+        <handlers:Item Key="item07F6" Value="Crisis/Physique Jewel 4"/>
+        <handlers:Item Key="item07F7" Value="Ironwall/Physique Jewel 4"/>
+        <handlers:Item Key="item07F8" Value="Friendship/Physique Jewel 4"/>
+        <handlers:Item Key="item07F9" Value="Satiated/Physique Jewel 4"/>
+        <handlers:Item Key="item07FA" Value="Stonethrower/Physique Jewel 4"/>
+        <handlers:Item Key="item07FB" Value="Resistor/Physique Jewel 4"/>
+        <handlers:Item Key="item07FC" Value="Flight/Physique Jewel 4"/>
+        <handlers:Item Key="item07FD" Value="Sprinter/Physique Jewel 4"/>
+        <handlers:Item Key="item07FE" Value="Refresh/Physique Jewel 4"/>
+        <handlers:Item Key="item07FF" Value="Jumping/Physique Jewel 4"/>
+        <handlers:Item Key="item0800" Value="Sheath/Physique Jewel 4"/>
+        <handlers:Item Key="item0801" Value="Gobbler/Physique Jewel 4"/>
+        <handlers:Item Key="item0802" Value="Grinder/Physique Jewel 4"/>
+        <handlers:Item Key="item0803" Value="Bomber/Physique Jewel 4"/>
+        <handlers:Item Key="item0804" Value="Fungiform/Physique Jewel 4"/>
+        <handlers:Item Key="item0805" Value="Slider/Physique Jewel 4"/>
+        <handlers:Item Key="item0806" Value="Guardian/Physique Jewel 4"/>
+        <handlers:Item Key="item0807" Value="Drain/Evasion Jewel 4"/>
+        <handlers:Item Key="item0808" Value="Fortitude/Evasion Jewel 4"/>
+        <handlers:Item Key="item0809" Value="Crisis/Evasion Jewel 4"/>
+        <handlers:Item Key="item080A" Value="Ironwall/Evasion Jewel 4"/>
+        <handlers:Item Key="item080B" Value="Friendship/Evasion Jewel 4"/>
+        <handlers:Item Key="item080C" Value="Satiated/Evasion Jewel 4"/>
+        <handlers:Item Key="item080D" Value="Stonethrower/Evasion Jewel 4"/>
+        <handlers:Item Key="item080E" Value="Resistor/Evasion Jewel 4"/>
+        <handlers:Item Key="item080F" Value="Flight/Evasion Jewel 4"/>
+        <handlers:Item Key="item0810" Value="Sprinter/Evasion Jewel 4"/>
+        <handlers:Item Key="item0811" Value="Refresh/Evasion Jewel 4"/>
+        <handlers:Item Key="item0812" Value="Jumping/Evasion Jewel 4"/>
+        <handlers:Item Key="item0813" Value="Sheath/Evasion Jewel 4"/>
+        <handlers:Item Key="item0814" Value="Gobbler/Evasion Jewel 4"/>
+        <handlers:Item Key="item0815" Value="Grinder/Evasion Jewel 4"/>
+        <handlers:Item Key="item0816" Value="Bomber/Evasion Jewel 4"/>
+        <handlers:Item Key="item0817" Value="Fungiform/Evasion Jewel 4"/>
+        <handlers:Item Key="item0818" Value="Slider/Evasion Jewel 4"/>
+        <handlers:Item Key="item0819" Value="Guardian/Evasion Jewel 4"/>
+        <handlers:Item Key="item081A" Value="Drain/Attack Jewel 4"/>
+        <handlers:Item Key="item081B" Value="Fortitude/Attack Jewel 4"/>
+        <handlers:Item Key="item081C" Value="Crisis/Attack Jewel 4"/>
+        <handlers:Item Key="item081D" Value="Ironwall/Attack Jewel 4"/>
+        <handlers:Item Key="item081E" Value="Friendship/Attack Jewel 4"/>
+        <handlers:Item Key="item081F" Value="Satiated/Attack Jewel 4"/>
+        <handlers:Item Key="item0820" Value="Stonethrower/Attack Jewel 4"/>
+        <handlers:Item Key="item0821" Value="Resistor/Attack Jewel 4"/>
+        <handlers:Item Key="item0822" Value="Flight/Attack Jewel 4"/>
+        <handlers:Item Key="item0823" Value="Sprinter/Attack Jewel 4"/>
+        <handlers:Item Key="item0824" Value="Refresh/Attack Jewel 4"/>
+        <handlers:Item Key="item0825" Value="Jumping/Attack Jewel 4"/>
+        <handlers:Item Key="item0826" Value="Sheath/Attack Jewel 4"/>
+        <handlers:Item Key="item0827" Value="Gobbler/Attack Jewel 4"/>
+        <handlers:Item Key="item0828" Value="Grinder/Attack Jewel 4"/>
+        <handlers:Item Key="item0829" Value="Bomber/Attack Jewel 4"/>
+        <handlers:Item Key="item082A" Value="Fungiform/Attack Jewel 4"/>
+        <handlers:Item Key="item082B" Value="Slider/Attack Jewel 4"/>
+        <handlers:Item Key="item082C" Value="Guardian/Attack Jewel 4"/>
+        <handlers:Item Key="item082D" Value="Drain/Expert Jewel 4"/>
+        <handlers:Item Key="item082E" Value="Fortitude/Expert Jewel 4"/>
+        <handlers:Item Key="item082F" Value="Crisis/Expert Jewel 4"/>
+        <handlers:Item Key="item0830" Value="Ironwall/Expert Jewel 4"/>
+        <handlers:Item Key="item0831" Value="Friendship/Expert Jewel 4"/>
+        <handlers:Item Key="item0832" Value="Satiated/Expert Jewel 4"/>
+        <handlers:Item Key="item0833" Value="Stonethrower/Expert Jewel 4"/>
+        <handlers:Item Key="item0834" Value="Resistor/Expert Jewel 4"/>
+        <handlers:Item Key="item0835" Value="Flight/Expert Jewel 4"/>
+        <handlers:Item Key="item0836" Value="Sprinter/Expert Jewel 4"/>
+        <handlers:Item Key="item0837" Value="Refresh/Expert Jewel 4"/>
+        <handlers:Item Key="item0838" Value="Jumping/Expert Jewel 4"/>
+        <handlers:Item Key="item0839" Value="Sheath/Expert Jewel 4"/>
+        <handlers:Item Key="item083A" Value="Gobbler/Expert Jewel 4"/>
+        <handlers:Item Key="item083B" Value="Grinder/Expert Jewel 4"/>
+        <handlers:Item Key="item083C" Value="Bomber/Expert Jewel 4"/>
+        <handlers:Item Key="item083D" Value="Fungiform/Expert Jewel 4"/>
+        <handlers:Item Key="item083E" Value="Slider/Expert Jewel 4"/>
+        <handlers:Item Key="item083F" Value="Guardian/Expert Jewel 4"/>
+        <handlers:Item Key="item0840" Value="Drain/Release Jewel 4"/>
+        <handlers:Item Key="item0841" Value="Fortitude/Release Jewel 4"/>
+        <handlers:Item Key="item0842" Value="Crisis/Release Jewel 4"/>
+        <handlers:Item Key="item0843" Value="Ironwall/Release Jewel 4"/>
+        <handlers:Item Key="item0844" Value="Friendship/Release Jewel 4"/>
+        <handlers:Item Key="item0845" Value="Satiated/Release Jewel 4"/>
+        <handlers:Item Key="item0846" Value="Stonethrower/Release Jewel 4"/>
+        <handlers:Item Key="item0847" Value="Resistor/Release Jewel 4"/>
+        <handlers:Item Key="item0848" Value="Flight/Release Jewel 4"/>
+        <handlers:Item Key="item0849" Value="Sprinter/Release Jewel 4"/>
+        <handlers:Item Key="item084A" Value="Refresh/Release Jewel 4"/>
+        <handlers:Item Key="item084B" Value="Jumping/Release Jewel 4"/>
+        <handlers:Item Key="item084C" Value="Sheath/Release Jewel 4"/>
+        <handlers:Item Key="item084D" Value="Gobbler/Release Jewel 4"/>
+        <handlers:Item Key="item084E" Value="Grinder/Release Jewel 4"/>
+        <handlers:Item Key="item084F" Value="Bomber/Release Jewel 4"/>
+        <handlers:Item Key="item0850" Value="Fungiform/Release Jewel 4"/>
+        <handlers:Item Key="item0851" Value="Slider/Release Jewel 4"/>
+        <handlers:Item Key="item0852" Value="Guardian/Release Jewel 4"/>
+        <handlers:Item Key="item0853" Value="Drain/Handicraft Jewel 4"/>
+        <handlers:Item Key="item0854" Value="Fortitude/Handicraft Jewel 4"/>
+        <handlers:Item Key="item0855" Value="Crisis/Handicraft Jewel 4"/>
+        <handlers:Item Key="item0856" Value="Ironwall/Handicraft Jewel 4"/>
+        <handlers:Item Key="item0857" Value="Friendship/Handicraft Jewel 4"/>
+        <handlers:Item Key="item0858" Value="Satiated/Handicraft Jewel 4"/>
+        <handlers:Item Key="item0859" Value="Stonethrower/Handicraft Jewel 4"/>
+        <handlers:Item Key="item085A" Value="Resistor/Handicraft Jewel 4"/>
+        <handlers:Item Key="item085B" Value="Flight/Handicraft Jewel 4"/>
+        <handlers:Item Key="item085C" Value="Sprinter/Handicraft Jewel 4"/>
+        <handlers:Item Key="item085D" Value="Refresh/Handicraft Jewel 4"/>
+        <handlers:Item Key="item085E" Value="Jumping/Handicraft Jewel 4"/>
+        <handlers:Item Key="item085F" Value="Sheath/Handicraft Jewel 4"/>
+        <handlers:Item Key="item0860" Value="Gobbler/Handicraft Jewel 4"/>
+        <handlers:Item Key="item0861" Value="Grinder/Handicraft Jewel 4"/>
+        <handlers:Item Key="item0862" Value="Bomber/Handicraft Jewel 4"/>
+        <handlers:Item Key="item0863" Value="Fungiform/Handicraft Jewel 4"/>
+        <handlers:Item Key="item0864" Value="Slider/Handicraft Jewel 4"/>
+        <handlers:Item Key="item0865" Value="Guardian/Handicraft Jewel 4"/>
+        <handlers:Item Key="item0866" Value="Footing/Protection Jewel 4"/>
+        <handlers:Item Key="item0867" Value="Charger/Protection Jewel 4"/>
+        <handlers:Item Key="item0868" Value="Enhancer/Protection Jewel 4"/>
+        <handlers:Item Key="item0869" Value="Destroyer/Protection Jewel 4"/>
+        <handlers:Item Key="item086A" Value="KO/Protection Jewel 4"/>
+        <handlers:Item Key="item086B" Value="Potential/Protection Jewel 4"/>
+        <handlers:Item Key="item086C" Value="Wind Resist/Protection Jewel 4"/>
+        <handlers:Item Key="item086D" Value="Draw/Protection Jewel 4"/>
+        <handlers:Item Key="item086E" Value="Throttle/Protection Jewel 4"/>
+        <handlers:Item Key="item086F" Value="Challenger/Protection Jewel 4"/>
+        <handlers:Item Key="item0870" Value="Flawless/Protection Jewel 4"/>
+        <handlers:Item Key="item0871" Value="Furor/Protection Jewel 4"/>
+        <handlers:Item Key="item0872" Value="Mighty/Protection Jewel 4"/>
+        <handlers:Item Key="item0873" Value="Brace/Protection Jewel 4"/>
+        <handlers:Item Key="item0874" Value="Phoenix/Protection Jewel 4"/>
+        <handlers:Item Key="item0875" Value="Earplug/Protection Jewel 4"/>
+        <handlers:Item Key="item0876" Value="Critical/Protection Jewel 4"/>
+        <handlers:Item Key="item0877" Value="Tenderizer/Protection Jewel 4"/>
+        <handlers:Item Key="item0878" Value="Handicraft/Protection Jewel 4"/>
+        <handlers:Item Key="item0879" Value="Release/Protection Jewel 4"/>
+        <handlers:Item Key="item087A" Value="Footing/Medicine Jewel 4"/>
+        <handlers:Item Key="item087B" Value="Charger/Medicine Jewel 4"/>
+        <handlers:Item Key="item087C" Value="Enhancer/Medicine Jewel 4"/>
+        <handlers:Item Key="item087D" Value="Destroyer/Medicine Jewel 4"/>
+        <handlers:Item Key="item087E" Value="KO/Medicine Jewel 4"/>
+        <handlers:Item Key="item087F" Value="Potential/Medicine Jewel 4"/>
+        <handlers:Item Key="item0880" Value="Wind Resist/Medicine Jewel 4"/>
+        <handlers:Item Key="item0881" Value="Draw/Medicine Jewel 4"/>
+        <handlers:Item Key="item0882" Value="Throttle/Medicine Jewel 4"/>
+        <handlers:Item Key="item0883" Value="Challenger/Medicine Jewel 4"/>
+        <handlers:Item Key="item0884" Value="Flawless/Medicine Jewel 4"/>
+        <handlers:Item Key="item0885" Value="Furor/Medicine Jewel 4"/>
+        <handlers:Item Key="item0886" Value="Mighty/Medicine Jewel 4"/>
+        <handlers:Item Key="item0887" Value="Brace/Medicine Jewel 4"/>
+        <handlers:Item Key="item0888" Value="Phoenix/Medicine Jewel 4"/>
+        <handlers:Item Key="item0889" Value="Earplug/Medicine Jewel 4"/>
+        <handlers:Item Key="item088A" Value="Critical/Medicine Jewel 4"/>
+        <handlers:Item Key="item088B" Value="Tenderizer/Medicine Jewel 4"/>
+        <handlers:Item Key="item088C" Value="Handicraft/Medicine Jewel 4"/>
+        <handlers:Item Key="item088D" Value="Release/Medicine Jewel 4"/>
+        <handlers:Item Key="item088E" Value="Footing/Vitality Jewel 4"/>
+        <handlers:Item Key="item088F" Value="Charger/Vitality Jewel 4"/>
+        <handlers:Item Key="item0890" Value="Enhancer/Vitality Jewel 4"/>
+        <handlers:Item Key="item0891" Value="Destroyer/Vitality Jewel 4"/>
+        <handlers:Item Key="item0892" Value="KO/Vitality Jewel 4"/>
+        <handlers:Item Key="item0893" Value="Potential/Vitality Jewel 4"/>
+        <handlers:Item Key="item0894" Value="Wind Resist/Vitality Jewel 4"/>
+        <handlers:Item Key="item0895" Value="Draw/Vitality Jewel 4"/>
+        <handlers:Item Key="item0896" Value="Throttle/Vitality Jewel 4"/>
+        <handlers:Item Key="item0897" Value="Challenger/Vitality Jewel 4"/>
+        <handlers:Item Key="item0898" Value="Flawless/Vitality Jewel 4"/>
+        <handlers:Item Key="item0899" Value="Furor/Vitality Jewel 4"/>
+        <handlers:Item Key="item089A" Value="Mighty/Vitality Jewel 4"/>
+        <handlers:Item Key="item089B" Value="Brace/Vitality Jewel 4"/>
+        <handlers:Item Key="item089C" Value="Phoenix/Vitality Jewel 4"/>
+        <handlers:Item Key="item089D" Value="Earplug/Vitality Jewel 4"/>
+        <handlers:Item Key="item089E" Value="Critical/Vitality Jewel 4"/>
+        <handlers:Item Key="item089F" Value="Tenderizer/Vitality Jewel 4"/>
+        <handlers:Item Key="item08A0" Value="Handicraft/Vitality Jewel 4"/>
+        <handlers:Item Key="item08A1" Value="Release/Vitality Jewel 4"/>
+        <handlers:Item Key="item08A2" Value="Footing/Maintenance Jewel 4"/>
+        <handlers:Item Key="item08A3" Value="Charger/Maintenance Jewel 4"/>
+        <handlers:Item Key="item08A4" Value="Enhancer/Maintenance Jewel 4"/>
+        <handlers:Item Key="item08A5" Value="Destroyer/Maintenance Jewel 4"/>
+        <handlers:Item Key="item08A6" Value="KO/Maintenance Jewel 4"/>
+        <handlers:Item Key="item08A7" Value="Potential/Maintenance Jewel 4"/>
+        <handlers:Item Key="item08A8" Value="Wind Resist/Maintenance Jewel 4"/>
+        <handlers:Item Key="item08A9" Value="Draw/Maintenance Jewel 4"/>
+        <handlers:Item Key="item08AA" Value="Throttle/Maintenance Jewel 4"/>
+        <handlers:Item Key="item08AB" Value="Challenger/Maintenance Jewel 4"/>
+        <handlers:Item Key="item08AC" Value="Flawless/Maintenance Jewel 4"/>
+        <handlers:Item Key="item08AD" Value="Furor/Maintenance Jewel 4"/>
+        <handlers:Item Key="item08AE" Value="Mighty/Maintenance Jewel 4"/>
+        <handlers:Item Key="item08AF" Value="Brace/Maintenance Jewel 4"/>
+        <handlers:Item Key="item08B0" Value="Phoenix/Maintenance Jewel 4"/>
+        <handlers:Item Key="item08B1" Value="Earplug/Maintenance Jewel 4"/>
+        <handlers:Item Key="item08B2" Value="Critical/Maintenance Jewel 4"/>
+        <handlers:Item Key="item08B3" Value="Tenderizer/Maintenance Jewel 4"/>
+        <handlers:Item Key="item08B4" Value="Handicraft/Maintenance Jewel 4"/>
+        <handlers:Item Key="item08B5" Value="Release/Maintenance Jewel 4"/>
+        <handlers:Item Key="item08B6" Value="Footing/Physique Jewel 4"/>
+        <handlers:Item Key="item08B7" Value="Charger/Physique Jewel 4"/>
+        <handlers:Item Key="item08B8" Value="Enhancer/Physique Jewel 4"/>
+        <handlers:Item Key="item08B9" Value="Destroyer/Physique Jewel 4"/>
+        <handlers:Item Key="item08BA" Value="KO/Physique Jewel 4"/>
+        <handlers:Item Key="item08BB" Value="Potential/Physique Jewel 4"/>
+        <handlers:Item Key="item08BC" Value="Wind Resist/Physique Jewel 4"/>
+        <handlers:Item Key="item08BD" Value="Draw/Physique Jewel 4"/>
+        <handlers:Item Key="item08BE" Value="Throttle/Physique Jewel 4"/>
+        <handlers:Item Key="item08BF" Value="Challenger/Physique Jewel 4"/>
+        <handlers:Item Key="item08C0" Value="Flawless/Physique Jewel 4"/>
+        <handlers:Item Key="item08C1" Value="Furor/Physique Jewel 4"/>
+        <handlers:Item Key="item08C2" Value="Mighty/Physique Jewel 4"/>
+        <handlers:Item Key="item08C3" Value="Brace/Physique Jewel 4"/>
+        <handlers:Item Key="item08C4" Value="Phoenix/Physique Jewel 4"/>
+        <handlers:Item Key="item08C5" Value="Earplug/Physique Jewel 4"/>
+        <handlers:Item Key="item08C6" Value="Critical/Physique Jewel 4"/>
+        <handlers:Item Key="item08C7" Value="Tenderizer/Physique Jewel 4"/>
+        <handlers:Item Key="item08C8" Value="Handicraft/Physique Jewel 4"/>
+        <handlers:Item Key="item08C9" Value="Release/Physique Jewel 4"/>
+        <handlers:Item Key="item08CA" Value="Footing/Evasion Jewel 4"/>
+        <handlers:Item Key="item08CB" Value="Charger/Evasion Jewel 4"/>
+        <handlers:Item Key="item08CC" Value="Enhancer/Evasion Jewel 4"/>
+        <handlers:Item Key="item08CD" Value="Destroyer/Evasion Jewel 4"/>
+        <handlers:Item Key="item08CE" Value="KO/Evasion Jewel 4"/>
+        <handlers:Item Key="item08CF" Value="Potential/Evasion Jewel 4"/>
+        <handlers:Item Key="item08D0" Value="Wind Resist/Evasion Jewel 4"/>
+        <handlers:Item Key="item08D1" Value="Draw/Evasion Jewel 4"/>
+        <handlers:Item Key="item08D2" Value="Throttle/Evasion Jewel 4"/>
+        <handlers:Item Key="item08D3" Value="Challenger/Evasion Jewel 4"/>
+        <handlers:Item Key="item08D4" Value="Flawless/Evasion Jewel 4"/>
+        <handlers:Item Key="item08D5" Value="Furor/Evasion Jewel 4"/>
+        <handlers:Item Key="item08D6" Value="Mighty/Evasion Jewel 4"/>
+        <handlers:Item Key="item08D7" Value="Brace/Evasion Jewel 4"/>
+        <handlers:Item Key="item08D8" Value="Phoenix/Evasion Jewel 4"/>
+        <handlers:Item Key="item08D9" Value="Earplug/Evasion Jewel 4"/>
+        <handlers:Item Key="item08DA" Value="Critical/Evasion Jewel 4"/>
+        <handlers:Item Key="item08DB" Value="Tenderizer/Evasion Jewel 4"/>
+        <handlers:Item Key="item08DC" Value="Handicraft/Evasion Jewel 4"/>
+        <handlers:Item Key="item08DD" Value="Release/Evasion Jewel 4"/>
+        <handlers:Item Key="item08DE" Value="Survival Jewel 1"/>
+        <handlers:Item Key="item08DF" Value="Item 2271"/>
+        <handlers:Item Key="item08E0" Value="Warming Jewel 2"/>
+        <handlers:Item Key="item08E1" Value="Item 2273"/>
+        <handlers:Item Key="item08E2" Value="Item 2274"/>
+        <handlers:Item Key="item08E3" Value="Item 2275"/>
+        <handlers:Item Key="item08E4" Value="Item 2276"/>
+        <handlers:Item Key="item08E5" Value="Item 2277"/>
+        <handlers:Item Key="item08E6" Value="Item 2278"/>
+        <handlers:Item Key="item08E7" Value="Item 2279"/>
+        <handlers:Item Key="item08E8" Value="Item 2280"/>
+        <handlers:Item Key="item08E9" Value="Item 2281"/>
+        <handlers:Item Key="item08EA" Value="Item 2282"/>
+        <handlers:Item Key="item08EB" Value="Item 2283"/>
+        <handlers:Item Key="item08EC" Value="Item 2284"/>
+        <handlers:Item Key="item08ED" Value="Item 2285"/>
+        <handlers:Item Key="item08EE" Value="Item 2286"/>
+        <handlers:Item Key="item08EF" Value="Item 2287"/>
+        <handlers:Item Key="item08F0" Value="Item 2288"/>
+        <handlers:Item Key="item08F1" Value="Item 2289"/>
+        <handlers:Item Key="item08F2" Value="Item 2290"/>
+        <handlers:Item Key="item08F3" Value="Item 2291"/>
+        <handlers:Item Key="item08F4" Value="Item 2292"/>
+        <handlers:Item Key="item08F5" Value="Item 2293"/>
+        <handlers:Item Key="item08F6" Value="Item 2294"/>
+        <handlers:Item Key="item08F7" Value="Item 2295"/>
+        <handlers:Item Key="item08F8" Value="Item 2296"/>
+        <handlers:Item Key="item08F9" Value="Item 2297"/>
+        <handlers:Item Key="item08FA" Value="Item 2298"/>
+        <handlers:Item Key="item08FB" Value="Item 2299"/>
+        <handlers:Item Key="item08FC" Value="Item 2300"/>
+        <handlers:Item Key="item08FD" Value="Item 2301"/>
+        <handlers:Item Key="item08FE" Value="Item 2302"/>
+        <handlers:Item Key="item08FF" Value="Item 2303"/>
+        <handlers:Item Key="item0900" Value="Item 2304"/>
+        <handlers:Item Key="item0901" Value="Item 2305"/>
+        <handlers:Item Key="item0902" Value="Item 2306"/>
+        <handlers:Item Key="item0903" Value="Item 2307"/>
+        <handlers:Item Key="item0904" Value="Item 2308"/>
+        <handlers:Item Key="item0905" Value="Item 2309"/>
+        <handlers:Item Key="item0906" Value="Item 2310"/>
+        <handlers:Item Key="item0907" Value="Item 2311"/>
+        <handlers:Item Key="item0908" Value="Item 2312"/>
+        <handlers:Item Key="item0909" Value="Item 2313"/>
+        <handlers:Item Key="item090A" Value="Item 2314"/>
+        <handlers:Item Key="item090B" Value="Item 2315"/>
+        <handlers:Item Key="item090C" Value="Item 2316"/>
+        <handlers:Item Key="item090D" Value="Item 2317"/>
+        <handlers:Item Key="item090E" Value="Item 2318"/>
+        <handlers:Item Key="item090F" Value="Item 2319"/>
+        <handlers:Item Key="item0910" Value="Item 2320"/>
+        <handlers:Item Key="item0911" Value="Item 2321"/>
+        <handlers:Item Key="item0912" Value="Item 2322"/>
+        <handlers:Item Key="item0913" Value="Item 2323"/>
+        <handlers:Item Key="item0914" Value="Item 2324"/>
+        <handlers:Item Key="item0915" Value="Item 2325"/>
+        <handlers:Item Key="item0916" Value="Item 2326"/>
+        <handlers:Item Key="item0917" Value="Item 2327"/>
+        <handlers:Item Key="item0918" Value="Item 2328"/>
+        <handlers:Item Key="item0919" Value="Item 2329"/>
+        <handlers:Item Key="item091A" Value="Item 2330"/>
+        <handlers:Item Key="item091B" Value="Item 2331"/>
+        <handlers:Item Key="item091C" Value="Item 2332"/>
+        <handlers:Item Key="item091D" Value="Item 2333"/>
+        <handlers:Item Key="item091E" Value="Item 2334"/>
+        <handlers:Item Key="item091F" Value="Item 2335"/>
+        <handlers:Item Key="item0920" Value="Item 2336"/>
+        <handlers:Item Key="item0921" Value="Item 2337"/>
+        <handlers:Item Key="item0922" Value="Item 2338"/>
+        <handlers:Item Key="item0923" Value="Item 2339"/>
+        <handlers:Item Key="item0924" Value="Item 2340"/>
+        <handlers:Item Key="item0925" Value="Item 2341"/>
+        <handlers:Item Key="item0926" Value="Item 2342"/>
+        <handlers:Item Key="item0927" Value="Item 2343"/>
+        <handlers:Item Key="item0928" Value="Item 2344"/>
+        <handlers:Item Key="item0929" Value="Item 2345"/>
+        <handlers:Item Key="item092A" Value="Item 2346"/>
+        <handlers:Item Key="item092B" Value="Item 2347"/>
+        <handlers:Item Key="item092C" Value="Item 2348"/>
+        <handlers:Item Key="item092D" Value="Item 2349"/>
+        <handlers:Item Key="item092E" Value="Item 2350"/>
+        <handlers:Item Key="item092F" Value="Item 2351"/>
+        <handlers:Item Key="item0930" Value="Item 2352"/>
+        <handlers:Item Key="item0931" Value="Item 2353"/>
+        <handlers:Item Key="item0932" Value="Item 2354"/>
+        <handlers:Item Key="item0933" Value="Item 2355"/>
+        <handlers:Item Key="item0934" Value="Item 2356"/>
+        <handlers:Item Key="item0935" Value="Item 2357"/>
+        <handlers:Item Key="item0936" Value="Item 2358"/>
+        <handlers:Item Key="item0937" Value="Item 2359"/>
+        <handlers:Item Key="item0938" Value="Item 2360"/>
+        <handlers:Item Key="item0939" Value="Item 2361"/>
+        <handlers:Item Key="item093A" Value="Item 2362"/>
+        <handlers:Item Key="item093B" Value="Item 2363"/>
+        <handlers:Item Key="item093C" Value="Item 2364"/>
+        <handlers:Item Key="item093D" Value="Item 2365"/>
+        <handlers:Item Key="item093E" Value="Item 2366"/>
+        <handlers:Item Key="item093F" Value="Item 2367"/>
+        <handlers:Item Key="item0940" Value="Item 2368"/>
+        <handlers:Item Key="item0941" Value="Item 2369"/>
+        <handlers:Item Key="item0942" Value="Item 2370"/>
+        <handlers:Item Key="item0943" Value="Item 2371"/>
+        <handlers:Item Key="item0944" Value="Item 2372"/>
+        <handlers:Item Key="item0945" Value="Item 2373"/>
+        <handlers:Item Key="item0946" Value="Item 2374"/>
+        <handlers:Item Key="item0947" Value="Item 2375"/>
+        <handlers:Item Key="item0948" Value="Item 2376"/>
+        <handlers:Item Key="item0949" Value="Item 2377"/>
+        <handlers:Item Key="item094A" Value="Item 2378"/>
+        <handlers:Item Key="item094B" Value="Item 2379"/>
+        <handlers:Item Key="item094C" Value="Item 2380"/>
+        <handlers:Item Key="item094D" Value="Item 2381"/>
+        <handlers:Item Key="item094E" Value="Item 2382"/>
+        <handlers:Item Key="item094F" Value="Item 2383"/>
+        <handlers:Item Key="item0950" Value="Item 2384"/>
+        <handlers:Item Key="item0951" Value="Item 2385"/>
+        <handlers:Item Key="item0952" Value="Item 2386"/>
+        <handlers:Item Key="item0953" Value="Item 2387"/>
+        <handlers:Item Key="item0954" Value="Item 2388"/>
+        <handlers:Item Key="item0955" Value="Item 2389"/>
+        <handlers:Item Key="item0956" Value="Item 2390"/>
+        <handlers:Item Key="item0957" Value="Item 2391"/>
+        <handlers:Item Key="item0958" Value="Item 2392"/>
+        <handlers:Item Key="item0959" Value="Item 2393"/>
+        <handlers:Item Key="item095A" Value="Item 2394"/>
+        <handlers:Item Key="item095B" Value="Item 2395"/>
+        <handlers:Item Key="item095C" Value="Item 2396"/>
+        <handlers:Item Key="item095D" Value="Item 2397"/>
+        <handlers:Item Key="item095E" Value="Item 2398"/>
+        <handlers:Item Key="item095F" Value="Item 2399"/>
+        <handlers:Item Key="item0960" Value="Item 2400"/>
+        <handlers:Item Key="item0961" Value="Item 2401"/>
+        <handlers:Item Key="item0962" Value="Item 2402"/>
+        <handlers:Item Key="item0963" Value="Item 2403"/>
+        <handlers:Item Key="item0964" Value="Item 2404"/>
+        <handlers:Item Key="item0965" Value="Item 2405"/>
+        <handlers:Item Key="item0966" Value="Item 2406"/>
+        <handlers:Item Key="item0967" Value="Item 2407"/>
+        <handlers:Item Key="item0968" Value="Item 2408"/>
+        <handlers:Item Key="item0969" Value="Item 2409"/>
+        <handlers:Item Key="item096A" Value="Item 2410"/>
+        <handlers:Item Key="item096B" Value="Item 2411"/>
+        <handlers:Item Key="item096C" Value="Item 2412"/>
+        <handlers:Item Key="item096D" Value="Plum Flower Pot"/>
+        <handlers:Item Key="item096E" Value="Decorative Tree"/>
+        <handlers:Item Key="item096F" Value="Item 2415"/>
+        <handlers:Item Key="item0970" Value="Item 2416"/>
+        <handlers:Item Key="item0971" Value="Item 2417"/>
+        <handlers:Item Key="item0972" Value="Item 2418"/>
+        <handlers:Item Key="item0973" Value="Item 2419"/>
+        <handlers:Item Key="item0974" Value="Item 2420"/>
+        <handlers:Item Key="item0975" Value="Item 2421"/>
+        <handlers:Item Key="item0976" Value="Item 2422"/>
+        <handlers:Item Key="item0977" Value="Item 2423"/>
+        <handlers:Item Key="item0978" Value="Item 2424"/>
+        <handlers:Item Key="item0979" Value="Item 2425"/>
+        <handlers:Item Key="item097A" Value="Item 2426"/>
+        <handlers:Item Key="item097B" Value="Item 2427"/>
+        <handlers:Item Key="item097C" Value="Item 2428"/>
+        <handlers:Item Key="item097D" Value="Item 2429"/>
+        <handlers:Item Key="item097E" Value="Felyne Balloon"/>
+        <handlers:Item Key="item097F" Value="Grimalkyne Balloon (White)"/>
+        <handlers:Item Key="item0980" Value="Grimalkyne Balloon (Black)"/>
+        <handlers:Item Key="item0981" Value="Gajalaka Balloon"/>
+        <handlers:Item Key="item0982" Value="Item 2434"/>
+        <handlers:Item Key="item0983" Value="Item 2435"/>
+        <handlers:Item Key="item0984" Value="Item 2436"/>
+        <handlers:Item Key="item0985" Value="Item 2437"/>
+        <handlers:Item Key="item0986" Value="Item 2438"/>
+        <handlers:Item Key="item0987" Value="Item 2439"/>
+        <handlers:Item Key="item0988" Value="Item 2440"/>
+        <handlers:Item Key="item0989" Value="Item 2441"/>
+        <handlers:Item Key="item098A" Value="Item 2442"/>
+        <handlers:Item Key="item098B" Value="Item 2443"/>
+        <handlers:Item Key="item098C" Value="Item 2444"/>
+        <handlers:Item Key="item098D" Value="Item 2445"/>
+        <handlers:Item Key="item098E" Value="Item 2446"/>
+        <handlers:Item Key="item098F" Value="Item 2447"/>
+        <handlers:Item Key="item0990" Value="Item 2448"/>
+        <handlers:Item Key="item0991" Value="Item 2449"/>
+        <handlers:Item Key="item0992" Value="Item 2450"/>
+        <handlers:Item Key="item0993" Value="Item 2451"/>
+        <handlers:Item Key="item0994" Value="Item 2452"/>
+        <handlers:Item Key="item0995" Value="Item 2453"/>
+        <handlers:Item Key="item0996" Value="Item 2454"/>
+        <handlers:Item Key="item0997" Value="Joyful Lanterns"/>
+        <handlers:Item Key="item0998" Value="Sky Lantern Lights"/>
+        <handlers:Item Key="item0999" Value="Item 2457"/>
+        <handlers:Item Key="item099A" Value="Item 2458"/>
+        <handlers:Item Key="item099B" Value="Item 2459"/>
+        <handlers:Item Key="item099C" Value="Item 2460"/>
+        <handlers:Item Key="item099D" Value="Item 2461"/>
+        <handlers:Item Key="item099E" Value="Item 2462"/>
+        <handlers:Item Key="item099F" Value="Item 2463"/>
+        <handlers:Item Key="item09A0" Value="Item 2464"/>
+        <handlers:Item Key="item09A1" Value="Item 2465"/>
+        <handlers:Item Key="item09A2" Value="Item 2466"/>
+        <handlers:Item Key="item09A3" Value="Item 2467"/>
+        <handlers:Item Key="item09A4" Value="Item 2468"/>
+        <handlers:Item Key="item09A5" Value="Item 2469"/>
+        <handlers:Item Key="item09A6" Value="Item 2470"/>
+        <handlers:Item Key="item09A7" Value="Item 2471"/>
+        <handlers:Item Key="item09A8" Value="Item 2472"/>
+        <handlers:Item Key="item09A9" Value="Item 2473"/>
+        <handlers:Item Key="item09AA" Value="Paper Lantern"/>
+        <handlers:Item Key="item09AB" Value="Item 2475"/>
+        <handlers:Item Key="item09AC" Value="Round Paper Lanterns"/>
+        <handlers:Item Key="item09AD" Value="Item 2477"/>
+        <handlers:Item Key="item09AE" Value="Item 2478"/>
+        <handlers:Item Key="item09AF" Value="Item 2479"/>
+        <handlers:Item Key="item09B0" Value="Item 2480"/>
+        <handlers:Item Key="item09B1" Value="Item 2481"/>
+        <handlers:Item Key="item09B2" Value="Item 2482"/>
+        <handlers:Item Key="item09B3" Value="Item 2483"/>
+        <handlers:Item Key="item09B4" Value="Item 2484"/>
+        <handlers:Item Key="item09B5" Value="Item 2485"/>
+        <handlers:Item Key="item09B6" Value="Item 2486"/>
+        <handlers:Item Key="item09B7" Value="Item 2487"/>
+        <handlers:Item Key="item09B8" Value="Item 2488"/>
+        <handlers:Item Key="item09B9" Value="Item 2489"/>
+        <handlers:Item Key="item09BA" Value="Item 2490"/>
+        <handlers:Item Key="item09BB" Value="Item 2491"/>
+        <handlers:Item Key="item09BC" Value="Item 2492"/>
+        <handlers:Item Key="item09BD" Value="Item 2493"/>
+        <handlers:Item Key="item09BE" Value="Item 2494"/>
+        <handlers:Item Key="item09BF" Value="Item 2495"/>
+        <handlers:Item Key="item09C0" Value="Item 2496"/>
+        <handlers:Item Key="item09C1" Value="Item 2497"/>
+        <handlers:Item Key="item09C2" Value="Item 2498"/>
+        <handlers:Item Key="item09C3" Value="Item 2499"/>
+        <handlers:Item Key="item09C4" Value="Item 2500"/>
+        <handlers:Item Key="item09C5" Value="Item 2501"/>
+        <handlers:Item Key="item09C6" Value="Item 2502"/>
+        <handlers:Item Key="item09C7" Value="Item 2503"/>
+        <handlers:Item Key="item09C8" Value="Item 2504"/>
+        <handlers:Item Key="item09C9" Value="Item 2505"/>
+        <handlers:Item Key="item09CA" Value="Item 2506"/>
+        <handlers:Item Key="item09CB" Value="Item 2507"/>
+        <handlers:Item Key="item09CC" Value="Item 2508"/>
+        <handlers:Item Key="item09CD" Value="Item 2509"/>
+        <handlers:Item Key="item09CE" Value="Item 2510"/>
+        <handlers:Item Key="item09CF" Value="Item 2511"/>
+        <handlers:Item Key="item09D0" Value="Item 2512"/>
+        <handlers:Item Key="item09D1" Value="Item 2513"/>
+        <handlers:Item Key="item09D2" Value="Item 2514"/>
+        <handlers:Item Key="item09D3" Value="Item 2515"/>
+        <handlers:Item Key="item09D4" Value="Item 2516"/>
+        <handlers:Item Key="item09D5" Value="Item 2517"/>
+        <handlers:Item Key="item09D6" Value="Item 2518"/>
+        <handlers:Item Key="item09D7" Value="Item 2519"/>
+        <handlers:Item Key="item09D8" Value="Item 2520"/>
+        <handlers:Item Key="item09D9" Value="Item 2521"/>
+        <handlers:Item Key="item09DA" Value="Item 2522"/>
+        <handlers:Item Key="item09DB" Value="Item 2523"/>
+        <handlers:Item Key="item09DC" Value="Item 2524"/>
+        <handlers:Item Key="item09DD" Value="Item 2525"/>
+        <handlers:Item Key="item09DE" Value="Item 2526"/>
+        <handlers:Item Key="item09DF" Value="Item 2527"/>
+        <handlers:Item Key="item09E0" Value="Item 2528"/>
+        <handlers:Item Key="item09E1" Value="Item 2529"/>
+        <handlers:Item Key="item09E2" Value="Joyful Platter"/>
+        <handlers:Item Key="item09E3" Value="Luxury Platter"/>
+        <handlers:Item Key="item09E4" Value="Item 2532"/>
+        <handlers:Item Key="item09E5" Value="Item 2533"/>
+        <handlers:Item Key="item09E6" Value="Item 2534"/>
+        <handlers:Item Key="item09E7" Value="Item 2535"/>
+        <handlers:Item Key="item09E8" Value="Item 2536"/>
+        <handlers:Item Key="item09E9" Value="Item 2537"/>
+        <handlers:Item Key="item09EA" Value="Item 2538"/>
+        <handlers:Item Key="item09EB" Value="Item 2539"/>
+        <handlers:Item Key="item09EC" Value="Item 2540"/>
+        <handlers:Item Key="item09ED" Value="Item 2541"/>
+        <handlers:Item Key="item09EE" Value="Item 2542"/>
+        <handlers:Item Key="item09EF" Value="Item 2543"/>
+        <handlers:Item Key="item09F0" Value="Item 2544"/>
+        <handlers:Item Key="item09F1" Value="Item 2545"/>
+        <handlers:Item Key="item09F2" Value="Item 2546"/>
+        <handlers:Item Key="item09F3" Value="Item 2547"/>
+        <handlers:Item Key="item09F4" Value="Item 2548"/>
+        <handlers:Item Key="item09F5" Value="Item 2549"/>
+        <handlers:Item Key="item09F6" Value="Item 2550"/>
+        <handlers:Item Key="item09F7" Value="Item 2551"/>
+        <handlers:Item Key="item09F8" Value="Item 2552"/>
+        <handlers:Item Key="item09F9" Value="Item 2553"/>
+        <handlers:Item Key="item09FA" Value="Item 2554"/>
+        <handlers:Item Key="item09FB" Value="Item 2555"/>
+        <handlers:Item Key="item09FC" Value="Item 2556"/>
+        <handlers:Item Key="item09FD" Value="Item 2557"/>
+        <handlers:Item Key="item09FE" Value="Item 2558"/>
+        <handlers:Item Key="item09FF" Value="Item 2559"/>
+        <handlers:Item Key="item0A00" Value="Item 2560"/>
+        <handlers:Item Key="item0A01" Value="Item 2561"/>
+        <handlers:Item Key="item0A02" Value="Item 2562"/>
+        <handlers:Item Key="item0A03" Value="Item 2563"/>
+        <handlers:Item Key="item0A04" Value="Item 2564"/>
+        <handlers:Item Key="item0A05" Value="Item 2565"/>
+        <handlers:Item Key="item0A06" Value="Item 2566"/>
+        <handlers:Item Key="item0A07" Value="Item 2567"/>
+        <handlers:Item Key="item0A08" Value="Item 2568"/>
+        <handlers:Item Key="item0A09" Value="Item 2569"/>
+        <handlers:Item Key="item0A0A" Value="Item 2570"/>
+        <handlers:Item Key="item0A0B" Value="Item 2571"/>
+        <handlers:Item Key="item0A0C" Value="Item 2572"/>
+        <handlers:Item Key="item0A0D" Value="Item 2573"/>
+        <handlers:Item Key="item0A0E" Value="Item 2574"/>
+        <handlers:Item Key="item0A0F" Value="Item 2575"/>
+        <handlers:Item Key="item0A10" Value="Item 2576"/>
+        <handlers:Item Key="item0A11" Value="Item 2577"/>
+        <handlers:Item Key="item0A12" Value="Item 2578"/>
+        <handlers:Item Key="item0A13" Value="Item 2579"/>
+        <handlers:Item Key="item0A14" Value="Item 2580"/>
+        <handlers:Item Key="item0A15" Value="Joyful Snowman"/>
+        <handlers:Item Key="item0A16" Value="Appreciative Snowman"/>
+        <handlers:Item Key="item0A17" Value="Item 2583"/>
+        <handlers:Item Key="item0A18" Value="Item 2584"/>
+        <handlers:Item Key="item0A19" Value="Item 2585"/>
+        <handlers:Item Key="item0A1A" Value="Sky Lanterns"/>
+        <handlers:Item Key="item0A1B" Value="Item 2587"/>
+        <handlers:Item Key="item0A1C" Value="Item 2588"/>
+        <handlers:Item Key="item0A1D" Value="Item 2589"/>
+        <handlers:Item Key="item0A1E" Value="Item 2590"/>
+        <handlers:Item Key="item0A1F" Value="Item 2591"/>
+        <handlers:Item Key="item0A20" Value="Item 2592"/>
+        <handlers:Item Key="item0A21" Value="Item 2593"/>
+        <handlers:Item Key="item0A22" Value="Item 2594"/>
+        <handlers:Item Key="item0A23" Value="Masterpiece Sketches"/>
+        <handlers:Item Key="item0A24" Value="Item 2596"/>
+        <handlers:Item Key="item0A25" Value="Item 2597"/>
+        <handlers:Item Key="item0A26" Value="Item 2598"/>
+        <handlers:Item Key="item0A27" Value="Item 2599"/>
+        <handlers:Item Key="item0A28" Value="Item 2600"/>
+        <handlers:Item Key="item0A29" Value="Item 2601"/>
+        <handlers:Item Key="item0A2A" Value="Item 2602"/>
+        <handlers:Item Key="item0A2B" Value="Item 2603"/>
+        <handlers:Item Key="item0A2C" Value="Item 2604"/>
+        <handlers:Item Key="item0A2D" Value="Item 2605"/>
+        <handlers:Item Key="item0A2E" Value="Item 2606"/>
+        <handlers:Item Key="item0A2F" Value="Item 2607"/>
+        <handlers:Item Key="item0A30" Value="Item 2608"/>
+        <handlers:Item Key="item0A31" Value="Item 2609"/>
+        <handlers:Item Key="item0A32" Value="Item 2610"/>
+        <handlers:Item Key="item0A33" Value="Item 2611"/>
+        <handlers:Item Key="item0A34" Value="Item 2612"/>
+        <handlers:Item Key="item0A35" Value="Item 2613"/>
+        <handlers:Item Key="item0A36" Value="Item 2614"/>
+        <handlers:Item Key="item0A37" Value="Item 2615"/>
+        <handlers:Item Key="item0A38" Value="Item 2616"/>
+        <handlers:Item Key="item0A39" Value="Item 2617"/>
+        <handlers:Item Key="item0A3A" Value="Item 2618"/>
+        <handlers:Item Key="item0A3B" Value="Item 2619"/>
+        <handlers:Item Key="item0A3C" Value="Item 2620"/>
+        <handlers:Item Key="item0A3D" Value="Item 2621"/>
+        <handlers:Item Key="item0A3E" Value="Item 2622"/>
+        <handlers:Item Key="item0A3F" Value="Item 2623"/>
+        <handlers:Item Key="item0A40" Value="Item 2624"/>
+        <handlers:Item Key="item0A41" Value="Item 2625"/>
+        <handlers:Item Key="item0A42" Value="Item 2626"/>
+        <handlers:Item Key="item0A43" Value="Item 2627"/>
+        <handlers:Item Key="item0A44" Value="Item 2628"/>
+        <handlers:Item Key="item0A45" Value="Item 2629"/>
+        <handlers:Item Key="item0A46" Value="Item 2630"/>
+        <handlers:Item Key="item0A47" Value="Item 2631"/>
+        <handlers:Item Key="item0A48" Value="Item 2632"/>
+        <handlers:Item Key="item0A49" Value="Item 2633"/>
+        <handlers:Item Key="item0A4A" Value="Item 2634"/>
+        <handlers:Item Key="item0A4B" Value="Item 2635"/>
+        <handlers:Item Key="item0A4C" Value="Item 2636"/>
+        <handlers:Item Key="item0A4D" Value="Item 2637"/>
+        <handlers:Item Key="item0A4E" Value="Item 2638"/>
+        <handlers:Item Key="item0A4F" Value="Item 2639"/>
+        <handlers:Item Key="item0A50" Value="Item 2640"/>
+        <handlers:Item Key="item0A51" Value="Item 2641"/>
+        <handlers:Item Key="item0A52" Value="Item 2642"/>
+        <handlers:Item Key="item0A53" Value="Item 2643"/>
+        <handlers:Item Key="item0A54" Value="Item 2644"/>
+        <handlers:Item Key="item0A55" Value="Item 2645"/>
+        <handlers:Item Key="item0A56" Value="Item 2646"/>
+        <handlers:Item Key="item0A57" Value="Item 2647"/>
+        <handlers:Item Key="item0A58" Value="Item 2648"/>
+        <handlers:Item Key="item0A59" Value="Item 2649"/>
+        <handlers:Item Key="item0A5A" Value="Item 2650"/>
+        <handlers:Item Key="item0A5B" Value="Item 2651"/>
+        <handlers:Item Key="item0A5C" Value="Item 2652"/>
+        <handlers:Item Key="item0A5D" Value="Item 2653"/>
+        <handlers:Item Key="item0A5E" Value="Item 2654"/>
+        <handlers:Item Key="item0A5F" Value="Item 2655"/>
+        <handlers:Item Key="item0A60" Value="Item 2656"/>
+        <handlers:Item Key="item0A61" Value="Item 2657"/>
+        <handlers:Item Key="item0A62" Value="Item 2658"/>
+        <handlers:Item Key="item0A63" Value="Item 2659"/>
+        <handlers:Item Key="item0A64" Value="Item 2660"/>
+        <handlers:Item Key="item0A65" Value="Item 2661"/>
+        <handlers:Item Key="item0A66" Value="Item 2662"/>
+        <handlers:Item Key="item0A67" Value="Item 2663"/>
+        <handlers:Item Key="item0A68" Value="Item 2664"/>
+        <handlers:Item Key="item0A69" Value="Item 2665"/>
+        <handlers:Item Key="item0A6A" Value="Item 2666"/>
+        <handlers:Item Key="item0A6B" Value="Item 2667"/>
+        <handlers:Item Key="item0A6C" Value="Item 2668"/>
+        <handlers:Item Key="item0A6D" Value="Item 2669"/>
+        <handlers:Item Key="item0A6E" Value="Item 2670"/>
+        <handlers:Item Key="item0A6F" Value="Item 2671"/>
+        <handlers:Item Key="item0A70" Value="Item 2672"/>
+        <handlers:Item Key="item0A71" Value="Item 2673"/>
+        <handlers:Item Key="item0A72" Value="Item 2674"/>
+        <handlers:Item Key="item0A73" Value="Freezer Ticket"/>
+        <handlers:Item Key="item0A74" Value="Pearlspring Ticket"/>
+        <handlers:Item Key="item0A75" Value="Snowball"/>
+        <handlers:Item Key="item0A76" Value="Snowman"/>
+        <handlers:Item Key="item0A77" Value="Item 2679"/>
+        <handlers:Item Key="item0A78" Value="Item 2680"/>
+        <handlers:Item Key="item0A79" Value="Item 2681"/>
+        <handlers:Item Key="item0A7A" Value="Item 2682"/>
+        <handlers:Item Key="item0A7B" Value="Item 2683"/>
+        <handlers:Item Key="item0A7C" Value="Item 2684"/>
+        <handlers:Item Key="item0A7D" Value="Item 2685"/>
+        <handlers:Item Key="item0A7E" Value="Steel Melding Ticket"/>
+        <handlers:Item Key="item0A7F" Value="Silver Melding Ticket"/>
+        <handlers:Item Key="item0A80" Value="Steel Melding Feystone"/>
+        <handlers:Item Key="item0A81" Value="Silver Melding Feystone"/>
+        <handlers:Item Key="item0A82" Value="Gold Melding Ticket"/>
+        <handlers:Item Key="item0A83" Value="Astral Melding Ticket"/>
+        <handlers:Item Key="item0A84" Value="Gold Melding Feystone"/>
+        <handlers:Item Key="item0A85" Value="Astral Melding Feystone"/>
+        <handlers:Item Key="item0A86" Value="Item 2694"/>
+        <handlers:Item Key="item0A87" Value="Item 2695"/>
+        <handlers:Item Key="item0A88" Value="Item 2696"/>
+        <handlers:Item Key="item0A89" Value="Item 2697"/>
+        <handlers:Item Key="item0A8A" Value="Item 2698"/>
+        <handlers:Item Key="item0A8B" Value="Item 2699"/>
+        <handlers:Item Key="item0A8C" Value="Item 2700"/>
+        <handlers:Item Key="item0A8D" Value="Item 2701"/>
+        <handlers:Item Key="item0A8E" Value="Item 2702"/>
+        <handlers:Item Key="item0A8F" Value="Item 2703"/>
+        <handlers:Item Key="item0A90" Value="Item 2704"/>
+        <handlers:Item Key="item0A91" Value="Item 2705"/>
+        <handlers:Item Key="item0A92" Value="Item 2706"/>
+        <handlers:Item Key="item0A93" Value="Item 2707"/>
+        <handlers:Item Key="item0A94" Value="Item 2708"/>
+        <handlers:Item Key="item0A95" Value="Item 2709"/>
+        <handlers:Item Key="item0A96" Value="Joyful Ticket"/>
+        <handlers:Item Key="item0A97" Value="Penguin Ticket"/>
+        <handlers:Item Key="item0A98" Value="Sealed Dragon Cloth"/>
+        <handlers:Item Key="item0A99" Value="Buff Ticket"/>
+        <handlers:Item Key="item0A9A" Value="Pickaxe Ticket"/>
+        <handlers:Item Key="item0A9B" Value="Gratitude Ticket"/>
+        <handlers:Item Key="item0A9C" Value="Wyverian Ticket"/>
+        <handlers:Item Key="item0A9D" Value="Fest Ticket"/>
+        <handlers:Item Key="item0A9E" Value="Meaty Canteen Ticket"/>
+        <handlers:Item Key="item0A9F" Value="Item 2719"/>
+        <handlers:Item Key="item0AA0" Value="Item 2720"/>
+        <handlers:Item Key="item0AA1" Value="Item 2721"/>
+        <handlers:Item Key="item0AA2" Value="Item 2722"/>
+        <handlers:Item Key="item0AA3" Value="Item 2723"/>
+        <handlers:Item Key="item0AA4" Value="Item 2724"/>
+        <handlers:Item Key="item0AA5" Value="Item 2725"/>
+        <handlers:Item Key="item0AA6" Value="Item 2726"/>
+        <handlers:Item Key="item0AA7" Value="Item 2727"/>
+        <handlers:Item Key="item0AA8" Value="Item 2728"/>
+        <handlers:Item Key="item0AA9" Value="Item 2729"/>
+        <handlers:Item Key="item0AAA" Value="Unity Symbol"/>
+        <handlers:Item Key="item0AAB" Value="Item 2731"/>
+        <handlers:Item Key="item0AAC" Value="Item 2732"/>
+        <handlers:Item Key="item0AAD" Value="Item 2733"/>
+        <handlers:Item Key="item0AAE" Value="Item 2734"/>
+        <handlers:Item Key="item0AAF" Value="VIP Joyful Ticket"/>
+        <handlers:Item Key="item0AB0" Value="VIP Gratitude Ticket"/>
+    </x:Array>
+
+</ResourceDictionary>

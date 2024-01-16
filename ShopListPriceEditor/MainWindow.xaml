@@ -1,0 +1,97 @@
+﻿<Window x:Class="ShopListPriceEditor.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:dd="urn:gong-wpf-dragdrop"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ShopListPriceEditor"
+        mc:Ignorable="d" Height="497.52" Width="693" Title="{DynamicResource title}" ResizeMode="NoResize" Icon="hammer.ico">
+    <Grid RenderTransformOrigin="0.507,0.538" Background="#FFE5E5E5">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="67*"/>
+            <ColumnDefinition Width="725*"/>
+        </Grid.ColumnDefinitions>
+        <TabControl HorizontalAlignment="Left" Height="459" VerticalAlignment="Top" Width="792" RenderTransformOrigin="0.514,0.561" Grid.ColumnSpan="2">
+            <TabItem Header="Shop List Editor" Margin="-2,0">
+                <Grid Background="#FFE5E5E5" Margin="-6,15,0,-15" HorizontalAlignment="Left" Width="691">
+                    <StackPanel Margin="533,67,0,0" Orientation="Vertical" HorizontalAlignment="Left" Width="126" Height="346" VerticalAlignment="Top">
+                        <Button Content="{DynamicResource default}" HorizontalAlignment="Left" VerticalAlignment="Top" Click="DefaultItems" Height="24" Width="126" Margin="0,0,0,5"/>
+                        <Button Content="{DynamicResource gems}" HorizontalAlignment="Left" VerticalAlignment="Top" Click="AllGems" Height="24" Width="126" Margin="0,0,0,5" />
+                        <Button Content="{DynamicResource lvl4_gems}" HorizontalAlignment="Left" VerticalAlignment="Top" Click="Lvl4Gems" Height="24" Width="126" Margin="0,0,0,5" />
+                        <Button Content="{DynamicResource consumables}" HorizontalAlignment="Left" VerticalAlignment="Top" Click="AllConsumables" Height="24" Width="126" Margin="0,0,0,5"/>
+                        <Button Content="{DynamicResource lr_mats}" HorizontalAlignment="Left" VerticalAlignment="Top" Click="LRMaterials" Height="24" Width="126" Margin="0,0,0,5"/>
+                        <Button Content="{DynamicResource hr_mats}" HorizontalAlignment="Left" VerticalAlignment="Top" Click="HRMaterials" Height="24" Width="126" Margin="0,0,0,5"/>
+                        <Button Content="{DynamicResource gl_mats}" HorizontalAlignment="Left" VerticalAlignment="Top" Click="GLMaterials" Height="24" Width="126" Margin="0,0,0,5"/>
+                        <Button Content="{DynamicResource mr_mats}" HorizontalAlignment="Left" VerticalAlignment="Top" Click="MRMaterials" Height="24" Width="126" Margin="0,0,0,5"/>
+                        <Button Content="{DynamicResource sort}" Visibility="Hidden"  HorizontalAlignment="Left" VerticalAlignment="Top" Click="Sort" Height="24" Width="116" Margin="5,20,5,0"/>
+                        <Button Content="{DynamicResource clear}" HorizontalAlignment="Left" VerticalAlignment="Top" Click="ClearItems" Height="24" Width="116" Margin="5,10,5,5" />
+                        <Button Content="{DynamicResource undo}" Visibility="Hidden" HorizontalAlignment="Left" VerticalAlignment="Top" Click="Undo" Height="24" Width="116" Margin="5,10,0,0"/>
+
+                    </StackPanel>
+                    <Button Content="&gt;" HorizontalAlignment="Left" Margin="223,163,0,0" VerticalAlignment="Top" Width="91" Click="SendOut" BorderThickness="1" FontSize="14" FontWeight="Bold" Height="29"/>
+                    <Button Content="&lt;" HorizontalAlignment="Left" Margin="223,244,0,0" VerticalAlignment="Top" Width="91" Click="SendIn" BorderThickness="1" FontSize="14" FontWeight="Bold" Height="29"/>
+                    <StackPanel HorizontalAlignment="Left" Height="387" Margin="38,30,0,0" VerticalAlignment="Top" Width="170" DataContext="{Binding Mode=OneWay, RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type local:MainWindow}}}">
+                        <TextBox Height="23" TextWrapping="Wrap" x:Name="InputFilter" Text="{Binding filterInputText, UpdateSourceTrigger=PropertyChanged}" Margin="0,0,0,3"/>
+                        <ListBox Height="344" x:Name="input" SelectionMode="Extended" ItemsSource="{Binding filteredInput}" MouseDoubleClick="InputDoubleClick"/>
+                        <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" Width="170" RenderTransformOrigin="0.97,0.407"><Run Text="Items:"/><InlineUIContainer>
+                                <TextBlock x:Name="results" HorizontalAlignment="Right" TextWrapping="Wrap" VerticalAlignment="Top" Width="41" Text="{Binding filteredInput.Count}" Margin="3,0,1,1"><Run Text="0"/></TextBlock>
+                            </InlineUIContainer></TextBlock>
+                    </StackPanel>
+                    <StackPanel HorizontalAlignment="Left" Height="391" Margin="329,30,0,0" VerticalAlignment="Top" Width="170" DataContext="{Binding Mode=OneWay, RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type local:MainWindow}}}">
+                        <TextBox Height="23" TextWrapping="Wrap" x:Name="OutputFilter" Text="{Binding filterOutputText, UpdateSourceTrigger=PropertyChanged}" Margin="0,0,0,3"/>
+                        <ListBox Height="344" x:Name="output" SelectionMode="Extended" ItemsSource="{Binding filteredOutput}" dd:DragDrop.IsDragSource="True" dd:DragDrop.IsDropTarget="True" MouseDoubleClick="OutputDoubleClick" RenderTransformOrigin="0.543,0.481"/>
+                        <TextBlock x:Name="itemCount" HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" Width="170" RenderTransformOrigin="0.97,0.407" Height="19"><Run Text="Items in Shop: 0 / 255"/></TextBlock>
+                    </StackPanel>
+                    <Menu Height="22" VerticalAlignment="Top" Margin="-1,-17,-11,0" BorderBrush="Black" Background="#FFC1C1C1">
+
+                        <MenuItem Header="{DynamicResource file}" Height="19" Width="100">
+                            <MenuItem x:Name="openShopFile" Header="{DynamicResource open}" HorizontalAlignment="Left" Height="30" Width="140" Click="OpenFile"/>
+                            <MenuItem x:Name="saveShopFile" Header="{DynamicResource save}" HorizontalAlignment="Left" Height="30" Width="140" Click="SaveFile"/>
+                        </MenuItem>
+                        <MenuItem Header="{DynamicResource settings}" Height="19" Width="100">
+                            <ComboBox Width="120" SelectionChanged="InsertMethodChanged" x:Name="Settings">
+                                <ComboBoxItem Content="{DynamicResource insertTop}" HorizontalAlignment="Left" Width="118"/>
+                                <ComboBoxItem Content="{DynamicResource insertBottom}" HorizontalAlignment="Left" Width="118"/>
+                            </ComboBox>
+                        </MenuItem>
+                        <MenuItem Header="{DynamicResource lang}" Height="19" Width="74">
+                            <ComboBox Width="135" SelectionChanged="LanguageChanged" x:Name="Language">
+                                <ComboBoxItem Content="English (en-US)" Tag="en-US"/>
+                                <ComboBoxItem Content="日本語 (ja-JP)" Tag="ja-JP"/>
+                                <ComboBoxItem Content="繁體中文 (zh-TW)" Tag="zh-TW"/>
+                                <ComboBoxItem Content="简体中文 (zh-Hans)" Tag="zh-Hans"/>
+                            </ComboBox>
+                        </MenuItem>
+                    </Menu>
+                    <Label Content="Item Filter List" HorizontalAlignment="Left" Margin="56,0,0,0" VerticalAlignment="Top" RenderTransformOrigin="-1.533,-0.355" FontWeight="Bold" FontSize="18"/>
+                    <Label Content="In-Game Shop List" HorizontalAlignment="Left" Margin="331,0,0,0" VerticalAlignment="Top" RenderTransformOrigin="-1.533,-0.355" FontWeight="Bold" FontSize="18"/>
+                    <Label Content="Shop Presets" HorizontalAlignment="Left" Margin="537,33,0,0" VerticalAlignment="Top" RenderTransformOrigin="-1.533,-0.355" FontWeight="Bold" FontSize="18" Width="126"/>
+                </Grid>
+            </TabItem>
+            <TabItem Header="Shop Price Editor" Margin="0,2,0,0">
+                <Grid Background="#FFE5E5E5" DataContext="{Binding Mode=OneWay, RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type local:MainWindow}}}" Margin="-6,-2,103,-15">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="17*"/>
+                        <ColumnDefinition Width="376*"/>
+                    </Grid.ColumnDefinitions>
+                    <Menu Height="22" VerticalAlignment="Top" HorizontalAlignment="Left" Width="792" Margin="0,0,-6,0" Grid.ColumnSpan="2" Background="#FFC1C1C1">
+                        <MenuItem Header="{DynamicResource file}" Height="19" Width="43">
+                            <MenuItem Name="openPriceFile" Header="{DynamicResource open}" HorizontalAlignment="Left" Height="30" Width="140" Click="OpenFile"/>
+                            <MenuItem Name="savePriceFile" Header="{DynamicResource save}" HorizontalAlignment="Left" Height="30" Width="140" Click="SaveFile"/>
+                        </MenuItem>
+                    </Menu>
+                    <TextBox TextWrapping="Wrap" Name="priceFilterText" Text="{Binding filterPriceInputText, UpdateSourceTrigger=PropertyChanged}" Margin="10,29,268,394" Grid.ColumnSpan="2"
+                             Grid.Column="0" />
+                    <DataGrid Name="priceGrid" HorizontalAlignment="Left" ItemsSource="{Binding filteredPriceInput}" HorizontalScrollBarVisibility="Hidden" AutoGenerateColumns="False" Height="362" Margin="10,59,0,0" VerticalAlignment="Top" Width="411" CanUserReorderColumns="False" CanUserResizeColumns="False" CanUserSortColumns="False" Grid.ColumnSpan="2"
+                              Grid.Column="0" MinWidth="200">
+                        <DataGrid.Columns>
+                            <DataGridTextColumn Header="Item" Binding="{Binding Value}" Width="185" ClipboardContentBinding="{x:Null}" IsReadOnly="True"/>
+                            <DataGridTextColumn Header="Sell Price" Binding="{Binding ItemSellPrice}" Width="102" ClipboardContentBinding="{x:Null}"/>
+                            <DataGridTextColumn Header="Buy Price" Binding="{Binding ItemBuyPrice}" Width="102" ClipboardContentBinding="{x:Null}"/>
+                        </DataGrid.Columns>
+                    </DataGrid>
+                </Grid>
+            </TabItem>
+        </TabControl>
+    </Grid>
+</Window>
