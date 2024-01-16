@@ -5,14 +5,13 @@ This is a fork of a fork of a fork.
 
 I'm updating for completeness since:
 
-- the OG ShopList Editor is 404'd 
+- the OG ShopList Editor is [404](https://github.com/IX-Xur/MHW-Shop-Editor)'d 
 
-- the OG editor doesn't have the QoL and other features of MHWShopListAndPriceEditor
+- [updated editor](https://github.com/VoldirFr/MHW-Shop-Editor) doesn't have the QoL and other features of [MHWShopListAndPriceEditor](https://github.com/aria-zivar/MHW_Shop_and_Price_Editor)
 
 - MHWSLAPE is a tad outdated
 
 This will be reuploaded on Nexus and this repo (ideally) should mirror the most recent version of MHW (as of writing this README, MHW is version 15.21).
-
 
 **Now Requires Stracker's Loader  
 [https://www.nexusmods.com/monsterhunterworld/mods/1982](https://www.nexusmods.com/monsterhunterworld/mods/1982)**
@@ -43,3 +42,17 @@ If the nativePC folder or any necessary subfolders don't exist, create them.
 __Usage__
 
 Open the included itemData.itm file, make your changes, save the file and copy it into "steamapps\common\Monster Hunter World\nativePC\common\item".
+
+-------------------------------------------------------
+
+## Credits
+
+Credit to all that contributed to this project prior:
+
+IX_XUR for the OG
+
+VoldirFr for the most recent version of the OG editor
+
+aria-zivar for QoL changes and other features
+
+Every other unnamed contributor.
