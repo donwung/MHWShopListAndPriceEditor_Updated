@@ -16,8 +16,8 @@
                 <Grid Background="#FFE5E5E5" Margin="-6,15,0,-15" HorizontalAlignment="Left" Width="691">
                     <StackPanel Margin="533,67,0,0" Orientation="Vertical" HorizontalAlignment="Left" Width="126" Height="346" VerticalAlignment="Top">
                         <Button Content="{DynamicResource default}" HorizontalAlignment="Left" VerticalAlignment="Top" Click="DefaultItems" Height="24" Width="126" Margin="0,0,0,5"/>
-                        <Button Content="{DynamicResource gems}" HorizontalAlignment="Left" VerticalAlignment="Top" Click="AllGems" Height="24" Width="126" Margin="0,0,0,5" />
-                        <Button Content="{DynamicResource lvl4_gems}" HorizontalAlignment="Left" VerticalAlignment="Top" Click="Lvl4Gems" Height="24" Width="126" Margin="0,0,0,5" />
+                        <Button Content="{DynamicResource single_skill_gems}" HorizontalAlignment="Left" VerticalAlignment="Top" Click="SingleSkillGems" Height="24" Width="126" Margin="0,0,0,5" />
+                        <Button Content="{DynamicResource double_skill_gems}" HorizontalAlignment="Left" VerticalAlignment="Top" Click="DoubleSkillGems" Height="24" Width="126" Margin="0,0,0,5" />
                         <Button Content="{DynamicResource consumables}" HorizontalAlignment="Left" VerticalAlignment="Top" Click="AllConsumables" Height="24" Width="126" Margin="0,0,0,5"/>
                         <Button Content="{DynamicResource lr_mats}" HorizontalAlignment="Left" VerticalAlignment="Top" Click="LRMaterials" Height="24" Width="126" Margin="0,0,0,5"/>
                         <Button Content="{DynamicResource hr_mats}" HorizontalAlignment="Left" VerticalAlignment="Top" Click="HRMaterials" Height="24" Width="126" Margin="0,0,0,5"/>

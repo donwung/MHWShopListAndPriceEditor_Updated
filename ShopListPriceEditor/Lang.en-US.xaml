@@ -12,8 +12,8 @@
     <system:String x:Key="lang">Language</system:String>
     <system:String x:Key="default">Default Items</system:String>
     <system:String x:Key="default_clone">Default Items Clone</system:String>
-    <system:String x:Key="gems">All Gems</system:String>
-    <system:String x:Key="lvl4_gems">Level 4 Gems</system:String>
+    <system:String x:Key="single_skill_gems">Single Skill Gems</system:String>
+    <system:String x:Key="double_skill_gems">Double Skill Gems</system:String>
     <system:String x:Key="clear">Clear Items</system:String>
     <system:String x:Key="consumables">Consumables</system:String>
     <system:String x:Key="lr_mats">LR Materials</system:String>

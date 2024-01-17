@@ -313,16 +313,16 @@ namespace ShopListPriceEditor
             ShopListRefresh();
         }
 
-        private void AllGems(object sender, RoutedEventArgs e)
+        private void SingleSkillGems(object sender, RoutedEventArgs e)
         {
             Clear();
-            PopulateBoxes(itemHandler.itemsGems.ToList());
+            PopulateBoxes(itemHandler.itemsSingleSkillGems.ToList());
         }
 
-        private void Lvl4Gems(object sender, RoutedEventArgs e)
+        private void DoubleSkillGems(object sender, RoutedEventArgs e)
         {
             Clear();
-            PopulateBoxes(itemHandler.itemsLvl4Gems.ToList());
+            PopulateBoxes(itemHandler.itemsDoubleSkillGems.ToList());
         }
 
         private void AllConsumables(object sender, RoutedEventArgs e)
