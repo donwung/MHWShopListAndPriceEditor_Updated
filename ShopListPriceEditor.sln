@@ -16,8 +16,8 @@ Global
 		{465ACACD-895E-44A9-8741-4233497E0606}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{465ACACD-895E-44A9-8741-4233497E0606}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{465ACACD-895E-44A9-8741-4233497E0606}.Release|Any CPU.Build.0 = Release|Any CPU
-		{465ACACD-895E-44A9-8741-4233497E0606}.ShopListPriceEditor_Updated|Any CPU.ActiveCfg = Release|Any CPU
-		{465ACACD-895E-44A9-8741-4233497E0606}.ShopListPriceEditor_Updated|Any CPU.Build.0 = Release|Any CPU
+		{465ACACD-895E-44A9-8741-4233497E0606}.ShopListPriceEditor_Updated|Any CPU.ActiveCfg = Debug|Any CPU
+		{465ACACD-895E-44A9-8741-4233497E0606}.ShopListPriceEditor_Updated|Any CPU.Build.0 = Debug|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

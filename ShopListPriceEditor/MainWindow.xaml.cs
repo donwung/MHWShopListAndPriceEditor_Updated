@@ -25,6 +25,7 @@ namespace ShopListPriceEditor
         public static List<Item> listBoxOut = new List<Item>();
         public static List<List<Item>> listBoxOutUndo;
         public static List<Item> pricesIn = new List<Item>();
+        public static byte[] itemDataBin = ShopListPriceEditor.Properties.Resources.itemData;
         public static string filename = "";
         private static string inputFilterText = "";
         private static string outputFilterText = "";
@@ -88,6 +89,7 @@ namespace ShopListPriceEditor
             }
         }
 
+        // this function works for both price and item editor? shit is so confusing
         private void OpenFile(object sender, RoutedEventArgs e)
         {
             string fileName = "";
@@ -201,7 +203,6 @@ namespace ShopListPriceEditor
             */
 
 
-
             if (((MenuItem)sender).Name.Equals("saveShopFile"))
             {
                 fileName = "shopList.slt";
@@ -225,6 +226,7 @@ namespace ShopListPriceEditor
                 }
                 catch (Exception exception)
                 {
+                    // what the fuck
                     Console.WriteLine("I'm bad and I should feel bad for doing this, but it's late and I don't care.");
                 }
                 return;
@@ -242,6 +244,34 @@ namespace ShopListPriceEditor
             {
                 Console.WriteLine("mlem ---\n" + dlg.FileName + "mlem ---\n");
                 fileHandler.SaveFile(fileName, dlg.FileName, fs);
+                Properties.Settings.Default.SaveDirectory = System.IO.Path.GetDirectoryName(dlg.FileName);
+                Properties.Settings.Default.Save();
+            }
+        }
+
+        private void CreateDefaultPriceFile(object sender, RoutedEventArgs e)
+        {
+            Stream fs;
+            FileHandler fileHandler = new FileHandler();
+            string fileName = "itemData";
+            string fileExt = ".itm";
+            string fileFilter = "";
+
+            Console.WriteLine("Writing new itemData.itm");
+
+
+            SaveFileDialog dlg = new SaveFileDialog()
+            {
+                FileName = fileName,
+                DefaultExt = fileExt,
+                Filter = fileFilter,
+                InitialDirectory = Properties.Settings.Default.SaveDirectory
+            };
+
+            if (dlg.ShowDialog() == true && (fs = dlg.OpenFile()) != null)
+            {
+                Console.WriteLine("mlem ---\n" + dlg.FileName + "mlem ---\n");
+                fileHandler.CreateDefaultPriceFile(dlg.FileName, itemDataBin, fs);
                 Properties.Settings.Default.SaveDirectory = System.IO.Path.GetDirectoryName(dlg.FileName);
                 Properties.Settings.Default.Save();
             }

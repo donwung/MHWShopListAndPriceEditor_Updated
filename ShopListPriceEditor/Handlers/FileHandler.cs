@@ -41,7 +41,7 @@ namespace ShopListPriceEditor.Handlers
                 foreach (Item item in MainWindow._itemlist)
                 {
                     item.ItemOffset = itemOffset;
-                    
+
                     fs.Position += offsetIncrement;
 
                     var _sell = new byte[4] { (byte)fs.ReadByte(), (byte)fs.ReadByte(), (byte)fs.ReadByte(), (byte)fs.ReadByte() };
@@ -57,6 +57,7 @@ namespace ShopListPriceEditor.Handlers
             }
         }
 
+        // Saves itemData.itm
         public void SaveFile()
         {
             using (var fs = File.Open(saveFilename, FileMode.Open, FileAccess.Write))
@@ -78,8 +79,9 @@ namespace ShopListPriceEditor.Handlers
                     itemOffset += offsetIncrement;
                     fs.Position = itemOffset;
 
-                    
+
                     List<byte> prices = new List<byte>();
+
                     foreach (var thing in BitConverter.GetBytes(item.ItemSellPrice).ToList())
                     {
                         prices.Add(thing);
@@ -92,13 +94,26 @@ namespace ShopListPriceEditor.Handlers
 
                     foreach (byte data in prices.ToArray())
                     {
+                        Console.WriteLine(data);
                         fs.WriteByte(data);
                     }
                 }
+                fs.Close();
                 MessageBox.Show("File saved.");
             }
         }
 
+        public void CreateDefaultPriceFile(string path, byte[] myBinary, Stream fs)
+        {
+            using (fs)
+            {
+                fs.Write(myBinary, 0, myBinary.Length);
+                fs.Close();
+            }
+            MessageBox.Show("File saved.");
+        }
+
+        // Saves Shop List file
         public void SaveFile(string fileType, string fileName, Stream fs)
         {
             List<byte> items = new List<byte>();
@@ -107,7 +122,7 @@ namespace ShopListPriceEditor.Handlers
             byte[] shopListHeader = new byte[] { 0x01, 0x10, 0x09, 0x18, 0x19, 0x00, shopListMaxCount, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00 };
             byte[] shopListBuffer = new byte[] { 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00 };
 
-            byte[] itemPriceBuffer = new byte[] {};
+            byte[] itemPriceBuffer = new byte[] { };
 
             // Item index at 0x08 and 0x0A
             byte itemIndex = 0x00;
@@ -136,7 +151,7 @@ namespace ShopListPriceEditor.Handlers
                     items.AddRange(buffer);
                 }
             }
-            
+
             byte[] output = items.ToArray();
             fs.Write(output, 0, output.Length);
             fs.Close();

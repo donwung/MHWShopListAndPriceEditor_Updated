@@ -77,8 +77,9 @@
                     </Grid.ColumnDefinitions>
                     <Menu Height="22" VerticalAlignment="Top" HorizontalAlignment="Left" Width="792" Margin="0,0,-6,0" Grid.ColumnSpan="2" Background="#FFC1C1C1">
                         <MenuItem Header="{DynamicResource file}" Height="19" Width="43">
-                            <MenuItem Name="openPriceFile" Header="{DynamicResource open}" HorizontalAlignment="Left" Height="30" Width="140" Click="OpenFile"/>
-                            <MenuItem Name="savePriceFile" Header="{DynamicResource save}" HorizontalAlignment="Left" Height="30" Width="140" Click="SaveFile"/>
+                            <MenuItem Name="openPriceFile" Header="{DynamicResource open}" HorizontalAlignment="Left" Height="30" Width="200" Click="OpenFile"/>
+                            <MenuItem Name="savePriceFile" Header="{DynamicResource save}" HorizontalAlignment="Left" Height="30" Width="200" Click="SaveFile"/>
+                            <MenuItem Name="createDefaultPriceFile" Header="{DynamicResource default_prices}" HorizontalAlignment="Left" Height="30" Width="200" Click="CreateDefaultPriceFile"/>
                         </MenuItem>
                     </Menu>
                     <TextBox TextWrapping="Wrap" Name="priceFilterText" Text="{Binding filterPriceInputText, UpdateSourceTrigger=PropertyChanged}" Margin="10,29,268,394" Grid.ColumnSpan="2"

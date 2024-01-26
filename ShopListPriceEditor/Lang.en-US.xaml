@@ -9,6 +9,8 @@
     <system:String x:Key="file">File</system:String>
     <system:String x:Key="open">Open</system:String>
     <system:String x:Key="save">Save</system:String>
+    <system:String x:Key="default_prices">Create Default Prices</system:String>
+    <system:String x:Key="blank_prices">Create Blank Prices</system:String>
     <system:String x:Key="lang">Language</system:String>
     <system:String x:Key="default">Default Items</system:String>
     <system:String x:Key="default_clone">Default Items Clone</system:String>
@@ -2798,8 +2800,8 @@
         <handlers:Item Key="item0ACD" Value="Buff Ticket+" />
         <!-- <handlers:Item Key="item0ACE" Value="Unavailable" /> -->
         <!-- <handlers:Item Key="item0ACF" Value="Unavailable" /> -->
-        <!-- <handlers:Item Key="item0AD0" Value="Unavailable" /> -->
-        <!-- <handlers:Item Key="item0AD1" Value="Unavailable" /> -->
+        <handlers:Item Key="item0AD0" Value="Chocolate" />
+        <handlers:Item Key="item0AD1" Value="Artemis's Notebook" />
         <handlers:Item Key="item0AD2" Value="Zinogre Ticket" />
         <handlers:Item Key="item0AD3" Value="Brute Tigrex Ticket" />
         <!-- <handlers:Item Key="item0AD4" Value="Unavailable" /> -->
