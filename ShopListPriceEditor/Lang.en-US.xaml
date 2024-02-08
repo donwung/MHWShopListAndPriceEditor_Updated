@@ -13,7 +13,6 @@
     <system:String x:Key="blank_prices">Create Blank Prices</system:String>
     <system:String x:Key="lang">Language</system:String>
     <system:String x:Key="default">Default Items</system:String>
-    <system:String x:Key="default_clone">Default Items Clone</system:String>
     <system:String x:Key="single_skill_gems">Single Skill Gems</system:String>
     <system:String x:Key="double_skill_gems">Double Skill Gems</system:String>
     <system:String x:Key="clear">Clear Items</system:String>
@@ -51,7 +50,7 @@
         <handlers:Item Key="item0010" Value="Immunizer" />
         <handlers:Item Key="item0011" Value="Astera Jerky" />
         <handlers:Item Key="item0012" Value="Dash Juice" />
-        <handlers:Item Key="item0013" Value="Mega Dash Juice" />
+        <!-- <handlers:Item Key="item0013" Value="Mega Dash Juice" /> -->
         <handlers:Item Key="item0014" Value="Might Seed" />
         <handlers:Item Key="item0015" Value="Demondrug" />
         <handlers:Item Key="item0016" Value="Mega Demondrug" />
@@ -211,7 +210,7 @@
         <handlers:Item Key="item00B0" Value="Poison Coating" />
         <handlers:Item Key="item00B1" Value="Paralysis Coating" />
         <handlers:Item Key="item00B2" Value="Sleep Coating" />
-        <handlers:Item Key="item00B3" Value="Exhaust Coating" />
+        <!-- <handlers:Item Key="item00B3" Value="Exhaust Coating" /> -->
         <handlers:Item Key="item00B4" Value="Blast Coating" />
         <handlers:Item Key="item00B5" Value="First-aid Med" />
         <handlers:Item Key="item00B6" Value="First-aid Med+" />
@@ -2800,8 +2799,8 @@
         <handlers:Item Key="item0ACD" Value="Buff Ticket+" />
         <!-- <handlers:Item Key="item0ACE" Value="Unavailable" /> -->
         <!-- <handlers:Item Key="item0ACF" Value="Unavailable" /> -->
-        <handlers:Item Key="item0AD0" Value="Chocolate" />
-        <handlers:Item Key="item0AD1" Value="Artemis's Notebook" />
+        <!-- <handlers:Item Key="item0AD0" Value="Chocolate" />
+        <handlers:Item Key="item0AD1" Value="Artemis's Notebook" /> -->
         <handlers:Item Key="item0AD2" Value="Zinogre Ticket" />
         <handlers:Item Key="item0AD3" Value="Brute Tigrex Ticket" />
         <!-- <handlers:Item Key="item0AD4" Value="Unavailable" /> -->
