@@ -65,7 +65,7 @@ namespace ShopListPriceEditor
                     items.Reverse();
                     foreach (string item in items)
                     {
-                        var result = itemlist.SingleOrDefault(x => x.Key.Substring(4) == item);
+                        var result = itemlist.FirstOrDefault(x => x.Key.Substring(4) == item);
                         if (result != null)
                         {
                             listBoxIn.Remove(result);
@@ -77,7 +77,7 @@ namespace ShopListPriceEditor
                 {
                     foreach (string item in items)
                     {
-                        var result = itemlist.SingleOrDefault(x => x.Key.Substring(4) == item);
+                        var result = itemlist.FirstOrDefault(x => x.Key.Substring(4) == item);
                         if (result != null)
                         {
                             listBoxIn.Remove(result);
@@ -156,7 +156,7 @@ namespace ShopListPriceEditor
             foreach (string item in currentItems)
             {
 
-                var result = itemlist.SingleOrDefault(x => x.Value == item);
+                var result = itemlist.FirstOrDefault(x => x.Value == item);
 
                 if (result != null)
                 {
@@ -192,7 +192,7 @@ namespace ShopListPriceEditor
             foreach (string item in currentItems)
             {
                 Console.WriteLine("item: " + item);
-                var result = itemlist.SingleOrDefault(x => x.Value == item);
+                var result = itemlist.FirstOrDefault(x => x.Value == item);
                 Console.WriteLine("result: " + result);
                 if (result != null)
                 {
